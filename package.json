@@ -1,0 +1,8 @@
+{
+  "name": "citation-mgr",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/joetm/citation-mgr.git",
+  "author": "JO",
+  "license": "MIT"
+}
