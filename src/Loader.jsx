@@ -13,7 +13,7 @@ export default React.createClass({
             <div className="valign center-align" style={{margin:'0 auto'}}>
                 <Loading
                     id="loader"
-                    type='spin'
+                    type='bars'
                     width={400}
                     height={400}
                     color='#e3e3e3'

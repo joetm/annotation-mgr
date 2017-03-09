@@ -65,8 +65,8 @@ export default class App extends React.Component {
                         title="CITATION MGR"
                         iconClassNameRight="muidocs-icon-navigation-expand-more"
                       />
+                    <Loader type='balls' visible={this.state.isLoading} />
                     <ListFolder />
-                    <Loader visible={this.state.isLoading} />
                     <Footer />
                 </div>
             </MuiThemeProvider>
