@@ -4918,6 +4918,10 @@ react-event-listener@^0.4.0:
     react-addons-shallow-compare "^15.4.2"
     warning "^3.0.0"
 
+react-loading@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/react-loading/-/react-loading-0.0.9.tgz#e9fba6948915ba7742a508193828b6c73eb04956"
+
 react-redux@^5.0.3:
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-5.0.3.tgz#86c3b68d56e74294a42e2a740ab66117ef6c019f"

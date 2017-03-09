@@ -16,6 +16,7 @@ import AppBar from 'material-ui/AppBar';
 
 import Footer from './Footer.jsx';
 import ListFolder from './ListFolder.jsx';
+import Loader from './Loader.jsx';
 
 import {
   lightBlue500,
@@ -39,6 +40,9 @@ export default class App extends React.Component {
     constructor() {
       super();
     	// TODO
+      this.state = {
+          isLoading: true
+      };
     }
 
     fetchConfig() {
@@ -62,6 +66,7 @@ export default class App extends React.Component {
                         iconClassNameRight="muidocs-icon-navigation-expand-more"
                       />
                     <ListFolder />
+                    <Loader visible={this.state.isLoading} />
                     <Footer />
                 </div>
             </MuiThemeProvider>
