@@ -2,27 +2,35 @@
 
 import React from 'react';
 
+import injectTapEventPlugin from 'react-tap-event-plugin';
+// Needed for onTouchTap
+// http://stackoverflow.com/a/34015469/988941
+injectTapEventPlugin();
+
 import fetch from 'unfetch';
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
+import AppBar from 'material-ui/AppBar';
 
-import Mgt from './Mgt.jsx';
-
+import Footer from './Footer.jsx';
+import ListFolder from './ListFolder.jsx';
 
 import {
-  cyan500, cyan700,
-  pinkA200,
-  grey100, grey300, grey400, grey500,
-  white, darkBlack, fullBlack,
+  lightBlue500,
+  indigo500,
+  cyan50,
+  pink500,
+  grey500,
+  Black, White
 } from 'material-ui/styles/colors';
 
 const theme = getMuiTheme({
   palette: {
-    primary1Color: pinkA200,
-    primary2Color: cyan700,
-    primary3Color: grey400
+    primary1Color: lightBlue500,
+    primary2Color: indigo500,
+    primary3Color: pink500
   }
 });
 
@@ -33,7 +41,11 @@ export default class App extends React.Component {
     	// TODO
     }
 
-    fetchCitations() {
+    fetchConfig() {
+    // TODO
+    }
+
+    fetchFolders() {
 		// TODO
     }
 
@@ -45,7 +57,12 @@ export default class App extends React.Component {
   		  return (
             <MuiThemeProvider muiTheme={theme}>
                 <div>
-                    <Mgt />
+                    <AppBar
+                        title="CITATION MGR"
+                        iconClassNameRight="muidocs-icon-navigation-expand-more"
+                      />
+                    <ListFolder />
+                    <Footer />
                 </div>
             </MuiThemeProvider>
   		  );
