@@ -10,13 +10,13 @@ export default class SettingsDialog extends React.Component {
       <FlatButton
         label="Cancel"
         primary={true}
-        onTouchTap={this.props.closeDialog}
+        onTouchTap={this.props.closeSettingsDialog}
       />,
       <FlatButton
         label="Submit"
         primary={true}
         keyboardFocused={true}
-        onTouchTap={this.props.closeDialog}
+        onTouchTap={this.props.closeSettingsDialog}
       />,
     ];
     return (
@@ -26,7 +26,7 @@ export default class SettingsDialog extends React.Component {
           actions={actions}
           modal={false}
           open={this.props.open}
-          onRequestClose={this.props.closeDialog}
+          onRequestClose={this.props.closeSettingsDialog}
         >
           ---TODO---
         </Dialog>

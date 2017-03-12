@@ -9,6 +9,8 @@ import SettingsIcon from 'material-ui/svg-icons/action/settings';
 import Badge from 'material-ui/Badge';
 import NotificationsIcon from 'material-ui/svg-icons/social/notifications';
 
+import Search from './Search.jsx'
+
 /*
     <IconMenu
       iconButtonElement={<IconButton><SettingsIcon /></IconButton>}
@@ -20,18 +22,21 @@ import NotificationsIcon from 'material-ui/svg-icons/social/notifications';
     </IconMenu>
 */
 
+
 const RightIconMenu = (props) => (
   <div>
+    <Search onTouchTap={props.openDialog} />
+
     <IconButton><SettingsIcon onTouchTap={props.openDialog} /></IconButton>
-    <IconButton><SyncIcon /></IconButton>
+    <IconButton><SyncIcon onTouchTap={props.syncLiterature} /></IconButton>
 
     <Badge
-      badgeContent={122}
+      badgeContent={props.numUnannotated}
       secondary={true}
       badgeStyle={{top:0, right:0, zIndex:999}}
       style={{padding:'2px'}}
     >
-      <IconButton tooltip="Notifications">
+      <IconButton tooltip="Un-annotated Papers">
         <NotificationsIcon />
       </IconButton>
     </Badge>

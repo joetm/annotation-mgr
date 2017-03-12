@@ -40,7 +40,7 @@ const ListFolder = (props) => {
     });
     // const ConditionalSubHeader = props.folders.name ? <Subheader inset={true}>{props.folders.name}</Subheader> : null;
     return (
-        <div>
+        <div style={{display: props.visible ? 'block' : 'none'}}>
         <Subheader inset={true}>{props.folders.name}</Subheader>
         <Divider inset={true} />
         <List>

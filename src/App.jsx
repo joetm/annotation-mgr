@@ -47,6 +47,8 @@ export default class App extends React.Component {
             folders: [],
             progress: 0,
             dialogOpen: false,
+            filesVisible: false,
+            numUnannotated: null,
         };
     }
 
@@ -68,7 +70,9 @@ export default class App extends React.Component {
             console.log(URL, folderdata);
             this.setState({
                 folders: folderdata,
-                isLoading: false
+                isLoading: false,
+                filesVisible: true,
+                numUnannotated: folderdata.children.length, // TODO
             });
         });
     }
@@ -84,11 +88,22 @@ export default class App extends React.Component {
         }
     }
 
-    openDialog() {
+    openSettingsDialog() {
         this.setState({dialogOpen: true});
     }
-    closeDialog() {
+    closeSettingsDialog() {
         this.setState({dialogOpen: false});
+    }
+
+    syncLiterature() {
+        console.log('Sync Literature [TODO]');
+        this.setState({
+            filesVisible: false,
+        });
+        // TODO
+
+
+        this.fetchPapers();
     }
 
   	render() {
@@ -97,15 +112,22 @@ export default class App extends React.Component {
                 <div>
                     <AppBar
                         title="ANNOTATION MGR"
-                        iconElementRight={<SettingsMenu openDialog={this.openDialog.bind(this)} />}
+                        iconElementRight={<SettingsMenu
+                                openDialog={this.openSettingsDialog.bind(this)}
+                                syncLiterature={this.syncLiterature.bind(this)}
+                                numUnannotated={this.state.numUnannotated}
+                            />}
                         showMenuIconButton={false}
                       />
                     <SettingsDialog
                         open={this.state.dialogOpen}
-                        closeDialog={this.closeDialog.bind(this)}
+                        closeSettingsDialog={this.closeSettingsDialog.bind(this)}
                     />
                     <Loader progress={this.state.progress} visible={this.state.isLoading} />
-                    <ListFolder folders={this.state.folders} />
+                    <ListFolder
+                        folders={this.state.folders}
+                        visible={this.state.filesVisible}
+                    />
                 </div>
             </MuiThemeProvider>
   		  );
