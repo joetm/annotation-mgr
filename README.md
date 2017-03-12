@@ -1,5 +1,5 @@
-Citation Mgr
-============
+Annotation Mgr
+==============
 
 > NO PAPER MAY LEAVE THE PC WITHOUT THE PARSING OF ITS ANNOTATIONS.
 > THE MGR.
