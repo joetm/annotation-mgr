@@ -17,6 +17,9 @@ const mapFolders = () => {
 
 }
 
+const SecondaryText = (props) => (
+    <div>{props.type}: {props.mtime}, {props.size}</div>
+);
 
 const ListFolder = (props) => {
     if (!props.folders.children || !props.folders.children.length) {
@@ -33,7 +36,7 @@ const ListFolder = (props) => {
             <ListItem
                 leftAvatar={<Avatar icon={<FileIcon />} />}
                 primaryText={f.name}
-                secondaryText={f.type}
+                secondaryText={<SecondaryText {...f} />}
             />
         );
     });

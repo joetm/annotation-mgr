@@ -12,6 +12,33 @@ function dirTree(filename) {
             name: path.basename(filename)
         };
 
+        // stats:
+        //   dev: 64512,
+        //   mode: 33188,
+        //   nlink: 1,
+        //   uid: 1000,
+        //   gid: 1000,
+        //   rdev: 0,
+        //   blksize: 4096,
+        //   ino: 11280330,
+        //   size: 855989,
+        //   blocks: 1672,
+        //   atime: 2017-03-12T12:37:07.244Z,
+        //   mtime: 2017-03-08T16:41:12.500Z,
+        //   ctime: 2017-03-08T16:41:31.069Z,
+        //   birthtime: 2017-03-08T16:41:31.069Z
+
+    if (stats.mtime) {
+        info.mtime = stats.mtime;
+    }
+    if (stats.atime) {
+        info.atime = stats.atime;
+    }
+
+    if (stats.size) {
+        info.size = stats.size;
+    }
+
     if (stats.isDirectory()) {
         info.type = "folder";
         info.children = fs.readdirSync(filename).map(function(child) {
