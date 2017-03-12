@@ -68,12 +68,12 @@ module.exports = {
       filename: 'css/[name].css',
       disable: false,
       allChunks: true
-    }),
-  	new webpack.optimize.UglifyJsPlugin({
-        // mangle: false,
-        compress: {
-            warnings: false
-        }
-     })
+    })
+  	// new webpack.optimize.UglifyJsPlugin({
+   //      // mangle: false,
+   //      compress: {
+   //          warnings: false
+   //      }
+   //   })
   ]
 };

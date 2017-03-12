@@ -15,7 +15,6 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import AppBar from 'material-ui/AppBar';
 
 import Loader from './Loader.jsx';
-import Footer from './Footer.jsx';
 import ListFolder from './ListFolder.jsx';
 
 import {
@@ -52,15 +51,22 @@ export default class App extends React.Component {
         // TODO
     }
 
-    fetchFolders() {
-		// TODO
-    }
-
     fetchPapers() {
-        // TODO
+        //
         this.setState({
             isLoading: true,
             progress: 0
+        });
+        // fetch the data
+        const URL = "./data/folders.json";
+        this.serverRequest = fetch(URL)
+        .then(r => r.json())
+        .then((folderdata) => {
+            console.log(URL, folderdata);
+            this.setState({
+                folders: folderdata,
+                isLoading: false
+            });
         });
     }
 
@@ -85,7 +91,6 @@ export default class App extends React.Component {
                       />
                     <Loader progress={this.state.progress} visible={this.state.isLoading} />
                     <ListFolder folders={this.state.folders} />
-                    <Footer />
                 </div>
             </MuiThemeProvider>
   		  );
