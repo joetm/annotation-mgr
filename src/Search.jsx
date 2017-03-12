@@ -1,18 +1,37 @@
-var React = require('react');
+import React from 'react';
+
+import TextField from 'material-ui/TextField';
 
 import SearchIcon from 'material-ui/svg-icons/action/search';
 
-export default React.createClass({
-  state: {
-    isExpanded: false,
-  },
-  expand: function () {
+export default class Search extends React.Component {
+
+  constructor() {
+    super();
+    this.state = {
+        isExpanded: false,
+    };
+  }
+
+  expand() {
+    // TODO
     console.log('expand search bar');
-    this.setState(isExpanded: true);
-  },
-  render: function() {
+    this.setState({isExpanded: true});
+  }
+
+  render() {
     return (
-        <SearchIcon onTouchTap={this.expand} />
+        <div style={{display:'inline-block'}}>
+            <SearchIcon
+                onTouchTap={this.expand.bind(this)}
+                style={{marginRight:'10px'}}
+            />
+            <TextField
+                style={{display: this.state.isExpanded ? 'block' : 'none'}}
+                hintText="Search"
+            />
+        </div>
     );
   }
-});
+
+}
