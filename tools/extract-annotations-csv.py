@@ -1,5 +1,5 @@
 import poppler, os.path
-import json
+import csv
 
 
 filename = "test-PDFXChange-Viewer"
@@ -11,7 +11,11 @@ path = 'file://%s' % os.path.realpath('%s.pdf' % filename)
 doc = poppler.document_new_from_file(path, None)
 pages = [doc.get_page(i) for i in range(doc.get_n_pages())]
 
-fp = open('%s.json' % filename, 'wb')
+csvfile = open('%s.csv' % filename, 'wb')
+csvwriter = csv.writer(csvfile,
+    delimiter='|',
+    quotechar='"',
+    quoting=csv.QUOTE_MINIMAL)
 
 annotations = []
 
@@ -26,19 +30,6 @@ for page_no, page in enumerate(pages):
     	# clean string
     	it = it.replace("\n", "").replace("\r", "").strip()
     	# write to file
-        annotations.append([page_no + 1, it])
+        csvwriter.writerow([page_no + 1, it])
 
-json.dump(annotations, fp,
-    skipkeys=False,
-    ensure_ascii=True,
-    check_circular=True,
-    allow_nan=True,
-    cls=None,
-    indent=None,
-    separators=None,
-    encoding="utf-8",
-    default=None,
-    sort_keys=False
-)
-
-fp.close()
+csvfile.close()
