@@ -1,5 +1,5 @@
 {
-  "name": "citation-mgr",
+  "name": "annotation-mgr",
   "version": "0.0.1",
   "main": "src/index.js",
   "repository": "https://github.com/joetm/citation-mgr.git",
@@ -13,74 +13,25 @@
     "clean": "rimraf dist",
     "lint": "eslint build src tests",
     "lint:fix": "npm run lint -- --fix",
-    "start": "better-npm-run start",
-    "dev": "better-npm-run dev",
-    "test": "better-npm-run test",
+    "dev": "cross-env NODE_ENV=production node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base build/ --open",
+    "test": "cross-env NODE_ENV=test node ./node_modules/karma/bin/karma start config/karma.config",
     "test:dev": "npm run test -- --watch",
-    "deploy": "better-npm-run deploy",
-    "deploy:dev": "better-npm-run deploy:dev",
-    "deploy:prod": "better-npm-run deploy:prod",
+    "deploy": "npm run lint && npm run test && npm run clean && npm run compile",
+    "deploy:dev": "npm run deploy",
+    "deploy:prod": "npm run deploy",
     "codecov": "cat coverage/*/lcov.info | codecov"
   },
-  "betterScripts": {
-    "compile": {
-      "command": "node bin/compile",
-      "env": {
-        "DEBUG": "app:*"
-      }
-    },
-    "dev": {
-      "command": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base build/ --open",
-      "env": {
-        "NODE_ENV": "development",
-        "DEBUG": "app:*"
-      }
-    },
-    "deploy": {
-      "command": "npm run lint && npm run test && npm run clean && npm run compile",
-      "env": {
-        "DEBUG": "app:*"
-      }
-    },
-    "deploy:dev": {
-      "command": "npm run deploy",
-      "env": {
-        "NODE_ENV": "development",
-        "DEBUG": "app:*"
-      }
-    },
-    "deploy:prod": {
-      "command": "npm run deploy",
-      "env": {
-        "NODE_ENV": "production",
-        "DEBUG": "app:*"
-      }
-    },
-    "start": {
-      "command": "node bin/dev-server",
-      "env": {
-        "DEBUG": "app:*"
-      }
-    },
-    "test": {
-      "command": "node ./node_modules/karma/bin/karma start config/karma.config",
-      "env": {
-        "NODE_ENV": "test",
-        "DEBUG": "app:*"
-      }
-    }
-  },
   "dependencies": {
-    "better-npm-run": "^0.0.14",
     "material-ui": "^0.17.0",
+    "rc-progress": "^2.0.6",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-loading": "^0.0.9",
     "react-redux": "^5.0.3",
     "react-router": "^3.0.2",
     "react-tap-event-plugin": "^2.0.1",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
+    "service-worker-plugin": "^1.0.0",
     "unfetch": "^2.1.1"
   },
   "devDependencies": {
@@ -99,6 +50,7 @@
     "chai-enzyme": "^0.6.1",
     "cheerio": "^0.22.0",
     "codecov": "^1.0.1",
+    "cross-env": "^3.2.3",
     "css-loader": "^0.26.2",
     "debug": "^2.6.1",
     "enzyme": "^2.7.1",

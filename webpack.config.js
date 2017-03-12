@@ -15,7 +15,7 @@ module.exports = {
     publicPath: '/',
     filename: "[name].js"
   },
-  devtool: debug ? "inline-sourcemap" : null,
+  devtool: debug ? "inline-sourcemap" : false,
   module: {
     loaders: [
       {
@@ -63,9 +63,12 @@ module.exports = {
     new webpack.DefinePlugin({
         'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
     }),
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new ExtractTextPlugin({ filename: 'css/[name].css', disable: false, allChunks: true }),
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new ExtractTextPlugin({
+      filename: 'css/[name].css',
+      disable: false,
+      allChunks: true
+    }),
   	new webpack.optimize.UglifyJsPlugin({
         // mangle: false,
         compress: {

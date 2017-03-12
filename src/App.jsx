@@ -14,9 +14,9 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import AppBar from 'material-ui/AppBar';
 
+import Loader from './Loader.jsx';
 import Footer from './Footer.jsx';
 import ListFolder from './ListFolder.jsx';
-import Loader from './Loader.jsx';
 
 import {
   lightBlue500,
@@ -41,12 +41,15 @@ export default class App extends React.Component {
       super();
     	// TODO
       this.state = {
-          isLoading: true
+          isLoading: false,
+          serverRequest: null,
+          folders: [],
+          progress: 0
       };
     }
 
     fetchConfig() {
-    // TODO
+        // TODO
     }
 
     fetchFolders() {
@@ -54,7 +57,22 @@ export default class App extends React.Component {
     }
 
     fetchPapers() {
-    // TODO
+        // TODO
+        this.setState({
+            isLoading: true,
+            progress: 0
+        });
+    }
+
+    componentDidMount() {
+    	this.fetchConfig();
+    	this.fetchPapers();
+    }
+
+    componentWillUnmount() {
+      if (this.state.serverRequest) {
+        serverRequest.abort();
+      }
     }
 
   	render() {
@@ -62,11 +80,11 @@ export default class App extends React.Component {
             <MuiThemeProvider muiTheme={theme}>
                 <div>
                     <AppBar
-                        title="CITATION MGR"
+                        title="ANNOTATION MGR"
                         iconClassNameRight="muidocs-icon-navigation-expand-more"
                       />
-                    <Loader type='balls' visible={this.state.isLoading} />
-                    <ListFolder />
+                    <Loader progress={this.state.progress} visible={this.state.isLoading} />
+                    <ListFolder folders={this.state.folders} />
                     <Footer />
                 </div>
             </MuiThemeProvider>

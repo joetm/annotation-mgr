@@ -14,28 +14,26 @@ import EditorInsertChart from 'material-ui/svg-icons/editor/insert-chart';
 
 //      <Subheader inset={true}>Folders</Subheader>
 
-const ListFolder = () => (
-    <div>
-    <Divider inset={true} />
-    <List>
-      <ListItem
-        leftAvatar={<Avatar icon={<FileFolder />} />}
-        primaryText="Photos"
-        secondaryText="Jan 9, 2014"
-      />
-      <ListItem
-        leftAvatar={<Avatar icon={<FileFolder />} />}
-        primaryText="Recipes"
-        secondaryText="Jan 17, 2014"
-      />
-      <ListItem
-        leftAvatar={<Avatar icon={<FileFolder />} />}
-        primaryText="Work"
-        secondaryText="Jan 28, 2014"
-      />
-    </List>
-    </div>
-);
+const ListFolder = (props) => {
+    if (!props.folders.length) {
+        return null;
+    };
+    const folders = props.folders.map((m) => (
+        <ListItem
+            leftAvatar={<Avatar icon={<FileFolder />} />}
+            primaryText="Photos"
+            secondaryText="Jan 9, 2014"
+        />
+    ));
+    return (
+        <div>
+        <Divider inset={true} />
+        <List>
+          {folders}
+        </List>
+        </div>
+    );
+};
 
 export default ListFolder;
 
