@@ -16,6 +16,9 @@ import AppBar from 'material-ui/AppBar';
 
 import Loader from './Loader.jsx';
 import ListFolder from './ListFolder.jsx';
+import SettingsMenu from './SettingsMenu.jsx';
+import SettingsDialog from './SettingsDialog.jsx';
+
 
 import {
   lightBlue500,
@@ -37,14 +40,14 @@ const theme = getMuiTheme({
 export default class App extends React.Component {
 
     constructor() {
-      super();
-    	// TODO
-      this.state = {
-          isLoading: false,
-          serverRequest: null,
-          folders: [],
-          progress: 0
-      };
+        super();
+        this.state = {
+            isLoading: false,
+            serverRequest: null,
+            folders: [],
+            progress: 0,
+            dialogOpen: false,
+        };
     }
 
     fetchConfig() {
@@ -76,9 +79,16 @@ export default class App extends React.Component {
     }
 
     componentWillUnmount() {
-      if (this.state.serverRequest) {
-        serverRequest.abort();
-      }
+        if (this.state.serverRequest) {
+            serverRequest.abort();
+        }
+    }
+
+    openDialog() {
+        this.setState({dialogOpen: true});
+    }
+    closeDialog() {
+        this.setState({dialogOpen: false});
     }
 
   	render() {
@@ -87,8 +97,13 @@ export default class App extends React.Component {
                 <div>
                     <AppBar
                         title="ANNOTATION MGR"
-                        iconClassNameRight="muidocs-icon-navigation-expand-more"
+                        iconElementRight={<SettingsMenu openDialog={this.openDialog.bind(this)} />}
+                        showMenuIconButton={false}
                       />
+                    <SettingsDialog
+                        open={this.state.dialogOpen}
+                        closeDialog={this.closeDialog.bind(this)}
+                    />
                     <Loader progress={this.state.progress} visible={this.state.isLoading} />
                     <ListFolder folders={this.state.folders} />
                 </div>
