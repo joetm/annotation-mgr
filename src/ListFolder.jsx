@@ -11,45 +11,32 @@ import {blue500, yellow600} from 'material-ui/styles/colors';
 import EditorInsertChart from 'material-ui/svg-icons/editor/insert-chart';
 
 import FolderIcon from 'material-ui/svg-icons/file/folder';
-import FileIcon from 'material-ui/svg-icons/file/cloud';
+import FileIcon from 'material-ui/svg-icons/action/description';
 
+import ListFolderItem from "./ListFolderItem.jsx";
 
-const mapFolders = () => {
-
-}
-
-const getSecText = (txt) => `${txt.type}: ${txt.mtime}, ${txt.size}`;
 
 const ListFolder = (props) => {
+
     if (!props.folders.children || !props.folders.children.length) {
         return null;
     };
-    const folders = props.folders.children.map((f) => {
-        // console.log(f['type']);
-        let FIcon;
-        if (f['type'] === "file") {
-            FIcon = <FileIcon />;
-        } else {
-            FIcon = <FolderIcon />;
-        }
-        return (
-            <ListItem
-                leftAvatar={<Avatar icon={FIcon} />}
-                primaryText={f.name}
-                secondaryText={getSecText(f)}
+
+    const items = props.folders.children.map((f) => (
+            <ListFolderItem
+                f={f}
             />
-        );
-    });
+        ));
+
     // const ConditionalSubHeader = props.folders.name ? <Subheader inset={true}>{props.folders.name}</Subheader> : null;
     return (
         <div style={{display: props.visible ? 'block' : 'none'}}>
-        <Subheader inset={true}>{props.folders.name}</Subheader>
-        <Divider inset={true} />
-        <List>
-          {folders}
-        </List>
+            <Subheader inset={true}>{props.folders.name}</Subheader>
+            <Divider inset={true} />
+            <List children={items} />
         </div>
     );
+
 };
 
 export default ListFolder;
