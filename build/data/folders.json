@@ -1,734 +1,1209 @@
 {
     "path": "/home/jonas/FU/IKON/Literatur/",
     "name": "Literatur",
-    "mtime": "2017-03-08T15:41:59.758Z",
-    "atime": "2017-03-11T19:37:30.093Z",
-    "size": 4096,
     "type": "folder",
     "children": [
         {
             "path": "/home/jonas/FU/IKON/Literatur/2008SocioTechnicalCongruence.pdf",
             "name": "2008SocioTechnicalCongruence.pdf",
-            "mtime": "2017-02-22T11:48:14.000Z",
-            "atime": "2017-03-12T12:37:06.844Z",
-            "size": 323964,
             "type": "file",
-            "hash": "1f28f7cf9c34ee92fb6cf6accc073b0e"
+            "hash": "1f28f7cf9c34ee92fb6cf6accc073b0e",
+            "mtime": "2017-02-22T11:48:14.000Z",
+            "atime": "2017-03-15T15:45:36.032Z",
+            "size": 323964
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/317.2.full.pdf",
             "name": "317.2.full.pdf",
-            "mtime": "2017-02-17T08:17:24.000Z",
-            "atime": "2017-03-12T12:37:06.848Z",
-            "size": 591563,
             "type": "file",
-            "hash": "8e5f0e6160994cde25d6f6dfc7b24c90"
+            "hash": "8e5f0e6160994cde25d6f6dfc7b24c90",
+            "mtime": "2017-02-17T08:17:24.000Z",
+            "atime": "2017-03-15T15:45:36.032Z",
+            "size": 591563
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/317.3.full.pdf",
             "name": "317.3.full.pdf",
-            "mtime": "2017-02-17T08:19:20.000Z",
-            "atime": "2017-03-12T12:37:06.848Z",
-            "size": 591613,
             "type": "file",
-            "hash": "368a9a1a5e72362a301a100dfd802ad6"
+            "hash": "368a9a1a5e72362a301a100dfd802ad6",
+            "mtime": "2017-02-17T08:19:20.000Z",
+            "atime": "2017-03-15T15:45:36.036Z",
+            "size": 591613
+        },
+        {
+            "path": "/home/jonas/FU/IKON/Literatur/CSCW",
+            "name": "CSCW",
+            "type": "folder",
+            "children": [
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/CSCW/CCIwp2010-02.pdf",
+                    "name": "CCIwp2010-02.pdf",
+                    "type": "file",
+                    "hash": "3a939d14929a50e85a2f08d63cec7758",
+                    "mtime": "2017-03-15T15:24:08.336Z",
+                    "atime": "2017-03-15T15:45:36.040Z",
+                    "size": 316727
+                }
+            ]
+        },
+        {
+            "path": "/home/jonas/FU/IKON/Literatur/Chaos computing - Wikipedia.pdf",
+            "name": "Chaos computing - Wikipedia.pdf",
+            "type": "file",
+            "hash": "019c48fba0c3e9ecfe03ce0749209841",
+            "mtime": "2017-03-15T13:29:38.380Z",
+            "atime": "2017-03-15T14:48:42.020Z",
+            "size": 144838
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/Collective intelligence - Wikipedia.pdf",
             "name": "Collective intelligence - Wikipedia.pdf",
-            "mtime": "2017-02-17T15:33:42.000Z",
-            "atime": "2017-03-12T12:37:06.852Z",
-            "size": 965233,
             "type": "file",
-            "hash": "eaf062e0460efa006a50cae36f22330c"
+            "hash": "eaf062e0460efa006a50cae36f22330c",
+            "mtime": "2017-02-17T15:33:42.000Z",
+            "atime": "2017-03-15T15:45:36.040Z",
+            "size": 965233
+        },
+        {
+            "path": "/home/jonas/FU/IKON/Literatur/Crowd",
+            "name": "Crowd",
+            "type": "folder",
+            "children": [
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p1152-huang.pdf",
+                    "name": "p1152-huang.pdf",
+                    "type": "file",
+                    "hash": "4116f30d6eac743d2216b5cfe2ac25f1",
+                    "mtime": "2017-03-13T12:21:52.510Z",
+                    "atime": "2017-03-15T15:45:36.044Z",
+                    "size": 1749723
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p1193-israni.pdf",
+                    "name": "p1193-israni.pdf",
+                    "type": "file",
+                    "hash": "e936cb287d92620fd5874652c5e46721",
+                    "mtime": "2017-03-13T12:22:03.562Z",
+                    "atime": "2017-03-15T15:45:36.048Z",
+                    "size": 789077
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p1217-cheng.pdf",
+                    "name": "p1217-cheng.pdf",
+                    "type": "file",
+                    "hash": "106fced5feb8e48e0fe03a5db43d14eb",
+                    "mtime": "2017-03-13T12:22:12.301Z",
+                    "atime": "2017-03-15T15:45:36.052Z",
+                    "size": 993540
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p1334-de-choudhury.pdf",
+                    "name": "p1334-de-choudhury.pdf",
+                    "type": "file",
+                    "hash": "9fc7ca581946f9cd251509dc75a66dd1",
+                    "mtime": "2017-03-13T12:22:19.107Z",
+                    "atime": "2017-03-15T15:45:36.056Z",
+                    "size": 1208406
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p1350-gorm.pdf",
+                    "name": "p1350-gorm.pdf",
+                    "type": "file",
+                    "hash": "f78206464a7eea47426e48dc504584cb",
+                    "mtime": "2017-03-13T12:22:29.915Z",
+                    "atime": "2017-03-15T15:45:36.060Z",
+                    "size": 2185139
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p1432-georgiou.pdf",
+                    "name": "p1432-georgiou.pdf",
+                    "type": "file",
+                    "hash": "cd397ab9caa045779a29180062c4218c",
+                    "mtime": "2017-03-13T12:22:38.842Z",
+                    "atime": "2017-03-15T15:45:36.064Z",
+                    "size": 878811
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p1501-pater.pdf",
+                    "name": "p1501-pater.pdf",
+                    "type": "file",
+                    "hash": "4b7aed523495da78790fc69812702b5f",
+                    "mtime": "2017-03-13T12:23:04.242Z",
+                    "atime": "2017-03-15T15:45:36.068Z",
+                    "size": 4237825
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p1527-baumer.pdf",
+                    "name": "p1527-baumer.pdf",
+                    "type": "file",
+                    "hash": "46d9d0a109b966fffd2a9a6e719a265f",
+                    "mtime": "2017-03-13T12:23:27.054Z",
+                    "atime": "2017-03-15T15:45:36.076Z",
+                    "size": 16611629
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p1544-law.pdf",
+                    "name": "p1544-law.pdf",
+                    "type": "file",
+                    "hash": "b19dc418650f7fb0b52a29df77cc5b16",
+                    "mtime": "2017-03-13T12:23:32.052Z",
+                    "atime": "2017-03-15T15:45:36.112Z",
+                    "size": 827525
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p155-arif.pdf",
+                    "name": "p155-arif.pdf",
+                    "type": "file",
+                    "hash": "420e000fba9499ac1eee3d48875c8a26",
+                    "mtime": "2017-03-13T11:17:26.250Z",
+                    "atime": "2017-03-15T15:45:36.116Z",
+                    "size": 2492209
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p1562-paredes.pdf",
+                    "name": "p1562-paredes.pdf",
+                    "type": "file",
+                    "hash": "7147cfcd45c0e1760bcfbe3ef9e82773",
+                    "mtime": "2017-03-13T12:23:40.182Z",
+                    "atime": "2017-03-15T15:45:36.120Z",
+                    "size": 2793709
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p1661-malone.pdf",
+                    "name": "p1661-malone.pdf",
+                    "type": "file",
+                    "hash": "50a7e28087a09749e9162fc0fe0e3b79",
+                    "mtime": "2017-03-13T12:23:47.549Z",
+                    "atime": "2017-03-15T15:45:36.128Z",
+                    "size": 2158245
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p1675-ahmed.pdf",
+                    "name": "p1675-ahmed.pdf",
+                    "type": "file",
+                    "hash": "c1a1b10e404118a891286d90e7648f5d",
+                    "mtime": "2017-03-13T12:23:53.843Z",
+                    "atime": "2017-03-15T15:45:36.132Z",
+                    "size": 1097845
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p1688-de-boer.pdf",
+                    "name": "p1688-de-boer.pdf",
+                    "type": "file",
+                    "hash": "a0d975b3a1e275536bcdc0b156b68f28",
+                    "mtime": "2017-03-13T12:24:09.504Z",
+                    "atime": "2017-03-15T15:45:36.136Z",
+                    "size": 1631300
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p1700-salehi.pdf",
+                    "name": "p1700-salehi.pdf",
+                    "type": "file",
+                    "hash": "7bf5b7d9ad2c60338135ceabea84e8ba",
+                    "mtime": "2017-03-13T13:37:06.711Z",
+                    "atime": "2017-03-15T15:45:36.140Z",
+                    "size": 3529511
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p1785-narayan.pdf",
+                    "name": "p1785-narayan.pdf",
+                    "type": "file",
+                    "hash": "3cf2ef190435db1243479b7f9ee8f038",
+                    "mtime": "2017-03-13T13:37:09.667Z",
+                    "atime": "2017-03-15T15:45:36.152Z",
+                    "size": 940084
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p183-krafft.pdf",
+                    "name": "p183-krafft.pdf",
+                    "type": "file",
+                    "hash": "4546ec546b63288f285230db652ff0f6",
+                    "mtime": "2017-03-13T11:17:40.606Z",
+                    "atime": "2017-03-15T15:45:36.152Z",
+                    "size": 671372
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p1835-merritt.pdf",
+                    "name": "p1835-merritt.pdf",
+                    "type": "file",
+                    "hash": "bfc28fe6b202e0b093f6c7107110e8af",
+                    "mtime": "2017-03-13T13:37:24.607Z",
+                    "atime": "2017-03-15T15:45:36.156Z",
+                    "size": 8185822
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p1876-quattrone.pdf",
+                    "name": "p1876-quattrone.pdf",
+                    "type": "file",
+                    "hash": "16f2268b6b240d90ea8103081105a680",
+                    "mtime": "2017-03-13T13:37:21.095Z",
+                    "atime": "2017-03-15T15:45:36.176Z",
+                    "size": 1202443
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p1890-salehi.pdf",
+                    "name": "p1890-salehi.pdf",
+                    "type": "file",
+                    "hash": "eeabe0762367666548961d1562d912d1",
+                    "mtime": "2017-03-13T13:37:40.623Z",
+                    "atime": "2017-03-15T15:45:36.180Z",
+                    "size": 18603106
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p1902-whiting.pdf",
+                    "name": "p1902-whiting.pdf",
+                    "type": "file",
+                    "hash": "6883ecc455f9e5e97a8ec20e4583ed0e",
+                    "mtime": "2017-03-13T13:37:31.255Z",
+                    "atime": "2017-03-15T15:45:36.220Z",
+                    "size": 1054328
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p191-cheon.pdf",
+                    "name": "p191-cheon.pdf",
+                    "type": "file",
+                    "hash": "586a11ef9ce8c1ad1b418038fc6f2bb1",
+                    "mtime": "2017-03-13T11:17:46.138Z",
+                    "atime": "2017-03-15T15:45:36.224Z",
+                    "size": 929373
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p1934-cavalcanti.pdf",
+                    "name": "p1934-cavalcanti.pdf",
+                    "type": "file",
+                    "hash": "63e51097cfd0a82435b6b141b380131e",
+                    "mtime": "2017-03-13T13:37:36.091Z",
+                    "atime": "2017-03-15T15:45:36.228Z",
+                    "size": 860286
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p1946-bentley.pdf",
+                    "name": "p1946-bentley.pdf",
+                    "type": "file",
+                    "hash": "31cedfadce8b3dfa6c174b7a8f430833",
+                    "mtime": "2017-03-13T13:37:56.371Z",
+                    "atime": "2017-03-15T15:45:36.232Z",
+                    "size": 5684824
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p1957-yao.pdf",
+                    "name": "p1957-yao.pdf",
+                    "type": "file",
+                    "hash": "c926b7ff88a7bc7ee4de3613bc1ccd77",
+                    "mtime": "2017-03-13T13:37:47.487Z",
+                    "atime": "2017-03-15T15:45:36.248Z",
+                    "size": 3092530
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p1982-kim.pdf",
+                    "name": "p1982-kim.pdf",
+                    "type": "file",
+                    "hash": "042b48bb0ce742857734b5b6938ba9b3",
+                    "mtime": "2017-03-13T13:38:01.751Z",
+                    "atime": "2017-03-15T15:45:36.252Z",
+                    "size": 5139638
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p2082-zhang.pdf",
+                    "name": "p2082-zhang.pdf",
+                    "type": "file",
+                    "hash": "d8676a404aae9e614d9d17337b5e7628",
+                    "mtime": "2017-03-13T13:37:56.163Z",
+                    "atime": "2017-03-15T15:45:36.264Z",
+                    "size": 2070267
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p2124-bowser.pdf",
+                    "name": "p2124-bowser.pdf",
+                    "type": "file",
+                    "hash": "bee7400e43a10a4c11837ee391800838",
+                    "mtime": "2017-03-13T13:37:59.791Z",
+                    "atime": "2017-03-15T15:45:36.272Z",
+                    "size": 896257
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p2137-reeves.pdf",
+                    "name": "p2137-reeves.pdf",
+                    "type": "file",
+                    "hash": "b1fa6f551284bf982e4a530d8ee5c8d7",
+                    "mtime": "2017-03-13T13:38:04.731Z",
+                    "atime": "2017-03-15T15:45:36.272Z",
+                    "size": 1550224
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p2153-moller.pdf",
+                    "name": "p2153-moller.pdf",
+                    "type": "file",
+                    "hash": "c526433f52577c27b69812468162965c",
+                    "mtime": "2017-03-13T13:38:24.451Z",
+                    "atime": "2017-03-15T15:45:36.276Z",
+                    "size": 7408189
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p2236-marrinan.pdf",
+                    "name": "p2236-marrinan.pdf",
+                    "type": "file",
+                    "hash": "c17f5d85a53c6155e95951cf55b9febc",
+                    "mtime": "2017-03-13T13:38:18.619Z",
+                    "atime": "2017-03-15T15:45:36.292Z",
+                    "size": 2368528
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p233-kim.pdf",
+                    "name": "p233-kim.pdf",
+                    "type": "file",
+                    "hash": "a5b4edf399e2ca214318ad397f2c02dd",
+                    "mtime": "2017-03-13T11:17:51.914Z",
+                    "atime": "2017-03-15T15:45:36.300Z",
+                    "size": 3620015
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p2330-lykourentzou.pdf",
+                    "name": "p2330-lykourentzou.pdf",
+                    "type": "file",
+                    "hash": "1ccfa7324b8139fad403ea48e60c924d",
+                    "mtime": "2017-03-13T13:38:23.987Z",
+                    "atime": "2017-03-15T15:45:36.308Z",
+                    "size": 6052212
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p2359-haraty.pdf",
+                    "name": "p2359-haraty.pdf",
+                    "type": "file",
+                    "hash": "4ff40d7e2a5d0e64e8c9d2542bba6c1a",
+                    "mtime": "2017-03-13T13:38:24.319Z",
+                    "atime": "2017-03-15T15:45:36.320Z",
+                    "size": 817437
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p2410-morschheuser.pdf",
+                    "name": "p2410-morschheuser.pdf",
+                    "type": "file",
+                    "hash": "3b12c53ba42c2179cffacd29ca1dd1dc",
+                    "mtime": "2017-03-13T13:38:29.100Z",
+                    "atime": "2017-03-15T15:45:36.324Z",
+                    "size": 1486276
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p2436-passi.pdf",
+                    "name": "p2436-passi.pdf",
+                    "type": "file",
+                    "hash": "77d58925bb1d9e04d71d01e70aa0fd74",
+                    "mtime": "2017-03-13T13:38:33.192Z",
+                    "atime": "2017-03-15T15:45:36.328Z",
+                    "size": 1549400
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p246-kim.pdf",
+                    "name": "p246-kim.pdf",
+                    "type": "file",
+                    "hash": "9e2b8573847e39d6cf75753d65dc0bca",
+                    "mtime": "2017-03-13T11:17:59.799Z",
+                    "atime": "2017-03-15T15:45:36.332Z",
+                    "size": 11535178
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p2518-cham.pdf",
+                    "name": "p2518-cham.pdf",
+                    "type": "file",
+                    "hash": "0c158aed6f5abcbd33ec8c70b0d321c0",
+                    "mtime": "2017-03-13T13:38:37.212Z",
+                    "atime": "2017-03-15T15:45:36.356Z",
+                    "size": 962034
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p322-samory.pdf",
+                    "name": "p322-samory.pdf",
+                    "type": "file",
+                    "hash": "921360d8e78f456f0cd488b00ebc8f7b",
+                    "mtime": "2017-03-13T11:17:59.823Z",
+                    "atime": "2017-03-15T15:45:36.360Z",
+                    "size": 1597734
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p370-olteanu.pdf",
+                    "name": "p370-olteanu.pdf",
+                    "type": "file",
+                    "hash": "d502d6562606fbb60a1bac7931f0af2c",
+                    "mtime": "2017-03-13T11:18:03.583Z",
+                    "atime": "2017-03-15T15:45:36.364Z",
+                    "size": 1298918
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p541-park.pdf",
+                    "name": "p541-park.pdf",
+                    "type": "file",
+                    "hash": "ffac376da4ca7d5df3fca3e3a3f54616",
+                    "mtime": "2017-03-13T11:18:08.135Z",
+                    "atime": "2017-03-15T15:45:36.368Z",
+                    "size": 1814130
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p555-hoyle.pdf",
+                    "name": "p555-hoyle.pdf",
+                    "type": "file",
+                    "hash": "6b450f82df6cc3c82dc8e10da1681890",
+                    "mtime": "2017-03-13T11:18:11.915Z",
+                    "atime": "2017-03-15T15:45:36.372Z",
+                    "size": 1281113
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p567-fiesler.pdf",
+                    "name": "p567-fiesler.pdf",
+                    "type": "file",
+                    "hash": "c148c0203858b45808a9ff294f95bb81",
+                    "mtime": "2017-03-13T11:18:16.719Z",
+                    "atime": "2017-03-15T15:45:36.376Z",
+                    "size": 1019556
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p581-mendel.pdf",
+                    "name": "p581-mendel.pdf",
+                    "type": "file",
+                    "hash": "4994b6fe432dae3bc41ea11b65563b00",
+                    "mtime": "2017-03-13T11:18:21.003Z",
+                    "atime": "2017-03-15T15:45:36.380Z",
+                    "size": 1108071
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p594-shi.pdf",
+                    "name": "p594-shi.pdf",
+                    "type": "file",
+                    "hash": "6d508879fe1b031b8aef29a90bf4b5dd",
+                    "mtime": "2017-03-13T11:18:26.287Z",
+                    "atime": "2017-03-15T15:45:36.384Z",
+                    "size": 2659906
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p604-feinberg.pdf",
+                    "name": "p604-feinberg.pdf",
+                    "type": "file",
+                    "hash": "60a11f28da3707dabf7a03c730f09834",
+                    "mtime": "2017-03-13T11:18:32.912Z",
+                    "atime": "2017-03-15T15:45:36.392Z",
+                    "size": 2474059
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p740-devito (1).pdf",
+                    "name": "p740-devito (1).pdf",
+                    "type": "file",
+                    "hash": "d88cc64217c219990391649cb3f97cd4",
+                    "mtime": "2017-03-13T11:18:47.848Z",
+                    "atime": "2017-03-15T15:45:36.396Z",
+                    "size": 1388307
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p740-devito.pdf",
+                    "name": "p740-devito.pdf",
+                    "type": "file",
+                    "hash": "d88cc64217c219990391649cb3f97cd4",
+                    "mtime": "2017-03-13T12:21:00.684Z",
+                    "atime": "2017-03-15T15:45:36.400Z",
+                    "size": 1388307
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p821-summers.pdf",
+                    "name": "p821-summers.pdf",
+                    "type": "file",
+                    "hash": "b1e6ad7ebd0ba56c52c8c8066c0a98ba",
+                    "mtime": "2017-03-13T12:21:11.272Z",
+                    "atime": "2017-03-15T15:45:36.404Z",
+                    "size": 748594
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Crowd/p889-hata.pdf",
+                    "name": "p889-hata.pdf",
+                    "type": "file",
+                    "hash": "f70fe81ebfdba78b62b52ec4ffd0c07c",
+                    "mtime": "2017-03-13T12:21:42.507Z",
+                    "atime": "2017-03-15T15:45:36.408Z",
+                    "size": 1631974
+                }
+            ]
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/Cyber-physical system - Wikipedia.pdf",
             "name": "Cyber-physical system - Wikipedia.pdf",
-            "mtime": "2017-02-20T19:43:18.000Z",
-            "atime": "2017-03-12T12:37:06.856Z",
-            "size": 267159,
             "type": "file",
-            "hash": "9d266c060715d4c526bb1c357a2302a6"
+            "hash": "9d266c060715d4c526bb1c357a2302a6",
+            "mtime": "2017-02-20T19:43:18.000Z",
+            "atime": "2017-03-15T15:45:36.412Z",
+            "size": 267159
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/Cyber-physisches System – Wikipedia.pdf",
             "name": "Cyber-physisches System – Wikipedia.pdf",
-            "mtime": "2017-02-20T19:42:58.000Z",
-            "atime": "2017-03-12T12:37:06.856Z",
-            "size": 145953,
             "type": "file",
-            "hash": "f881a191da4ab51aaf4a3913f11775c4"
+            "hash": "f881a191da4ab51aaf4a3913f11775c4",
+            "mtime": "2017-02-20T19:42:58.000Z",
+            "atime": "2017-03-15T15:45:36.412Z",
+            "size": 145953
+        },
+        {
+            "path": "/home/jonas/FU/IKON/Literatur/Does IT Matter.pdf",
+            "name": "Does IT Matter.pdf",
+            "type": "file",
+            "hash": "dfd7b3fc86b554b06ee9308efb1beb66",
+            "mtime": "2017-03-12T18:39:48.712Z",
+            "atime": "2017-03-15T14:48:42.064Z",
+            "size": 363324
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/Doxing - Wikipedia.pdf",
             "name": "Doxing - Wikipedia.pdf",
-            "mtime": "2017-02-17T16:07:50.000Z",
-            "atime": "2017-03-12T12:37:06.860Z",
-            "size": 194419,
             "type": "file",
-            "hash": "9bb71ebbf13a06d21d601fe61635f8b1"
+            "hash": "9bb71ebbf13a06d21d601fe61635f8b1",
+            "mtime": "2017-02-17T16:07:50.000Z",
+            "atime": "2017-03-15T15:45:36.416Z",
+            "size": 194419
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/Europeana",
             "name": "Europeana",
-            "mtime": "2017-03-09T09:56:16.412Z",
-            "atime": "2017-03-11T19:37:30.093Z",
-            "size": 4096,
             "type": "folder",
             "children": [
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Europeana/-EDM_slides_130714.ppt",
                     "name": "-EDM_slides_130714.ppt",
-                    "mtime": "2017-02-02T09:02:24.000Z",
-                    "atime": "2017-03-12T12:37:06.860Z",
-                    "size": 29744128,
                     "type": "file",
-                    "hash": "17a5811149b5e99372106f3316183df9"
+                    "hash": "17a5811149b5e99372106f3316183df9",
+                    "mtime": "2017-02-02T09:02:24.000Z",
+                    "atime": "2017-03-15T15:45:36.416Z",
+                    "size": 29744128
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Europeana/55-218-1-PB.pdf",
                     "name": "55-218-1-PB.pdf",
-                    "mtime": "2017-03-09T09:56:13.468Z",
-                    "atime": "2017-03-12T12:37:06.920Z",
-                    "size": 1942145,
                     "type": "file",
-                    "hash": "268f0b53fed9cbd1f8ef485684c9cd51"
+                    "hash": "268f0b53fed9cbd1f8ef485684c9cd51",
+                    "mtime": "2017-03-09T09:56:13.468Z",
+                    "atime": "2017-03-15T15:45:36.480Z",
+                    "size": 1942145
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Europeana/Data structure - Europeana Labs.pdf",
                     "name": "Data structure - Europeana Labs.pdf",
-                    "mtime": "2017-03-09T09:54:56.754Z",
-                    "atime": "2017-03-12T12:37:06.924Z",
-                    "size": 1200790,
                     "type": "file",
-                    "hash": "7ced9699c07f45ac063d89e5e6d4f456"
+                    "hash": "7ced9699c07f45ac063d89e5e6d4f456",
+                    "mtime": "2017-03-09T09:54:56.754Z",
+                    "atime": "2017-03-15T15:45:36.488Z",
+                    "size": 1200790
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Europeana/EDM Mapping Guidelines v2.3_112016.pdf",
                     "name": "EDM Mapping Guidelines v2.3_112016.pdf",
-                    "mtime": "2017-02-02T09:04:34.000Z",
-                    "atime": "2017-03-12T12:37:06.928Z",
-                    "size": 1402159,
                     "type": "file",
-                    "hash": "3d8da68f10eb95dd79e08527c8db1825"
+                    "hash": "3d8da68f10eb95dd79e08527c8db1825",
+                    "mtime": "2017-02-02T09:04:34.000Z",
+                    "atime": "2017-03-15T15:45:36.488Z",
+                    "size": 1402159
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Europeana/EDM Schematron validation in Oxygen XML editor (1).pdf",
                     "name": "EDM Schematron validation in Oxygen XML editor (1).pdf",
-                    "mtime": "2017-02-02T09:04:38.000Z",
-                    "atime": "2017-03-12T12:37:06.932Z",
-                    "size": 388550,
                     "type": "file",
-                    "hash": "6ded4652a2d6d9add118a220bc93bf59"
+                    "hash": "6ded4652a2d6d9add118a220bc93bf59",
+                    "mtime": "2017-02-02T09:04:38.000Z",
+                    "atime": "2017-03-15T15:45:36.492Z",
+                    "size": 388550
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Europeana/EDM Schematron validation in Oxygen XML editor.pdf",
                     "name": "EDM Schematron validation in Oxygen XML editor.pdf",
-                    "mtime": "2017-02-02T09:04:28.000Z",
-                    "atime": "2017-03-12T12:37:06.936Z",
-                    "size": 388550,
                     "type": "file",
-                    "hash": "6ded4652a2d6d9add118a220bc93bf59"
+                    "hash": "6ded4652a2d6d9add118a220bc93bf59",
+                    "mtime": "2017-02-02T09:04:28.000Z",
+                    "atime": "2017-03-15T15:45:36.496Z",
+                    "size": 388550
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Europeana/EDM.xsd",
                     "name": "EDM.xsd",
-                    "mtime": "2017-02-02T09:04:18.000Z",
-                    "atime": "2017-03-12T12:37:06.936Z",
-                    "size": 1464,
                     "type": "file",
-                    "hash": "44641c15ae39d88a122c5209ee42751a"
+                    "hash": "44641c15ae39d88a122c5209ee42751a",
+                    "mtime": "2017-02-02T09:04:18.000Z",
+                    "atime": "2017-03-15T15:45:36.496Z",
+                    "size": 1464
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Europeana/EDMObjectTemplatesProviders.html",
                     "name": "EDMObjectTemplatesProviders.html",
-                    "mtime": "2017-02-02T09:02:58.000Z",
-                    "atime": "2017-03-12T12:37:06.936Z",
-                    "size": 85764,
                     "type": "file",
-                    "hash": "269135bfef665f73489a5b96c0f407b5"
+                    "hash": "269135bfef665f73489a5b96c0f407b5",
+                    "mtime": "2017-02-02T09:02:58.000Z",
+                    "atime": "2017-03-15T15:45:36.496Z",
+                    "size": 85764
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Europeana/EDM_Definition_v5.2.7_042016 (1).pdf",
                     "name": "EDM_Definition_v5.2.7_042016 (1).pdf",
-                    "mtime": "2017-02-02T09:04:44.000Z",
-                    "atime": "2017-03-12T12:37:06.936Z",
-                    "size": 2213229,
                     "type": "file",
-                    "hash": "8efc62f40cf1a3449e0e98195e0b86d8"
+                    "hash": "8efc62f40cf1a3449e0e98195e0b86d8",
+                    "mtime": "2017-02-02T09:04:44.000Z",
+                    "atime": "2017-03-15T15:45:36.496Z",
+                    "size": 2213229
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Europeana/EDM_Definition_v5.2.7_042016.pdf",
                     "name": "EDM_Definition_v5.2.7_042016.pdf",
-                    "mtime": "2017-02-02T09:04:10.000Z",
-                    "atime": "2017-03-12T12:37:06.944Z",
-                    "size": 2213229,
                     "type": "file",
-                    "hash": "8efc62f40cf1a3449e0e98195e0b86d8"
+                    "hash": "8efc62f40cf1a3449e0e98195e0b86d8",
+                    "mtime": "2017-02-02T09:04:10.000Z",
+                    "atime": "2017-03-15T15:45:36.504Z",
+                    "size": 2213229
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Europeana/EDM_Factsheet (1).pdf",
                     "name": "EDM_Factsheet (1).pdf",
-                    "mtime": "2017-02-02T09:04:46.000Z",
-                    "atime": "2017-03-12T12:37:06.948Z",
-                    "size": 166726,
                     "type": "file",
-                    "hash": "e7ddf6b3d80b5ca39d48843f2b163053"
+                    "hash": "e7ddf6b3d80b5ca39d48843f2b163053",
+                    "mtime": "2017-02-02T09:04:46.000Z",
+                    "atime": "2017-03-15T15:45:36.508Z",
+                    "size": 166726
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Europeana/EDM_Factsheet.pdf",
                     "name": "EDM_Factsheet.pdf",
-                    "mtime": "2017-02-02T09:02:26.000Z",
-                    "atime": "2017-03-12T12:37:06.948Z",
-                    "size": 166726,
                     "type": "file",
-                    "hash": "e7ddf6b3d80b5ca39d48843f2b163053"
+                    "hash": "e7ddf6b3d80b5ca39d48843f2b163053",
+                    "mtime": "2017-02-02T09:02:26.000Z",
+                    "atime": "2017-03-15T15:45:36.508Z",
+                    "size": 166726
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Europeana/EDM_Mapping_Guidelines_v2.3_112016 (1).pdf",
                     "name": "EDM_Mapping_Guidelines_v2.3_112016 (1).pdf",
-                    "mtime": "2017-02-02T09:04:50.000Z",
-                    "atime": "2017-03-12T12:37:06.952Z",
-                    "size": 1402159,
                     "type": "file",
-                    "hash": "3d8da68f10eb95dd79e08527c8db1825"
+                    "hash": "3d8da68f10eb95dd79e08527c8db1825",
+                    "mtime": "2017-02-02T09:04:50.000Z",
+                    "atime": "2017-03-15T15:45:36.508Z",
+                    "size": 1402159
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Europeana/EDM_Mapping_Guidelines_v2.3_112016.pdf",
                     "name": "EDM_Mapping_Guidelines_v2.3_112016.pdf",
-                    "mtime": "2017-02-02T09:02:50.000Z",
-                    "atime": "2017-03-12T12:37:06.952Z",
-                    "size": 1402159,
                     "type": "file",
-                    "hash": "3d8da68f10eb95dd79e08527c8db1825"
+                    "hash": "3d8da68f10eb95dd79e08527c8db1825",
+                    "mtime": "2017-02-02T09:02:50.000Z",
+                    "atime": "2017-03-15T15:45:36.512Z",
+                    "size": 1402159
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Europeana/EDM_Primer_130714 (1).pdf",
                     "name": "EDM_Primer_130714 (1).pdf",
-                    "mtime": "2017-02-02T09:04:54.000Z",
-                    "atime": "2017-03-12T12:37:06.956Z",
-                    "size": 3379100,
                     "type": "file",
-                    "hash": "8addc086eea7cebf4a088d6520a6ec89"
+                    "hash": "8addc086eea7cebf4a088d6520a6ec89",
+                    "mtime": "2017-02-02T09:04:54.000Z",
+                    "atime": "2017-03-15T15:45:36.520Z",
+                    "size": 3379100
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Europeana/EDM_Primer_130714.pdf",
                     "name": "EDM_Primer_130714.pdf",
-                    "mtime": "2017-02-02T09:02:44.000Z",
-                    "atime": "2017-03-12T12:37:06.964Z",
-                    "size": 3379100,
                     "type": "file",
-                    "hash": "8addc086eea7cebf4a088d6520a6ec89"
+                    "hash": "8addc086eea7cebf4a088d6520a6ec89",
+                    "mtime": "2017-02-02T09:02:44.000Z",
+                    "atime": "2017-03-15T15:45:36.528Z",
+                    "size": 3379100
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Europeana/Europeana Data Model Documentation - Europeana Professional.pdf",
                     "name": "Europeana Data Model Documentation - Europeana Professional.pdf",
-                    "mtime": "2017-02-02T08:53:20.000Z",
-                    "atime": "2017-03-12T12:37:06.976Z",
-                    "size": 557877,
                     "type": "file",
-                    "hash": "fc97589e24105c6a348b1f294ac4daa2"
+                    "hash": "fc97589e24105c6a348b1f294ac4daa2",
+                    "mtime": "2017-02-02T08:53:20.000Z",
+                    "atime": "2017-03-15T15:45:36.540Z",
+                    "size": 557877
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Europeana/Europeana Linked Open Data - Europeana Labs.pdf",
                     "name": "Europeana Linked Open Data - Europeana Labs.pdf",
-                    "mtime": "2017-02-02T10:52:18.000Z",
-                    "atime": "2017-03-12T12:37:06.980Z",
-                    "size": 437381,
                     "type": "file",
-                    "hash": "d1df4df85a62ab842e1971ee3398c46b"
+                    "hash": "d1df4df85a62ab842e1971ee3398c46b",
+                    "mtime": "2017-02-02T10:52:18.000Z",
+                    "atime": "2017-03-15T15:45:36.540Z",
+                    "size": 437381
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Europeana/eu.html",
                     "name": "eu.html",
-                    "mtime": "2017-02-02T09:04:24.000Z",
-                    "atime": "2017-03-12T12:37:06.980Z",
-                    "size": 109167,
                     "type": "file",
-                    "hash": "ebdc54fc2e2e73fc61fd9aa092d310e8"
+                    "hash": "ebdc54fc2e2e73fc61fd9aa092d310e8",
+                    "mtime": "2017-02-02T09:04:24.000Z",
+                    "atime": "2017-03-15T15:45:36.544Z",
+                    "size": 109167
                 }
             ]
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/Evolution - A-Z - Morphospace.pdf",
             "name": "Evolution - A-Z - Morphospace.pdf",
-            "mtime": "2017-03-03T16:02:00.925Z",
-            "atime": "2017-03-12T12:37:06.980Z",
-            "size": 92031,
             "type": "file",
-            "hash": "6db7319e3522760a312c187dcd3d94c7"
+            "hash": "6db7319e3522760a312c187dcd3d94c7",
+            "mtime": "2017-03-03T16:02:00.925Z",
+            "atime": "2017-03-15T15:45:36.544Z",
+            "size": 92031
+        },
+        {
+            "path": "/home/jonas/FU/IKON/Literatur/Fog computing - Wikipedia.pdf",
+            "name": "Fog computing - Wikipedia.pdf",
+            "type": "file",
+            "hash": "c0f86542ec2dc1fd8c9b9581ada3fa0f",
+            "mtime": "2017-03-15T13:27:33.548Z",
+            "atime": "2017-03-15T14:48:42.156Z",
+            "size": 142244
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/Games",
             "name": "Games",
-            "mtime": "2017-03-01T13:26:20.637Z",
-            "atime": "2017-03-11T19:37:30.093Z",
-            "size": 4096,
             "type": "folder",
             "children": [
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Games/Bussards - Phil Hagelberg.pdf",
                     "name": "Bussards - Phil Hagelberg.pdf",
-                    "mtime": "2017-02-26T12:09:58.000Z",
-                    "atime": "2017-03-12T12:37:06.980Z",
-                    "size": 89865,
                     "type": "file",
-                    "hash": "fb524691f7e4f6ee7adb84b1b79665fd"
+                    "hash": "fb524691f7e4f6ee7adb84b1b79665fd",
+                    "mtime": "2017-02-26T12:09:58.000Z",
+                    "atime": "2017-03-15T15:45:36.544Z",
+                    "size": 89865
                 }
             ]
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/Human Factors Dirty Dozen.png",
             "name": "Human Factors Dirty Dozen.png",
-            "mtime": "2017-03-08T14:18:06.621Z",
-            "atime": "2017-03-12T12:37:06.980Z",
-            "size": 86962,
             "type": "file",
-            "hash": "2631e387779a4e641a52a1320604330b"
+            "hash": "2631e387779a4e641a52a1320604330b",
+            "mtime": "2017-03-08T14:18:06.621Z",
+            "atime": "2017-03-15T15:45:36.544Z",
+            "size": 86962
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/Human factors and ergonomics - Wikipedia.pdf",
             "name": "Human factors and ergonomics - Wikipedia.pdf",
-            "mtime": "2017-03-08T14:17:01.628Z",
-            "atime": "2017-03-12T12:37:06.984Z",
-            "size": 468794,
             "type": "file",
-            "hash": "b679408782019aa1232df16092eac5de"
+            "hash": "b679408782019aa1232df16092eac5de",
+            "mtime": "2017-03-08T14:17:01.628Z",
+            "atime": "2017-03-15T15:45:36.544Z",
+            "size": 468794
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/Human flesh search engine - Wikipedia.pdf",
             "name": "Human flesh search engine - Wikipedia.pdf",
-            "mtime": "2017-02-17T16:07:26.000Z",
-            "atime": "2017-03-12T12:37:06.984Z",
-            "size": 199212,
             "type": "file",
-            "hash": "366bbdbea591f8fe9d34f299eca2ffbf"
+            "hash": "366bbdbea591f8fe9d34f299eca2ffbf",
+            "mtime": "2017-02-17T16:07:26.000Z",
+            "atime": "2017-03-15T15:45:36.548Z",
+            "size": 199212
+        },
+        {
+            "path": "/home/jonas/FU/IKON/Literatur/I invented the web.pdf",
+            "name": "I invented the web.pdf",
+            "type": "file",
+            "hash": "edf0e5b7cd5782d57cd1f253f185d86c",
+            "mtime": "2017-03-12T18:40:37.025Z",
+            "atime": "2017-03-15T14:48:42.204Z",
+            "size": 668308
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/Idios kosmos - Wikipedia.pdf",
             "name": "Idios kosmos - Wikipedia.pdf",
-            "mtime": "2017-03-03T15:42:13.791Z",
-            "atime": "2017-03-12T12:37:06.984Z",
-            "size": 82969,
             "type": "file",
-            "hash": "74438ed0b0766e915e09c5a7594d76e0"
+            "hash": "74438ed0b0766e915e09c5a7594d76e0",
+            "mtime": "2017-03-03T15:42:13.791Z",
+            "atime": "2017-03-15T15:45:36.552Z",
+            "size": 82969
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/Leveraging the wisdom (and ignorance) of crowds -- GCN.pdf",
             "name": "Leveraging the wisdom (and ignorance) of crowds -- GCN.pdf",
-            "mtime": "2017-02-23T08:28:52.000Z",
-            "atime": "2017-03-12T12:37:06.984Z",
-            "size": 1120725,
             "type": "file",
-            "hash": "ae48872eb58100dad1547d8354fd779c"
+            "hash": "ae48872eb58100dad1547d8354fd779c",
+            "mtime": "2017-02-23T08:28:52.000Z",
+            "atime": "2017-03-15T15:45:36.552Z",
+            "size": 1120725
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/Linked Data Browser",
             "name": "Linked Data Browser",
-            "mtime": "2017-03-01T15:09:19.913Z",
-            "atime": "2017-03-11T19:37:30.093Z",
-            "size": 4096,
             "type": "folder",
             "children": [
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Linked Data Browser/11-berners-lee-hollenbach-tabulator-redux.pdf",
                     "name": "11-berners-lee-hollenbach-tabulator-redux.pdf",
-                    "mtime": "2017-03-01T15:05:44.657Z",
-                    "atime": "2017-03-12T12:37:06.988Z",
-                    "size": 685725,
                     "type": "file",
-                    "hash": "09c02793a3fe3ba907f403942730c749"
+                    "hash": "09c02793a3fe3ba907f403942730c749",
+                    "mtime": "2017-03-01T15:05:44.657Z",
+                    "atime": "2017-03-15T15:45:36.552Z",
+                    "size": 685725
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Linked Data Browser/Tabulating the semantic web.pdf",
                     "name": "Tabulating the semantic web.pdf",
-                    "mtime": "2017-03-01T15:05:38.588Z",
-                    "atime": "2017-03-12T12:37:06.992Z",
-                    "size": 454410,
                     "type": "file",
-                    "hash": "1b618840a49c713217042fd8bbab38f8"
+                    "hash": "1b618840a49c713217042fd8bbab38f8",
+                    "mtime": "2017-03-01T15:05:38.588Z",
+                    "atime": "2017-03-15T15:45:36.556Z",
+                    "size": 454410
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Linked Data Browser/Tabulator_ Generic data browser.pdf",
                     "name": "Tabulator_ Generic data browser.pdf",
-                    "mtime": "2017-03-01T15:06:25.249Z",
-                    "atime": "2017-03-12T12:37:06.992Z",
-                    "size": 127951,
                     "type": "file",
-                    "hash": "f22bc013db9b6249abdfcc1c201791b1"
+                    "hash": "f22bc013db9b6249abdfcc1c201791b1",
+                    "mtime": "2017-03-01T15:06:25.249Z",
+                    "atime": "2017-03-15T15:45:36.556Z",
+                    "size": 127951
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Linked Data Browser/linkeddata_tabulator_ Linked Data Browser.pdf",
                     "name": "linkeddata_tabulator_ Linked Data Browser.pdf",
-                    "mtime": "2017-03-01T15:09:19.913Z",
-                    "atime": "2017-03-12T12:37:06.992Z",
-                    "size": 150928,
                     "type": "file",
-                    "hash": "b959ed8be470678dfacff4ce1d15c2e5"
+                    "hash": "b959ed8be470678dfacff4ce1d15c2e5",
+                    "mtime": "2017-03-01T15:09:19.913Z",
+                    "atime": "2017-03-15T15:45:36.560Z",
+                    "size": 150928
                 }
             ]
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/Methods",
             "name": "Methods",
-            "mtime": "2017-03-03T15:46:45.330Z",
-            "atime": "2017-03-11T19:37:30.093Z",
-            "size": 4096,
             "type": "folder",
             "children": [
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Methods/Carol's Life Crisis.pdf",
                     "name": "Carol's Life Crisis.pdf",
-                    "mtime": "2017-03-03T15:23:22.340Z",
-                    "atime": "2017-03-12T12:37:06.996Z",
-                    "size": 1016772,
                     "type": "file",
-                    "hash": "de1f97ce6d23d55be88db0c345a16bc8"
+                    "hash": "de1f97ce6d23d55be88db0c345a16bc8",
+                    "mtime": "2017-03-03T15:23:22.340Z",
+                    "atime": "2017-03-15T15:45:36.560Z",
+                    "size": 1016772
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Methods/Decisional balance sheet - Wikipedia.pdf",
                     "name": "Decisional balance sheet - Wikipedia.pdf",
-                    "mtime": "2017-03-03T15:42:39.168Z",
-                    "atime": "2017-03-12T12:37:07.000Z",
-                    "size": 189426,
                     "type": "file",
-                    "hash": "3fc53245d8bb63115adfe6608c3951ee"
+                    "hash": "3fc53245d8bb63115adfe6608c3951ee",
+                    "mtime": "2017-03-03T15:42:39.168Z",
+                    "atime": "2017-03-15T15:45:36.564Z",
+                    "size": 189426
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Methods/Main Page - openrepgrid-wiki.pdf",
                     "name": "Main Page - openrepgrid-wiki.pdf",
-                    "mtime": "2017-03-03T15:40:34.224Z",
-                    "atime": "2017-03-12T12:37:07.000Z",
-                    "size": 123015,
                     "type": "file",
-                    "hash": "b1a9ca4802e8060b495db96ff5fa6b67"
+                    "hash": "b1a9ca4802e8060b495db96ff5fa6b67",
+                    "mtime": "2017-03-03T15:40:34.224Z",
+                    "atime": "2017-03-15T15:45:36.564Z",
+                    "size": 123015
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Methods/OpenRepGrid - Tools for repertory grids.pdf",
                     "name": "OpenRepGrid - Tools for repertory grids.pdf",
-                    "mtime": "2017-03-03T15:36:35.275Z",
-                    "atime": "2017-03-12T12:37:07.000Z",
-                    "size": 455059,
                     "type": "file",
-                    "hash": "00183118e49707e24975536430c025c1"
+                    "hash": "00183118e49707e24975536430c025c1",
+                    "mtime": "2017-03-03T15:36:35.275Z",
+                    "atime": "2017-03-15T15:45:36.564Z",
+                    "size": 455059
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Methods/Personal construct theory - Wikipedia.pdf",
                     "name": "Personal construct theory - Wikipedia.pdf",
-                    "mtime": "2017-03-03T15:38:56.306Z",
-                    "atime": "2017-03-12T12:37:07.000Z",
-                    "size": 181597,
                     "type": "file",
-                    "hash": "0991712dfb888207765d6ae29bce0c1e"
+                    "hash": "0991712dfb888207765d6ae29bce0c1e",
+                    "mtime": "2017-03-03T15:38:56.306Z",
+                    "atime": "2017-03-15T15:45:36.564Z",
+                    "size": 181597
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Methods/Relational frame theory - Wikipedia.pdf",
                     "name": "Relational frame theory - Wikipedia.pdf",
-                    "mtime": "2017-03-03T15:46:45.330Z",
-                    "atime": "2017-03-12T12:37:07.004Z",
-                    "size": 151079,
                     "type": "file",
-                    "hash": "bad02061ee3dd02f67e9aa00c59bf86f"
+                    "hash": "bad02061ee3dd02f67e9aa00c59bf86f",
+                    "mtime": "2017-03-03T15:46:45.330Z",
+                    "atime": "2017-03-15T15:45:36.568Z",
+                    "size": 151079
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Methods/Repertory grid - Wikipedia.pdf",
                     "name": "Repertory grid - Wikipedia.pdf",
-                    "mtime": "2017-03-03T15:38:15.416Z",
-                    "atime": "2017-03-12T12:37:07.004Z",
-                    "size": 134170,
                     "type": "file",
-                    "hash": "737c84ae4ece4040de12f40b5a73ddcf"
+                    "hash": "737c84ae4ece4040de12f40b5a73ddcf",
+                    "mtime": "2017-03-03T15:38:15.416Z",
+                    "atime": "2017-03-15T15:45:36.568Z",
+                    "size": 134170
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Methods/WebGrid 5 Elicitation and Analysis.pdf",
                     "name": "WebGrid 5 Elicitation and Analysis.pdf",
-                    "mtime": "2017-03-03T15:21:26.153Z",
-                    "atime": "2017-03-12T12:37:07.004Z",
-                    "size": 128785,
                     "type": "file",
-                    "hash": "9fc3ba8d9c34ef25255bd8a08a8d2f89"
+                    "hash": "9fc3ba8d9c34ef25255bd8a08a8d2f89",
+                    "mtime": "2017-03-03T15:21:26.153Z",
+                    "atime": "2017-03-15T15:45:36.568Z",
+                    "size": 128785
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Methods/WebGrid 5.pdf",
                     "name": "WebGrid 5.pdf",
-                    "mtime": "2017-03-03T15:21:01.936Z",
-                    "atime": "2017-03-12T12:37:07.008Z",
-                    "size": 137336,
                     "type": "file",
-                    "hash": "cbe4e8c4bc14e4209725e7cbd1769f60"
+                    "hash": "cbe4e8c4bc14e4209725e7cbd1769f60",
+                    "mtime": "2017-03-03T15:21:01.936Z",
+                    "atime": "2017-03-15T15:45:36.568Z",
+                    "size": 137336
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Methods/_ The RepGrid  - Figure 1 of 2.pdf",
                     "name": "_ The RepGrid  - Figure 1 of 2.pdf",
-                    "mtime": "2017-03-03T15:36:04.177Z",
-                    "atime": "2017-03-12T12:37:07.008Z",
-                    "size": 502230,
                     "type": "file",
-                    "hash": "b949ab9e83aed4ff5b2638fab89ebe15"
+                    "hash": "b949ab9e83aed4ff5b2638fab89ebe15",
+                    "mtime": "2017-03-03T15:36:04.177Z",
+                    "atime": "2017-03-15T15:45:36.568Z",
+                    "size": 502230
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Methods/dvangennip_repertory-grid-tool_ web form for administering repertory grid interviews.pdf",
                     "name": "dvangennip_repertory-grid-tool_ web form for administering repertory grid interviews.pdf",
-                    "mtime": "2017-03-03T15:45:38.700Z",
-                    "atime": "2017-03-12T12:37:07.008Z",
-                    "size": 107361,
                     "type": "file",
-                    "hash": "4bc4600e5e93dd20fb19379a62f7d4c6"
+                    "hash": "4bc4600e5e93dd20fb19379a62f7d4c6",
+                    "mtime": "2017-03-03T15:45:38.700Z",
+                    "atime": "2017-03-15T15:45:36.572Z",
+                    "size": 107361
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Methods/gridsampler - A Sample Size Simulation Tool for Multiple Grid Studies.pdf",
                     "name": "gridsampler - A Sample Size Simulation Tool for Multiple Grid Studies.pdf",
-                    "mtime": "2017-03-03T15:44:30.078Z",
-                    "atime": "2017-03-12T12:37:07.008Z",
-                    "size": 741031,
                     "type": "file",
-                    "hash": "a8200663ca7e6072837b13ae8da6da5d"
+                    "hash": "a8200663ca7e6072837b13ae8da6da5d",
+                    "mtime": "2017-03-03T15:44:30.078Z",
+                    "atime": "2017-03-15T15:45:36.572Z",
+                    "size": 741031
+                }
+            ]
+        },
+        {
+            "path": "/home/jonas/FU/IKON/Literatur/Misc",
+            "name": "Misc",
+            "type": "folder",
+            "children": [
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Misc/jbenjamin_FormFunctionContagion_RDM02_lores.pdf",
+                    "name": "jbenjamin_FormFunctionContagion_RDM02_lores.pdf",
+                    "type": "file",
+                    "hash": "b40cc635c45bd37f810a1210b0bf6445",
+                    "mtime": "2017-03-15T14:48:16.703Z",
+                    "atime": "2017-03-15T14:48:48.012Z",
+                    "size": 3122408
                 }
             ]
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/Mitteroecker-Huttegger-2009.pdf",
             "name": "Mitteroecker-Huttegger-2009.pdf",
-            "mtime": "2017-03-03T16:01:36.966Z",
-            "atime": "2017-03-12T12:37:07.012Z",
-            "size": 718311,
             "type": "file",
-            "hash": "3e613c1ada9dc164eb575f2dadfbf429"
+            "hash": "3e613c1ada9dc164eb575f2dadfbf429",
+            "mtime": "2017-03-03T16:01:36.966Z",
+            "atime": "2017-03-15T15:45:36.584Z",
+            "size": 718311
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/Museum",
             "name": "Museum",
-            "mtime": "2017-03-01T13:26:10.089Z",
-            "atime": "2017-03-11T19:37:30.097Z",
-            "size": 4096,
             "type": "folder",
             "children": [
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Museum/Met Museum Makes 375,000 Images Available for Free - The New York Times.pdf",
                     "name": "Met Museum Makes 375,000 Images Available for Free - The New York Times.pdf",
-                    "mtime": "2017-02-08T07:22:34.000Z",
-                    "atime": "2017-03-12T12:37:07.016Z",
-                    "size": 83339,
                     "type": "file",
-                    "hash": "37788b4768da1602fa16ec0f6a07107c"
+                    "hash": "37788b4768da1602fa16ec0f6a07107c",
+                    "mtime": "2017-02-08T07:22:34.000Z",
+                    "atime": "2017-03-15T15:45:36.588Z",
+                    "size": 83339
                 }
             ]
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/Ontology Tools",
             "name": "Ontology Tools",
-            "mtime": "2017-03-01T13:26:16.569Z",
-            "atime": "2017-03-11T19:37:30.097Z",
-            "size": 4096,
             "type": "folder",
             "children": [
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Ontology Tools/A Metadata Interoperability Platform _ museumsandtheweb.pdf",
                     "name": "A Metadata Interoperability Platform _ museumsandtheweb.pdf",
-                    "mtime": "2017-02-01T16:27:10.000Z",
-                    "atime": "2017-03-12T12:37:07.016Z",
-                    "size": 79302,
                     "type": "file",
-                    "hash": "d0126d8c9b864d0e1adfe5f7b1d1e0bc"
+                    "hash": "d0126d8c9b864d0e1adfe5f7b1d1e0bc",
+                    "mtime": "2017-02-01T16:27:10.000Z",
+                    "atime": "2017-03-15T15:45:36.588Z",
+                    "size": 79302
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Ontology Tools/MINT Metadata Interoperability_ Services_V4.pdf",
                     "name": "MINT Metadata Interoperability_ Services_V4.pdf",
-                    "mtime": "2017-02-01T16:26:16.000Z",
-                    "atime": "2017-03-12T12:37:07.016Z",
-                    "size": 1701653,
                     "type": "file",
-                    "hash": "bcb16405d82895679514b5b2c4e06892"
+                    "hash": "bcb16405d82895679514b5b2c4e06892",
+                    "mtime": "2017-02-01T16:26:16.000Z",
+                    "atime": "2017-03-15T15:45:36.588Z",
+                    "size": 1701653
                 }
             ]
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/Persuasive technology - Wikipedia.pdf",
             "name": "Persuasive technology - Wikipedia.pdf",
-            "mtime": "2017-03-04T11:00:42.405Z",
-            "atime": "2017-03-12T12:37:07.020Z",
-            "size": 163577,
             "type": "file",
-            "hash": "9629f61c22a68cf0b4904c1d31924c2b"
+            "hash": "9629f61c22a68cf0b4904c1d31924c2b",
+            "mtime": "2017-03-04T11:00:42.405Z",
+            "atime": "2017-03-15T15:45:36.592Z",
+            "size": 163577
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/SemWeb",
             "name": "SemWeb",
-            "mtime": "2017-03-01T13:26:16.161Z",
-            "atime": "2017-03-11T19:37:30.097Z",
-            "size": 4096,
             "type": "folder",
             "children": [
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/SemWeb/bernstein_cacm_16.pdf",
                     "name": "bernstein_cacm_16.pdf",
-                    "mtime": "2017-02-17T14:44:42.000Z",
-                    "atime": "2017-03-12T12:37:07.020Z",
-                    "size": 1545202,
                     "type": "file",
-                    "hash": "e06e2502f5fdd6a6251e435e78fbe5d5"
+                    "hash": "e06e2502f5fdd6a6251e435e78fbe5d5",
+                    "mtime": "2017-02-17T14:44:42.000Z",
+                    "atime": "2017-03-15T15:45:36.592Z",
+                    "size": 1545202
                 }
             ]
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/Social Machines",
             "name": "Social Machines",
-            "mtime": "2017-03-08T16:58:02.423Z",
-            "atime": "2017-03-11T19:37:30.097Z",
-            "size": 4096,
             "type": "folder",
             "children": [
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/1-s2.0-S1071581912001607-main.pdf",
                     "name": "1-s2.0-S1071581912001607-main.pdf",
-                    "mtime": "2017-03-06T11:52:47.735Z",
-                    "atime": "2017-03-12T12:37:07.028Z",
-                    "size": 383897,
                     "type": "file",
-                    "hash": "b50ef86c813536e236d601ca13188adb"
+                    "hash": "b50ef86c813536e236d601ca13188adb",
+                    "mtime": "2017-03-06T11:52:47.735Z",
+                    "atime": "2017-03-15T15:45:36.596Z",
+                    "size": 383897
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/15-09-11_Data_Ethics_EN.pdf",
                     "name": "15-09-11_Data_Ethics_EN.pdf",
+                    "type": "file",
+                    "hash": "16de46b7c010228a12dbeba0b7f03f51",
                     "mtime": "2017-01-26T12:43:18.385Z",
-                    "atime": "2017-03-12T12:37:07.028Z",
-                    "size": 1284856,
-                    "type": "file",
-                    "hash": "16de46b7c010228a12dbeba0b7f03f51"
-                },
-                {
-                    "path": "/home/jonas/FU/IKON/Literatur/Social Machines/1511.05324.pdf",
-                    "name": "1511.05324.pdf",
-                    "mtime": "2017-02-17T10:31:50.000Z",
-                    "atime": "2017-03-12T12:37:07.032Z",
-                    "size": 5036882,
-                    "type": "file",
-                    "hash": "76af4f2242873cf1a63cec0f838cd8fe"
+                    "atime": "2017-03-15T15:45:36.600Z",
+                    "size": 1284856
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/1702.04537.pdf",
                     "name": "1702.04537.pdf",
-                    "mtime": "2017-03-08T16:13:35.269Z",
-                    "atime": "2017-03-12T12:37:07.044Z",
-                    "size": 293281,
                     "type": "file",
-                    "hash": "7f2cf0035f5ac7481c97ad36144207d7"
+                    "hash": "7f2cf0035f5ac7481c97ad36144207d7",
+                    "mtime": "2017-03-08T16:13:35.269Z",
+                    "atime": "2017-03-15T15:45:36.604Z",
+                    "size": 293281
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/2014_SOCM_Flow__Formal__Camera_Ready.pdf",
                     "name": "2014_SOCM_Flow__Formal__Camera_Ready.pdf",
+                    "type": "file",
+                    "hash": "86bf2411c4f8213eedbce426a3a3d5bb",
                     "mtime": "2017-03-08T13:01:14.142Z",
-                    "atime": "2017-03-12T12:37:07.044Z",
-                    "size": 747075,
-                    "type": "file",
-                    "hash": "86bf2411c4f8213eedbce426a3a3d5bb"
-                },
-                {
-                    "path": "/home/jonas/FU/IKON/Literatur/Social Machines/2015_ASONAM_Information_Cascades %281%29.pdf",
-                    "name": "2015_ASONAM_Information_Cascades %281%29.pdf",
-                    "mtime": "2017-03-08T16:19:13.130Z",
-                    "atime": "2017-03-12T12:37:07.048Z",
-                    "size": 1411117,
-                    "type": "file",
-                    "hash": "03afada8a1caf7abca571a86e774c575"
+                    "atime": "2017-03-15T15:45:36.604Z",
+                    "size": 747075
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/449-Ohara_introduction.pdf",
                     "name": "449-Ohara_introduction.pdf",
-                    "mtime": "2017-03-08T16:11:36.034Z",
-                    "atime": "2017-03-12T12:37:07.052Z",
-                    "size": 245815,
                     "type": "file",
-                    "hash": "52e9e1e568c34a25da4acccb7226a994"
+                    "hash": "52e9e1e568c34a25da4acccb7226a994",
+                    "mtime": "2017-03-08T16:11:36.034Z",
+                    "atime": "2017-03-15T15:45:36.608Z",
+                    "size": 245815
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Accenture-Technology-Trends-Technology-Vision-2016.pdf",
                     "name": "Accenture-Technology-Trends-Technology-Vision-2016.pdf",
-                    "mtime": "2017-01-26T12:43:11.005Z",
-                    "atime": "2017-03-12T12:37:07.052Z",
-                    "size": 5950110,
                     "type": "file",
-                    "hash": "93fae0ab6540a1a276f48ada298e4149"
+                    "hash": "ecc6352e1cd9d9df48115e6c1c45ddbb",
+                    "mtime": "2017-03-12T18:36:35.415Z",
+                    "atime": "2017-03-15T15:45:36.608Z",
+                    "size": 5909670
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete",
                     "name": "Anwendungsgebiete",
-                    "mtime": "2017-03-08T16:17:10.155Z",
-                    "atime": "2017-03-11T19:37:30.097Z",
-                    "size": 4096,
                     "type": "folder",
                     "children": [
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/Collaborative Mathematics",
                             "name": "Collaborative Mathematics",
-                            "mtime": "2017-03-08T14:00:17.490Z",
-                            "atime": "2017-03-11T19:37:30.097Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/Collaborative Mathematics/-1305.0900.pdf",
                                     "name": "-1305.0900.pdf",
-                                    "mtime": "2017-02-17T10:24:46.000Z",
-                                    "atime": "2017-03-12T12:37:07.068Z",
-                                    "size": 697079,
                                     "type": "file",
-                                    "hash": "202f5c4458010d2d1f7812802baadd3a"
+                                    "hash": "202f5c4458010d2d1f7812802baadd3a",
+                                    "mtime": "2017-02-17T10:24:46.000Z",
+                                    "atime": "2017-03-15T15:45:36.624Z",
+                                    "size": 697079
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/Collaborative Mathematics/mathoverflow",
                                     "name": "mathoverflow",
-                                    "mtime": "2017-02-17T10:09:48.458Z",
-                                    "atime": "2017-03-11T19:37:30.101Z",
-                                    "size": 4096,
                                     "type": "folder",
                                     "children": []
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/Collaborative Mathematics/polymath",
                                     "name": "polymath",
-                                    "mtime": "2017-02-17T10:09:53.214Z",
-                                    "atime": "2017-03-11T19:37:30.101Z",
-                                    "size": 4096,
                                     "type": "folder",
                                     "children": []
                                 }
                             ]
                         },
                         {
+                            "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/Computation",
+                            "name": "Computation",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/Computation/p139-luczak-roesch.pdf",
+                                    "name": "p139-luczak-roesch.pdf",
+                                    "type": "file",
+                                    "hash": "5bea5b11e0815032a00b161050a18f48",
+                                    "mtime": "2017-03-08T16:28:08.392Z",
+                                    "atime": "2017-03-15T15:45:36.628Z",
+                                    "size": 662189
+                                }
+                            ]
+                        },
+                        {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/Data Analysis",
                             "name": "Data Analysis",
-                            "mtime": "2017-03-08T13:56:26.091Z",
-                            "atime": "2017-03-11T19:37:30.101Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/Data Analysis/CI16_final.pdf",
                                     "name": "CI16_final.pdf",
-                                    "mtime": "2017-02-17T15:27:58.000Z",
-                                    "atime": "2017-03-12T12:37:07.068Z",
-                                    "size": 224968,
                                     "type": "file",
-                                    "hash": "6bc0419be6b446f9259509da858c93b2"
+                                    "hash": "6bc0419be6b446f9259509da858c93b2",
+                                    "mtime": "2017-02-17T15:27:58.000Z",
+                                    "atime": "2017-03-15T15:45:36.628Z",
+                                    "size": 224968
                                 }
                             ]
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/Design",
                             "name": "Design",
-                            "mtime": "2017-02-17T10:06:04.593Z",
-                            "atime": "2017-03-11T19:37:30.101Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/Design/siehe MsC Thesis - system das Design an Crowdworker outsourced",
                                     "name": "siehe MsC Thesis - system das Design an Crowdworker outsourced",
-                                    "mtime": "2017-02-17T10:05:44.384Z",
-                                    "atime": "2017-03-11T19:37:30.105Z",
-                                    "size": 4096,
                                     "type": "folder",
                                     "children": []
                                 }
@@ -737,45 +1212,49 @@
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/Industrie 4.0",
                             "name": "Industrie 4.0",
-                            "mtime": "2017-02-17T10:00:34.641Z",
-                            "atime": "2017-03-11T19:37:30.109Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": []
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/IoT",
                             "name": "IoT",
-                            "mtime": "2017-03-08T08:04:52.544Z",
-                            "atime": "2017-03-11T19:37:30.109Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/IoT/Andy's Twittering House _ MQTT.pdf",
                                     "name": "Andy's Twittering House _ MQTT.pdf",
-                                    "mtime": "2017-02-28T16:38:30.000Z",
-                                    "atime": "2017-03-12T12:37:07.072Z",
-                                    "size": 84006,
                                     "type": "file",
-                                    "hash": "b74e45c82fd693f4d8e036bc45cae791"
+                                    "hash": "b74e45c82fd693f4d8e036bc45cae791",
+                                    "mtime": "2017-02-28T16:38:30.000Z",
+                                    "atime": "2017-03-15T15:45:36.632Z",
+                                    "size": 84006
+                                }
+                            ]
+                        },
+                        {
+                            "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/Legal",
+                            "name": "Legal",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/Legal/finalversion.pdf",
+                                    "name": "finalversion.pdf",
+                                    "type": "file",
+                                    "hash": "f300d61d42d94d9d9f595bc96b0cabf6",
+                                    "mtime": "2017-02-19T11:45:22.000Z",
+                                    "atime": "2017-03-15T15:45:36.632Z",
+                                    "size": 111844
                                 }
                             ]
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/MOOC",
                             "name": "MOOC",
-                            "mtime": "2017-02-17T10:04:45.691Z",
-                            "atime": "2017-03-11T19:37:30.109Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/MOOC/Real-world problem solving",
                                     "name": "Real-world problem solving",
-                                    "mtime": "2017-02-17T10:04:40.123Z",
-                                    "atime": "2017-03-11T19:37:30.109Z",
-                                    "size": 4096,
                                     "type": "folder",
                                     "children": []
                                 }
@@ -784,17 +1263,11 @@
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/Natural Disasters",
                             "name": "Natural Disasters",
-                            "mtime": "2017-02-17T10:07:11.158Z",
-                            "atime": "2017-03-11T19:37:30.109Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/Natural Disasters/Usahidi",
                                     "name": "Usahidi",
-                                    "mtime": "2017-02-17T10:07:07.018Z",
-                                    "atime": "2017-03-11T19:37:30.109Z",
-                                    "size": 4096,
                                     "type": "folder",
                                     "children": []
                                 }
@@ -803,53 +1276,38 @@
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/Problem-Solving",
                             "name": "Problem-Solving",
-                            "mtime": "2017-03-08T13:57:05.392Z",
-                            "atime": "2017-03-11T19:37:30.113Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": []
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/Social Machines _ REFA.pdf",
                             "name": "Social Machines _ REFA.pdf",
-                            "mtime": "2017-02-17T09:45:38.000Z",
-                            "atime": "2017-03-12T12:37:07.072Z",
-                            "size": 411963,
                             "type": "file",
-                            "hash": "49addf734613d7a37dd7dda17435a570"
+                            "hash": "49addf734613d7a37dd7dda17435a570",
+                            "mtime": "2017-02-17T09:45:38.000Z",
+                            "atime": "2017-03-15T15:45:36.632Z",
+                            "size": 411963
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/e-Science, Citizen Science",
                             "name": "e-Science, Citizen Science",
-                            "mtime": "2017-02-17T10:03:55.986Z",
-                            "atime": "2017-03-11T19:37:30.105Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/e-Science, Citizen Science/Foldit",
                                     "name": "Foldit",
-                                    "mtime": "2017-02-17T10:03:54.461Z",
-                                    "atime": "2017-03-11T19:37:30.105Z",
-                                    "size": 4096,
                                     "type": "folder",
                                     "children": []
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/e-Science, Citizen Science/Galaxy Zoo",
                                     "name": "Galaxy Zoo",
-                                    "mtime": "2017-02-17T10:03:24.385Z",
-                                    "atime": "2017-03-11T19:37:30.105Z",
-                                    "size": 4096,
                                     "type": "folder",
                                     "children": []
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Anwendungsgebiete/e-Science, Citizen Science/polymath",
                                     "name": "polymath",
-                                    "mtime": "2017-02-17T10:03:16.713Z",
-                                    "atime": "2017-03-11T19:37:30.109Z",
-                                    "size": 4096,
                                     "type": "folder",
                                     "children": []
                                 }
@@ -860,183 +1318,186 @@
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Characteristics, Classification",
                     "name": "Characteristics, Classification",
-                    "mtime": "2017-03-08T16:55:03.410Z",
-                    "atime": "2017-03-11T19:37:30.113Z",
-                    "size": 4096,
                     "type": "folder",
                     "children": [
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Characteristics, Classification/!!!SOCIAM Classificationv2.pdf",
                             "name": "!!!SOCIAM Classificationv2.pdf",
-                            "mtime": "2017-03-07T14:02:22.414Z",
-                            "atime": "2017-03-12T12:37:07.072Z",
-                            "size": 655817,
                             "type": "file",
-                            "hash": "404307dc828a703d6ebaec4be5078240"
+                            "hash": "404307dc828a703d6ebaec4be5078240",
+                            "mtime": "2017-03-07T14:02:22.414Z",
+                            "atime": "2017-03-15T15:45:36.636Z",
+                            "size": 655817
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Characteristics, Classification/!372355.pdf",
                             "name": "!372355.pdf",
-                            "mtime": "2017-02-28T16:46:40.000Z",
-                            "atime": "2017-03-12T12:37:07.076Z",
-                            "size": 285429,
                             "type": "file",
-                            "hash": "1d8e7b60ac3c18fa272663a90a145f6b"
+                            "hash": "1d8e7b60ac3c18fa272663a90a145f6b",
+                            "mtime": "2017-02-28T16:46:40.000Z",
+                            "atime": "2017-03-15T15:45:36.636Z",
+                            "size": 285429
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Characteristics, Classification/-WebSci16_Upload_Paper_112.pdf",
                             "name": "-WebSci16_Upload_Paper_112.pdf",
-                            "mtime": "2017-02-17T18:49:14.000Z",
-                            "atime": "2017-03-12T12:37:07.076Z",
-                            "size": 399245,
                             "type": "file",
-                            "hash": "6ccb97ebea22d8dbd0dda048f8587817"
+                            "hash": "6ccb97ebea22d8dbd0dda048f8587817",
+                            "mtime": "2017-02-17T18:49:14.000Z",
+                            "atime": "2017-03-15T15:45:36.640Z",
+                            "size": 399245
+                        },
+                        {
+                            "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Characteristics, Classification/1511.05324.pdf",
+                            "name": "1511.05324.pdf",
+                            "type": "file",
+                            "hash": "76af4f2242873cf1a63cec0f838cd8fe",
+                            "mtime": "2017-02-17T10:31:50.000Z",
+                            "atime": "2017-03-15T15:45:36.640Z",
+                            "size": 5036882
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Characteristics, Classification/379506.pdf",
                             "name": "379506.pdf",
-                            "mtime": "2017-02-28T17:05:02.000Z",
-                            "atime": "2017-03-12T12:37:07.080Z",
-                            "size": 562204,
                             "type": "file",
-                            "hash": "4fcfe7ea5c14ec67573663bed9ed398d"
+                            "hash": "4fcfe7ea5c14ec67573663bed9ed398d",
+                            "mtime": "2017-02-28T17:05:02.000Z",
+                            "atime": "2017-03-15T15:45:36.652Z",
+                            "size": 562204
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Characteristics, Classification/Stories",
                             "name": "Stories",
-                            "mtime": "2017-03-08T16:58:02.423Z",
-                            "atime": "2017-03-11T19:37:30.113Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Characteristics, Classification/Stories/ATTACHMENT01.pdf",
                                     "name": "ATTACHMENT01.pdf",
-                                    "mtime": "2017-03-08T15:28:44.142Z",
-                                    "atime": "2017-03-12T12:37:07.080Z",
-                                    "size": 236067,
                                     "type": "file",
-                                    "hash": "7ba15826fdf9f0a8d65886d5e9f40b2e"
+                                    "hash": "7ba15826fdf9f0a8d65886d5e9f40b2e",
+                                    "mtime": "2017-03-08T15:28:44.142Z",
+                                    "atime": "2017-03-15T15:45:36.656Z",
+                                    "size": 236067
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Characteristics, Classification/Stories/WebSci_2015_submission_127-3.pdf",
                                     "name": "WebSci_2015_submission_127-3.pdf",
-                                    "mtime": "2017-03-08T16:57:54.630Z",
-                                    "atime": "2017-03-12T12:37:07.080Z",
-                                    "size": 308721,
                                     "type": "file",
-                                    "hash": "17338fd17604e09ff57b3ede06855627"
+                                    "hash": "17338fd17604e09ff57b3ede06855627",
+                                    "mtime": "2017-03-08T16:57:54.630Z",
+                                    "atime": "2017-03-15T15:45:36.656Z",
+                                    "size": 308721
                                 }
                             ]
                         },
                         {
-                            "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Characteristics, Classification/p905-shadbolt.pdf",
-                            "name": "p905-shadbolt.pdf",
-                            "mtime": "2017-01-26T12:39:05.682Z",
-                            "atime": "2017-03-12T12:37:07.084Z",
-                            "size": 747736,
+                            "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Characteristics, Classification/socm2013_submission_9.pdf",
+                            "name": "socm2013_submission_9.pdf",
                             "type": "file",
-                            "hash": "9c5ade250d8a3402950ffd05683a6801"
+                            "hash": "d35713a5a53c804c36e795ce4225d36d",
+                            "mtime": "2017-02-19T11:35:56.000Z",
+                            "atime": "2017-03-15T15:45:36.660Z",
+                            "size": 639474
+                        },
+                        {
+                            "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Characteristics, Classification/vass_and_munson.pdf",
+                            "name": "vass_and_munson.pdf",
+                            "type": "file",
+                            "hash": "63c64e6714b22ac51beaef06effef9a9",
+                            "mtime": "2017-02-19T11:32:42.000Z",
+                            "atime": "2017-03-15T15:45:36.660Z",
+                            "size": 195913
                         }
                     ]
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Engineering, Design",
                     "name": "Engineering, Design",
-                    "mtime": "2017-03-08T16:54:41.817Z",
-                    "atime": "2017-03-11T19:37:30.113Z",
-                    "size": 4096,
                     "type": "folder",
                     "children": [
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Engineering, Design/001872677602900806.pdf",
                             "name": "001872677602900806.pdf",
-                            "mtime": "2017-01-26T12:36:45.482Z",
-                            "atime": "2017-03-12T12:37:07.088Z",
-                            "size": 1040642,
                             "type": "file",
-                            "hash": "edebe8c4b1167a903a5bf214f61ab185"
+                            "hash": "edebe8c4b1167a903a5bf214f61ab185",
+                            "mtime": "2017-01-26T12:36:45.482Z",
+                            "atime": "2017-03-15T15:45:36.660Z",
+                            "size": 1040642
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Engineering, Design/40c2249a0cd4143b6b3aaadc02f940f45c6b.pdf",
                             "name": "40c2249a0cd4143b6b3aaadc02f940f45c6b.pdf",
-                            "mtime": "2017-02-17T14:44:14.000Z",
-                            "atime": "2017-03-12T12:37:07.092Z",
-                            "size": 1268872,
                             "type": "file",
-                            "hash": "d32db70baa77fef4e8b28f6d1e995f86"
+                            "hash": "d32db70baa77fef4e8b28f6d1e995f86",
+                            "mtime": "2017-02-17T14:44:14.000Z",
+                            "atime": "2017-03-15T15:45:36.664Z",
+                            "size": 1268872
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Engineering, Design/ED557308.pdf",
                             "name": "ED557308.pdf",
-                            "mtime": "2017-03-08T08:04:17.908Z",
-                            "atime": "2017-03-12T12:37:07.092Z",
-                            "size": 2053783,
                             "type": "file",
-                            "hash": "6e72359825c6afaaee2ad26bb4d63862"
+                            "hash": "6e72359825c6afaaee2ad26bb4d63862",
+                            "mtime": "2017-03-08T08:04:17.908Z",
+                            "atime": "2017-03-15T15:45:36.668Z",
+                            "size": 2053783
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Engineering, Design/a49-boer.pdf",
                             "name": "a49-boer.pdf",
-                            "mtime": "2017-02-17T15:34:30.000Z",
-                            "atime": "2017-03-12T12:37:07.100Z",
-                            "size": 420083,
                             "type": "file",
-                            "hash": "b30818cdb882399f7cdf99a06bbdc8d3"
+                            "hash": "b30818cdb882399f7cdf99a06bbdc8d3",
+                            "mtime": "2017-02-17T15:34:30.000Z",
+                            "atime": "2017-03-15T15:45:36.676Z",
+                            "size": 420083
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Engineering, Design/p1143-murray-rust.pdf",
                             "name": "p1143-murray-rust.pdf",
-                            "mtime": "2017-03-08T16:53:45.064Z",
-                            "atime": "2017-03-12T12:37:07.100Z",
-                            "size": 3761770,
                             "type": "file",
-                            "hash": "3e7b9507a4a25508056cca568add9f7e"
+                            "hash": "3e7b9507a4a25508056cca568add9f7e",
+                            "mtime": "2017-03-08T16:53:45.064Z",
+                            "atime": "2017-03-15T15:45:36.676Z",
+                            "size": 3761770
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Engineering, Design/panel4.pdf",
                             "name": "panel4.pdf",
-                            "mtime": "2017-03-08T16:52:08.609Z",
-                            "atime": "2017-03-12T12:37:07.108Z",
-                            "size": 172857,
                             "type": "file",
-                            "hash": "5bc32ce02cfc5e227d3184420d5766e4"
+                            "hash": "5bc32ce02cfc5e227d3184420d5766e4",
+                            "mtime": "2017-03-08T16:52:08.609Z",
+                            "atime": "2017-03-15T15:45:36.684Z",
+                            "size": 172857
                         }
                     ]
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Frameworks, Models",
                     "name": "Frameworks, Models",
-                    "mtime": "2017-03-08T14:25:27.995Z",
-                    "atime": "2017-03-11T19:37:30.113Z",
-                    "size": 4096,
                     "type": "folder",
                     "children": [
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Frameworks, Models/-Ramine Tinati - Understanding Social Machines - Camera Ready Version.pdf",
                             "name": "-Ramine Tinati - Understanding Social Machines - Camera Ready Version.pdf",
-                            "mtime": "2017-03-08T13:13:50.053Z",
-                            "atime": "2017-03-12T12:37:07.112Z",
-                            "size": 153195,
                             "type": "file",
-                            "hash": "917a4cf83432809a68d06a4a1b26b9c0"
+                            "hash": "917a4cf83432809a68d06a4a1b26b9c0",
+                            "mtime": "2017-03-08T13:13:50.053Z",
+                            "atime": "2017-03-15T15:45:36.684Z",
+                            "size": 153195
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Frameworks, Models/lifecycles",
                             "name": "lifecycles",
-                            "mtime": "2017-03-08T13:48:11.710Z",
-                            "atime": "2017-03-11T19:37:30.113Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Frameworks, Models/lifecycles/-13socm05-tinati.pdf",
                                     "name": "-13socm05-tinati.pdf",
-                                    "mtime": "2017-02-17T14:38:40.000Z",
-                                    "atime": "2017-03-12T12:37:07.112Z",
-                                    "size": 406050,
                                     "type": "file",
-                                    "hash": "9dad477f4ab7f70c27d201db1d568680"
+                                    "hash": "9dad477f4ab7f70c27d201db1d568680",
+                                    "mtime": "2017-02-17T14:38:40.000Z",
+                                    "atime": "2017-03-15T15:45:36.684Z",
+                                    "size": 406050
                                 }
                             ]
                         }
@@ -1045,185 +1506,164 @@
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/General",
                     "name": "General",
-                    "mtime": "2017-03-08T16:56:30.784Z",
-                    "atime": "2017-03-11T19:37:30.113Z",
-                    "size": 4096,
                     "type": "folder",
                     "children": [
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/General/-Social Machines.pdf",
                             "name": "-Social Machines.pdf",
-                            "mtime": "2017-02-28T14:53:06.000Z",
-                            "atime": "2017-03-12T12:37:07.112Z",
-                            "size": 488400,
                             "type": "file",
-                            "hash": "d6cb1d812cd3e822bf296c871826f2e4"
+                            "hash": "d6cb1d812cd3e822bf296c871826f2e4",
+                            "mtime": "2017-02-28T14:53:06.000Z",
+                            "atime": "2017-03-15T15:45:36.688Z",
+                            "size": 488400
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/General/-Social machine - Wikipedia.pdf",
                             "name": "-Social machine - Wikipedia.pdf",
-                            "mtime": "2017-03-08T16:03:27.194Z",
-                            "atime": "2017-03-12T12:37:07.116Z",
-                            "size": 175706,
                             "type": "file",
-                            "hash": "3d02866d8939f9a71a1aa8791acaf9a4"
+                            "hash": "3d02866d8939f9a71a1aa8791acaf9a4",
+                            "mtime": "2017-03-08T16:03:27.194Z",
+                            "atime": "2017-03-15T15:45:36.688Z",
+                            "size": 175706
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/General/-[Tim_Berners-lee]_Weaving_the_Web_The_Original_De.pdf",
                             "name": "-[Tim_Berners-lee]_Weaving_the_Web_The_Original_De.pdf",
-                            "mtime": "2017-03-02T16:22:25.683Z",
-                            "atime": "2017-03-12T12:37:07.116Z",
-                            "size": 12393202,
                             "type": "file",
-                            "hash": "aaded00bc0e1fe6c2bc1e5264703b072"
+                            "hash": "aaded00bc0e1fe6c2bc1e5264703b072",
+                            "mtime": "2017-03-02T16:22:25.683Z",
+                            "atime": "2017-03-15T15:45:36.692Z",
+                            "size": 12393202
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/General/PRO-VE.pdf",
                             "name": "PRO-VE.pdf",
-                            "mtime": "2017-03-08T16:45:49.815Z",
-                            "atime": "2017-03-12T12:37:07.144Z",
-                            "size": 869430,
                             "type": "file",
-                            "hash": "438983132a4830c76e42927dd2e1d930"
+                            "hash": "438983132a4830c76e42927dd2e1d930",
+                            "mtime": "2017-03-08T16:45:49.815Z",
+                            "atime": "2017-03-15T15:45:36.716Z",
+                            "size": 869430
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/General/SocialMachine.pdf",
                             "name": "SocialMachine.pdf",
-                            "mtime": "2017-03-08T16:21:27.098Z",
-                            "atime": "2017-03-12T12:37:07.148Z",
-                            "size": 2096335,
                             "type": "file",
-                            "hash": "b35985d60a42336e432f947bc7a75e6b"
+                            "hash": "b35985d60a42336e432f947bc7a75e6b",
+                            "mtime": "2017-03-08T16:21:27.098Z",
+                            "atime": "2017-03-15T15:45:36.720Z",
+                            "size": 2096335
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/General/SocialMachinesv8.pdf",
                             "name": "SocialMachinesv8.pdf",
-                            "mtime": "2017-03-08T16:23:37.101Z",
-                            "atime": "2017-03-12T12:37:07.152Z",
-                            "size": 173643,
                             "type": "file",
-                            "hash": "a0db013fb987b8edd2a574bbac907097"
+                            "hash": "a0db013fb987b8edd2a574bbac907097",
+                            "mtime": "2017-03-08T16:23:37.101Z",
+                            "atime": "2017-03-15T15:45:36.724Z",
+                            "size": 173643
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/General/The social in the platform trap_ Why a microscopic system focus limits the prospect of social machines _ Discover Society.pdf",
                             "name": "The social in the platform trap_ Why a microscopic system focus limits the prospect of social machines _ Discover Society.pdf",
-                            "mtime": "2017-03-08T16:56:25.364Z",
-                            "atime": "2017-03-12T12:37:07.152Z",
-                            "size": 663802,
                             "type": "file",
-                            "hash": "948b1e34645f21bb80e71ab96064a5a4"
+                            "hash": "948b1e34645f21bb80e71ab96064a5a4",
+                            "mtime": "2017-03-08T16:56:25.364Z",
+                            "atime": "2017-03-15T15:45:36.728Z",
+                            "size": 663802
                         }
                     ]
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Incentives, Motivation",
                     "name": "Incentives, Motivation",
-                    "mtime": "2017-03-08T13:57:05.392Z",
-                    "atime": "2017-03-11T19:37:30.113Z",
-                    "size": 4096,
                     "type": "folder",
                     "children": [
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Incentives, Motivation/SSRN-id2912951.pdf",
                             "name": "SSRN-id2912951.pdf",
-                            "mtime": "2017-02-17T14:47:50.000Z",
-                            "atime": "2017-03-12T12:37:07.156Z",
-                            "size": 1766665,
                             "type": "file",
-                            "hash": "77ca549fced661f53839873410e8fd6f"
+                            "hash": "77ca549fced661f53839873410e8fd6f",
+                            "mtime": "2017-02-17T14:47:50.000Z",
+                            "atime": "2017-03-15T15:45:36.728Z",
+                            "size": 1766665
                         }
                     ]
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Issues",
                     "name": "Issues",
-                    "mtime": "2017-03-08T16:57:37.974Z",
-                    "atime": "2017-03-11T19:37:30.113Z",
-                    "size": 4096,
                     "type": "folder",
                     "children": [
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Issues/Abuse and Misuse",
                             "name": "Abuse and Misuse",
-                            "mtime": "2017-03-08T16:57:38.710Z",
-                            "atime": "2017-03-11T19:37:30.113Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Issues/Abuse and Misuse/Special issue on the abuse and misuse of social agents _ Interacting with Computers _ Oxford Academic.pdf",
                                     "name": "Special issue on the abuse and misuse of social agents _ Interacting with Computers _ Oxford Academic.pdf",
-                                    "mtime": "2017-03-08T16:57:25.270Z",
-                                    "atime": "2017-03-12T12:37:07.160Z",
-                                    "size": 303576,
                                     "type": "file",
-                                    "hash": "9c7cf22929f04a3b0bb3d10d6bb00418"
+                                    "hash": "33062c582f2e102c336b37c6e5ef9f4d",
+                                    "mtime": "2017-03-12T18:28:37.303Z",
+                                    "atime": "2017-03-15T15:45:36.736Z",
+                                    "size": 311132
                                 }
                             ]
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Issues/Data Privacy",
                             "name": "Data Privacy",
-                            "mtime": "2017-03-08T16:17:01.499Z",
-                            "atime": "2017-03-11T19:37:30.113Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Issues/Data Privacy/13socm09_ByrneEvans.pdf",
                                     "name": "13socm09_ByrneEvans.pdf",
-                                    "mtime": "2017-02-28T16:20:50.000Z",
-                                    "atime": "2017-03-12T12:37:07.160Z",
-                                    "size": 493833,
                                     "type": "file",
-                                    "hash": "37cdc1cf10a04d094b4074dd132904c3"
+                                    "hash": "37cdc1cf10a04d094b4074dd132904c3",
+                                    "mtime": "2017-02-28T16:20:50.000Z",
+                                    "atime": "2017-03-15T15:45:36.736Z",
+                                    "size": 493833
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Issues/Data Privacy/ohara group privacy amsterdam.pdf",
                                     "name": "ohara group privacy amsterdam.pdf",
-                                    "mtime": "2017-03-08T13:46:58.724Z",
-                                    "atime": "2017-03-12T12:37:07.164Z",
-                                    "size": 425271,
                                     "type": "file",
-                                    "hash": "21b73115b7a91d81da70b01c3c269f37"
+                                    "hash": "21b73115b7a91d81da70b01c3c269f37",
+                                    "mtime": "2017-03-08T13:46:58.724Z",
+                                    "atime": "2017-03-15T15:45:36.740Z",
+                                    "size": 425271
                                 }
                             ]
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Issues/Pseudonyms",
                             "name": "Pseudonyms",
-                            "mtime": "2017-03-08T16:56:12.008Z",
-                            "atime": "2017-03-11T19:37:30.113Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Issues/Pseudonyms/p897-dalton.pdf",
                                     "name": "p897-dalton.pdf",
-                                    "mtime": "2017-03-08T16:55:48.155Z",
-                                    "atime": "2017-03-12T12:37:07.168Z",
-                                    "size": 372400,
                                     "type": "file",
-                                    "hash": "a291c44ab87a9ccd1bb2af4f81b65f9d"
+                                    "hash": "a291c44ab87a9ccd1bb2af4f81b65f9d",
+                                    "mtime": "2017-03-08T16:55:48.155Z",
+                                    "atime": "2017-03-15T15:45:36.740Z",
+                                    "size": 372400
                                 }
                             ]
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Issues/Trust",
                             "name": "Trust",
-                            "mtime": "2017-03-08T16:43:06.991Z",
-                            "atime": "2017-03-11T19:37:30.113Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Issues/Trust/ohara_social_turn_snamas_final.pdf",
                                     "name": "ohara_social_turn_snamas_final.pdf",
-                                    "mtime": "2017-03-08T16:42:53.055Z",
-                                    "atime": "2017-03-12T12:37:07.168Z",
-                                    "size": 387007,
                                     "type": "file",
-                                    "hash": "d76184a6ba32ac495f2857b11042d455"
+                                    "hash": "d76184a6ba32ac495f2857b11042d455",
+                                    "mtime": "2017-03-08T16:42:53.055Z",
+                                    "atime": "2017-03-15T15:45:36.744Z",
+                                    "size": 387007
                                 }
                             ]
                         }
@@ -1232,127 +1672,131 @@
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Martin_Fuglsang,_Bent_Meier_Sorensen Deleuze.pdf",
                     "name": "Martin_Fuglsang,_Bent_Meier_Sorensen Deleuze.pdf",
-                    "mtime": "2017-02-17T13:17:48.000Z",
-                    "atime": "2017-03-12T12:37:07.168Z",
-                    "size": 658567,
                     "type": "file",
-                    "hash": "6a64a03c2466ba4e970faf45ffb7ca0e"
+                    "hash": "6a64a03c2466ba4e970faf45ffb7ca0e",
+                    "mtime": "2017-02-17T13:17:48.000Z",
+                    "atime": "2017-03-15T15:45:36.744Z",
+                    "size": 658567
+                },
+                {
+                    "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Misc",
+                    "name": "Misc",
+                    "type": "folder",
+                    "children": [
+                        {
+                            "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Misc/2015_ASONAM_Information_Cascades %281%29.pdf",
+                            "name": "2015_ASONAM_Information_Cascades %281%29.pdf",
+                            "type": "file",
+                            "hash": "03afada8a1caf7abca571a86e774c575",
+                            "mtime": "2017-03-08T16:19:13.130Z",
+                            "atime": "2017-03-15T15:45:36.748Z",
+                            "size": 1411117
+                        }
+                    ]
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Organisations, Institutions",
                     "name": "Organisations, Institutions",
-                    "mtime": "2017-03-08T13:48:49.227Z",
-                    "atime": "2017-03-11T19:37:30.113Z",
-                    "size": 4096,
                     "type": "folder",
                     "children": [
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Organisations, Institutions/-Laboratory for Social Machines _ Understanding and empowering human networks.pdf",
                             "name": "-Laboratory for Social Machines _ Understanding and empowering human networks.pdf",
-                            "mtime": "2017-02-28T14:55:56.000Z",
-                            "atime": "2017-03-12T12:37:07.172Z",
-                            "size": 75213,
                             "type": "file",
-                            "hash": "21faf8bbc7d79a5c91185b29e8709fd9"
+                            "hash": "21faf8bbc7d79a5c91185b29e8709fd9",
+                            "mtime": "2017-02-28T14:55:56.000Z",
+                            "atime": "2017-03-15T15:45:36.752Z",
+                            "size": 75213
                         }
                     ]
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Research Projects",
                     "name": "Research Projects",
-                    "mtime": "2017-03-08T13:58:13.414Z",
-                    "atime": "2017-03-11T19:37:30.113Z",
-                    "size": 4096,
                     "type": "folder",
                     "children": [
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Research Projects/MIT Lab",
                             "name": "MIT Lab",
-                            "mtime": "2017-03-08T13:58:11.414Z",
-                            "atime": "2017-03-11T19:37:30.113Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": []
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Research Projects/SOCIAM",
                             "name": "SOCIAM",
-                            "mtime": "2017-03-08T13:54:49.380Z",
-                            "atime": "2017-03-11T19:37:30.113Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Research Projects/SOCIAM/About _ SOCIAM.pdf",
                                     "name": "About _ SOCIAM.pdf",
-                                    "mtime": "2017-03-03T13:10:09.386Z",
-                                    "atime": "2017-03-12T12:37:07.172Z",
-                                    "size": 205113,
                                     "type": "file",
-                                    "hash": "9fba440ddfca141d8213be0e4f0c383b"
+                                    "hash": "9fba440ddfca141d8213be0e4f0c383b",
+                                    "mtime": "2017-03-03T13:10:09.386Z",
+                                    "atime": "2017-03-15T15:45:36.752Z",
+                                    "size": 205113
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Research Projects/SOCIAM/Frequently Asked Questions _ SOCIAM.pdf",
                                     "name": "Frequently Asked Questions _ SOCIAM.pdf",
-                                    "mtime": "2017-03-03T13:14:11.632Z",
-                                    "atime": "2017-03-12T12:37:07.172Z",
-                                    "size": 143692,
                                     "type": "file",
-                                    "hash": "d4a94a7f5d7a945371949bc487aebb3c"
+                                    "hash": "d4a94a7f5d7a945371949bc487aebb3c",
+                                    "mtime": "2017-03-03T13:14:11.632Z",
+                                    "atime": "2017-03-15T15:45:36.752Z",
+                                    "size": 143692
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Research Projects/SOCIAM/Project Objectives _ SOCIAM.pdf",
                                     "name": "Project Objectives _ SOCIAM.pdf",
-                                    "mtime": "2017-03-03T13:10:20.274Z",
-                                    "atime": "2017-03-12T12:37:07.176Z",
-                                    "size": 140854,
                                     "type": "file",
-                                    "hash": "ae897d0b4fb87017ce40227067e38212"
+                                    "hash": "ae897d0b4fb87017ce40227067e38212",
+                                    "mtime": "2017-03-03T13:10:20.274Z",
+                                    "atime": "2017-03-15T15:45:36.756Z",
+                                    "size": 140854
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Research Projects/SOCIAM/SOCIAM_ The Theory and Practice of Social Machines.pdf",
                                     "name": "SOCIAM_ The Theory and Practice of Social Machines.pdf",
-                                    "mtime": "2017-03-03T13:14:49.593Z",
-                                    "atime": "2017-03-12T12:37:07.176Z",
-                                    "size": 181430,
                                     "type": "file",
-                                    "hash": "8cc33d3efb2fa8e9e8e9337d72876896"
+                                    "hash": "8cc33d3efb2fa8e9e8e9337d72876896",
+                                    "mtime": "2017-03-03T13:14:49.593Z",
+                                    "atime": "2017-03-15T15:45:36.756Z",
+                                    "size": 181430
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Research Projects/SOCIAM/Social machines _ SOCIAM.pdf",
                                     "name": "Social machines _ SOCIAM.pdf",
-                                    "mtime": "2017-03-03T13:14:33.297Z",
-                                    "atime": "2017-03-12T12:37:07.176Z",
-                                    "size": 152679,
                                     "type": "file",
-                                    "hash": "5698aed04bc56cc75619c7e06a392e83"
+                                    "hash": "5698aed04bc56cc75619c7e06a392e83",
+                                    "mtime": "2017-03-03T13:14:33.297Z",
+                                    "atime": "2017-03-15T15:45:36.756Z",
+                                    "size": 152679
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Research Projects/SOCIAM/gtr.rcuk.ac - 1.pdf",
                                     "name": "gtr.rcuk.ac - 1.pdf",
-                                    "mtime": "2017-03-03T13:16:36.652Z",
-                                    "atime": "2017-03-12T12:37:07.176Z",
-                                    "size": 231490,
                                     "type": "file",
-                                    "hash": "531d1e21a7b41cf1e6bc548301a13348"
+                                    "hash": "531d1e21a7b41cf1e6bc548301a13348",
+                                    "mtime": "2017-03-03T13:16:36.652Z",
+                                    "atime": "2017-03-15T15:45:36.756Z",
+                                    "size": 231490
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Research Projects/SOCIAM/gtr.rcuk.ac - 2.pdf",
                                     "name": "gtr.rcuk.ac - 2.pdf",
-                                    "mtime": "2017-03-03T13:16:27.828Z",
-                                    "atime": "2017-03-12T12:37:07.180Z",
-                                    "size": 180635,
                                     "type": "file",
-                                    "hash": "1cc33d8f563bd562c3082e9788678a28"
+                                    "hash": "1cc33d8f563bd562c3082e9788678a28",
+                                    "mtime": "2017-03-03T13:16:27.828Z",
+                                    "atime": "2017-03-15T15:45:36.756Z",
+                                    "size": 180635
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Research Projects/SOCIAM/macroscope_brochure.pdf",
                                     "name": "macroscope_brochure.pdf",
-                                    "mtime": "2017-03-03T13:14:21.804Z",
-                                    "atime": "2017-03-12T12:37:07.180Z",
-                                    "size": 3413603,
                                     "type": "file",
-                                    "hash": "b7ff47b76692d28f37fb19dc701c635d"
+                                    "hash": "b7ff47b76692d28f37fb19dc701c635d",
+                                    "mtime": "2017-03-03T13:14:21.804Z",
+                                    "atime": "2017-03-15T15:45:36.760Z",
+                                    "size": 3413603
                                 }
                             ]
                         }
@@ -1361,138 +1805,132 @@
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Scientific American_ Feature Article_ The Semantic Web_ May 2001.pdf",
                     "name": "Scientific American_ Feature Article_ The Semantic Web_ May 2001.pdf",
-                    "mtime": "2017-02-17T13:33:40.000Z",
-                    "atime": "2017-03-12T12:37:07.188Z",
-                    "size": 192997,
                     "type": "file",
-                    "hash": "403db4f551c24446528302593c49f10e"
+                    "hash": "403db4f551c24446528302593c49f10e",
+                    "mtime": "2017-02-17T13:33:40.000Z",
+                    "atime": "2017-03-15T15:45:36.768Z",
+                    "size": 192997
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Social capital - Wikipedia.pdf",
                     "name": "Social capital - Wikipedia.pdf",
-                    "mtime": "2017-03-08T16:01:06.590Z",
-                    "atime": "2017-03-12T12:37:07.188Z",
-                    "size": 374638,
                     "type": "file",
-                    "hash": "3e544c77dc569feb02b223711a8c99f3"
+                    "hash": "3e544c77dc569feb02b223711a8c99f3",
+                    "mtime": "2017-03-08T16:01:06.590Z",
+                    "atime": "2017-03-15T15:45:36.768Z",
+                    "size": 374638
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Special Cases",
                     "name": "Special Cases",
-                    "mtime": "2017-03-09T11:06:22.613Z",
-                    "atime": "2017-03-11T19:37:30.113Z",
-                    "size": 4096,
                     "type": "folder",
                     "children": [
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Special Cases/Facebook Manifesto",
                             "name": "Facebook Manifesto",
-                            "mtime": "2017-03-01T13:26:15.737Z",
-                            "atime": "2017-03-11T19:37:30.113Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Special Cases/Facebook Manifesto/-The Facebook manifesto_ Mark Zuckerberg's letter to the world looks a lot like politics _ Technology _ The Guardian.pdf",
                                     "name": "-The Facebook manifesto_ Mark Zuckerberg's letter to the world looks a lot like politics _ Technology _ The Guardian.pdf",
-                                    "mtime": "2017-02-28T16:04:40.000Z",
-                                    "atime": "2017-03-12T12:37:07.192Z",
-                                    "size": 359452,
                                     "type": "file",
-                                    "hash": "9d66a73494ffb7d35734b2cb7644a0a9"
+                                    "hash": "9d66a73494ffb7d35734b2cb7644a0a9",
+                                    "mtime": "2017-02-28T16:04:40.000Z",
+                                    "atime": "2017-03-15T15:45:36.772Z",
+                                    "size": 359452
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Special Cases/Facebook Manifesto/-The Mark Zuckerberg Manifesto_ Great for Facebook, Bad for Journalism - The Atlantic.pdf",
                                     "name": "-The Mark Zuckerberg Manifesto_ Great for Facebook, Bad for Journalism - The Atlantic.pdf",
-                                    "mtime": "2017-02-28T16:03:14.000Z",
-                                    "atime": "2017-03-12T12:37:07.192Z",
-                                    "size": 248048,
                                     "type": "file",
-                                    "hash": "de19ee7d74fdf4e718574f07d433ee42"
+                                    "hash": "de19ee7d74fdf4e718574f07d433ee42",
+                                    "mtime": "2017-02-28T16:03:14.000Z",
+                                    "atime": "2017-03-15T15:45:36.772Z",
+                                    "size": 248048
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Special Cases/Facebook Manifesto/-Zuckerberg Manifesto - Building Global Community.pdf",
                                     "name": "-Zuckerberg Manifesto - Building Global Community.pdf",
-                                    "mtime": "2017-02-28T15:56:46.000Z",
-                                    "atime": "2017-03-12T12:37:07.196Z",
-                                    "size": 698137,
                                     "type": "file",
-                                    "hash": "49926fdb8bc1b5f149bd262af515906f"
+                                    "hash": "49926fdb8bc1b5f149bd262af515906f",
+                                    "mtime": "2017-02-28T15:56:46.000Z",
+                                    "atime": "2017-03-15T15:45:36.776Z",
+                                    "size": 698137
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Special Cases/Facebook Manifesto/The Mark Zuckerberg Manifesto Is a Blueprint for Destroying Journalism _ Hacker News.pdf",
                                     "name": "The Mark Zuckerberg Manifesto Is a Blueprint for Destroying Journalism _ Hacker News.pdf",
-                                    "mtime": "2017-02-19T14:48:48.000Z",
-                                    "atime": "2017-03-12T12:37:07.196Z",
-                                    "size": 196713,
                                     "type": "file",
-                                    "hash": "f76771b492c8128cfd4aec51d2364870"
+                                    "hash": "f76771b492c8128cfd4aec51d2364870",
+                                    "mtime": "2017-02-19T14:48:48.000Z",
+                                    "atime": "2017-03-15T15:45:36.776Z",
+                                    "size": 196713
                                 }
                             ]
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Special Cases/Pink Tap Water",
                             "name": "Pink Tap Water",
-                            "mtime": "2017-03-09T11:06:25.181Z",
-                            "atime": "2017-03-11T19:37:30.113Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Special Cases/Pink Tap Water/'Very, very pink' tap water has residents in Alberta town in a tizzy - CityNews.pdf",
                                     "name": "'Very, very pink' tap water has residents in Alberta town in a tizzy - CityNews.pdf",
-                                    "mtime": "2017-03-09T11:06:25.181Z",
-                                    "atime": "2017-03-12T12:37:07.196Z",
-                                    "size": 2722444,
                                     "type": "file",
-                                    "hash": "b9899df74607fe2bac74438c0488c9d2"
+                                    "hash": "b9899df74607fe2bac74438c0488c9d2",
+                                    "mtime": "2017-03-09T11:06:25.181Z",
+                                    "atime": "2017-03-15T15:45:36.780Z",
+                                    "size": 2722444
                                 }
                             ]
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Special Cases/Web Macroscope",
                             "name": "Web Macroscope",
-                            "mtime": "2017-03-08T16:57:02.717Z",
-                            "atime": "2017-03-11T19:37:30.113Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Special Cases/Web Macroscope/Web Macroscope _ SOCIAM.pdf",
                                     "name": "Web Macroscope _ SOCIAM.pdf",
-                                    "mtime": "2017-03-08T16:56:42.112Z",
-                                    "atime": "2017-03-12T12:37:07.204Z",
-                                    "size": 964144,
                                     "type": "file",
-                                    "hash": "176d9c509f85bcf488fbb4e77d747485"
+                                    "hash": "176d9c509f85bcf488fbb4e77d747485",
+                                    "mtime": "2017-03-08T16:56:42.112Z",
+                                    "atime": "2017-03-15T15:45:36.784Z",
+                                    "size": 964144
                                 }
                             ]
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Special Cases/WebObservatory, Monitoring",
                             "name": "WebObservatory, Monitoring",
-                            "mtime": "2017-03-08T16:43:33.092Z",
-                            "atime": "2017-03-11T19:37:30.113Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Special Cases/WebObservatory, Monitoring/2015_SOCM_WebObservatoryArchitecture_CM.pdf",
                                     "name": "2015_SOCM_WebObservatoryArchitecture_CM.pdf",
-                                    "mtime": "2017-03-08T16:20:05.359Z",
-                                    "atime": "2017-03-12T12:37:07.208Z",
-                                    "size": 392629,
                                     "type": "file",
-                                    "hash": "a28549338d62198bf4261372829935c0"
+                                    "hash": "a28549338d62198bf4261372829935c0",
+                                    "mtime": "2017-03-08T16:20:05.359Z",
+                                    "atime": "2017-03-15T15:45:36.788Z",
+                                    "size": 392629
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Special Cases/WebObservatory, Monitoring/Fry et al - Web Observatory.pdf",
                                     "name": "Fry et al - Web Observatory.pdf",
-                                    "mtime": "2017-03-08T16:43:26.540Z",
-                                    "atime": "2017-03-12T12:37:07.208Z",
-                                    "size": 1580405,
                                     "type": "file",
-                                    "hash": "15c87e434166873b94e0085cf722f8d7"
+                                    "hash": "15c87e434166873b94e0085cf722f8d7",
+                                    "mtime": "2017-03-08T16:43:26.540Z",
+                                    "atime": "2017-03-15T15:45:36.788Z",
+                                    "size": 1580405
+                                },
+                                {
+                                    "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Special Cases/WebObservatory, Monitoring/w15socm14-vankleek.pdf",
+                                    "name": "w15socm14-vankleek.pdf",
+                                    "type": "file",
+                                    "hash": "aa259043fbb32db2c376304e02407982",
+                                    "mtime": "2017-02-19T11:34:00.000Z",
+                                    "atime": "2017-03-15T15:45:36.792Z",
+                                    "size": 510821
                                 }
                             ]
                         }
@@ -1501,227 +1939,209 @@
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/TOAIJ-2-21.pdf",
                     "name": "TOAIJ-2-21.pdf",
-                    "mtime": "2017-03-08T15:59:53.909Z",
-                    "atime": "2017-03-12T12:37:07.212Z",
-                    "size": 1694324,
                     "type": "file",
-                    "hash": "ceb1d75ad2031404e6222a54252a9679"
+                    "hash": "ceb1d75ad2031404e6222a54252a9679",
+                    "mtime": "2017-03-08T15:59:53.909Z",
+                    "atime": "2017-03-15T15:45:36.796Z",
+                    "size": 1694324
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/The Social in the Platform Trap %28preprint%29.pdf",
                     "name": "The Social in the Platform Trap %28preprint%29.pdf",
-                    "mtime": "2017-02-19T11:34:54.000Z",
-                    "atime": "2017-03-12T12:37:07.216Z",
-                    "size": 72196,
                     "type": "file",
-                    "hash": "4a6e63f7928fd7fa78f22b581250642e"
+                    "hash": "4a6e63f7928fd7fa78f22b581250642e",
+                    "mtime": "2017-02-19T11:34:54.000Z",
+                    "atime": "2017-03-15T15:45:36.800Z",
+                    "size": 72196
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples",
                     "name": "Types, Use Cases, Implementations, Examples",
-                    "mtime": "2017-03-08T16:51:21.512Z",
-                    "atime": "2017-03-11T19:37:30.113Z",
-                    "size": 4096,
                     "type": "folder",
                     "children": [
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Application Areas (Unsolved Problems)",
                             "name": "Application Areas (Unsolved Problems)",
-                            "mtime": "2017-03-08T16:49:19.885Z",
-                            "atime": "2017-03-11T19:37:30.113Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Application Areas (Unsolved Problems)/List of unsolved problems in biology - Wikipedia.pdf",
                                     "name": "List of unsolved problems in biology - Wikipedia.pdf",
-                                    "mtime": "2017-03-08T16:47:18.142Z",
-                                    "atime": "2017-03-12T12:37:07.216Z",
-                                    "size": 126527,
                                     "type": "file",
-                                    "hash": "9597c3155fb84f1d966cbef060abdfa5"
+                                    "hash": "9597c3155fb84f1d966cbef060abdfa5",
+                                    "mtime": "2017-03-08T16:47:18.142Z",
+                                    "atime": "2017-03-15T15:45:36.800Z",
+                                    "size": 126527
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Application Areas (Unsolved Problems)/List of unsolved problems in chemistry - Wikipedia.pdf",
                                     "name": "List of unsolved problems in chemistry - Wikipedia.pdf",
-                                    "mtime": "2017-03-08T16:47:38.018Z",
-                                    "atime": "2017-03-12T12:37:07.220Z",
-                                    "size": 137460,
                                     "type": "file",
-                                    "hash": "3ee11e44563238495824933dd5c27f38"
+                                    "hash": "3ee11e44563238495824933dd5c27f38",
+                                    "mtime": "2017-03-08T16:47:38.018Z",
+                                    "atime": "2017-03-15T15:45:36.800Z",
+                                    "size": 137460
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Application Areas (Unsolved Problems)/List of unsolved problems in computer science - Wikipedia.pdf",
                                     "name": "List of unsolved problems in computer science - Wikipedia.pdf",
-                                    "mtime": "2017-03-08T16:47:47.486Z",
-                                    "atime": "2017-03-12T12:37:07.220Z",
-                                    "size": 136352,
                                     "type": "file",
-                                    "hash": "55998e2485a1965d8ef2a217150477dc"
+                                    "hash": "55998e2485a1965d8ef2a217150477dc",
+                                    "mtime": "2017-03-08T16:47:47.486Z",
+                                    "atime": "2017-03-15T15:45:36.804Z",
+                                    "size": 136352
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Application Areas (Unsolved Problems)/List of unsolved problems in economics - Wikipedia.pdf",
                                     "name": "List of unsolved problems in economics - Wikipedia.pdf",
-                                    "mtime": "2017-03-08T16:47:57.783Z",
-                                    "atime": "2017-03-12T12:37:07.220Z",
-                                    "size": 160348,
                                     "type": "file",
-                                    "hash": "479b9ff857e3c1f7416e9fece98bf38a"
+                                    "hash": "479b9ff857e3c1f7416e9fece98bf38a",
+                                    "mtime": "2017-03-08T16:47:57.783Z",
+                                    "atime": "2017-03-15T15:45:36.804Z",
+                                    "size": 160348
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Application Areas (Unsolved Problems)/List of unsolved problems in geoscience - Wikipedia.pdf",
                                     "name": "List of unsolved problems in geoscience - Wikipedia.pdf",
-                                    "mtime": "2017-03-08T16:48:08.539Z",
-                                    "atime": "2017-03-12T12:37:07.220Z",
-                                    "size": 133273,
                                     "type": "file",
-                                    "hash": "a406ae9082f63039b4efe5184e379f55"
+                                    "hash": "a406ae9082f63039b4efe5184e379f55",
+                                    "mtime": "2017-03-08T16:48:08.539Z",
+                                    "atime": "2017-03-15T15:45:36.804Z",
+                                    "size": 133273
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Application Areas (Unsolved Problems)/List of unsolved problems in information theory - Wikipedia.pdf",
                                     "name": "List of unsolved problems in information theory - Wikipedia.pdf",
-                                    "mtime": "2017-03-08T16:48:17.883Z",
-                                    "atime": "2017-03-12T12:37:07.220Z",
-                                    "size": 121223,
                                     "type": "file",
-                                    "hash": "f7995f373589ce442549b94164ee6f1a"
+                                    "hash": "f7995f373589ce442549b94164ee6f1a",
+                                    "mtime": "2017-03-08T16:48:17.883Z",
+                                    "atime": "2017-03-15T15:45:36.804Z",
+                                    "size": 121223
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Application Areas (Unsolved Problems)/List of unsolved problems in linguistics - Wikipedia.pdf",
                                     "name": "List of unsolved problems in linguistics - Wikipedia.pdf",
-                                    "mtime": "2017-03-08T16:48:27.019Z",
-                                    "atime": "2017-03-12T12:37:07.224Z",
-                                    "size": 138547,
                                     "type": "file",
-                                    "hash": "68bba490ee1a4bc4b5dfd9b36f79fe12"
+                                    "hash": "68bba490ee1a4bc4b5dfd9b36f79fe12",
+                                    "mtime": "2017-03-08T16:48:27.019Z",
+                                    "atime": "2017-03-15T15:45:36.804Z",
+                                    "size": 138547
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Application Areas (Unsolved Problems)/List of unsolved problems in mathematics - Wikipedia.pdf",
                                     "name": "List of unsolved problems in mathematics - Wikipedia.pdf",
-                                    "mtime": "2017-03-08T16:48:36.516Z",
-                                    "atime": "2017-03-12T12:37:07.224Z",
-                                    "size": 462155,
                                     "type": "file",
-                                    "hash": "b533a38d767eb5228449e8438e9e4382"
+                                    "hash": "b533a38d767eb5228449e8438e9e4382",
+                                    "mtime": "2017-03-08T16:48:36.516Z",
+                                    "atime": "2017-03-15T15:45:36.804Z",
+                                    "size": 462155
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Application Areas (Unsolved Problems)/List of unsolved problems in medicine - Wikipedia.pdf",
                                     "name": "List of unsolved problems in medicine - Wikipedia.pdf",
-                                    "mtime": "2017-03-08T16:48:46.280Z",
-                                    "atime": "2017-03-12T12:37:07.224Z",
-                                    "size": 86503,
                                     "type": "file",
-                                    "hash": "325a0bf8668a2c47d5051e29278371e3"
+                                    "hash": "325a0bf8668a2c47d5051e29278371e3",
+                                    "mtime": "2017-03-08T16:48:46.280Z",
+                                    "atime": "2017-03-15T15:45:36.808Z",
+                                    "size": 86503
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Application Areas (Unsolved Problems)/List of unsolved problems in neuroscience - Wikipedia.pdf",
                                     "name": "List of unsolved problems in neuroscience - Wikipedia.pdf",
-                                    "mtime": "2017-03-08T16:47:28.882Z",
-                                    "atime": "2017-03-12T12:37:07.224Z",
-                                    "size": 118707,
                                     "type": "file",
-                                    "hash": "2d83251d059223fb6dcd979a8b1e53e3"
+                                    "hash": "2d83251d059223fb6dcd979a8b1e53e3",
+                                    "mtime": "2017-03-08T16:47:28.882Z",
+                                    "atime": "2017-03-15T15:45:36.808Z",
+                                    "size": 118707
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Application Areas (Unsolved Problems)/List of unsolved problems in philosophy - Wikipedia.pdf",
                                     "name": "List of unsolved problems in philosophy - Wikipedia.pdf",
-                                    "mtime": "2017-03-08T16:48:57.176Z",
-                                    "atime": "2017-03-12T12:37:07.228Z",
-                                    "size": 168186,
                                     "type": "file",
-                                    "hash": "c36fabace37b10df191da51fcf72dfb7"
+                                    "hash": "c36fabace37b10df191da51fcf72dfb7",
+                                    "mtime": "2017-03-08T16:48:57.176Z",
+                                    "atime": "2017-03-15T15:45:36.808Z",
+                                    "size": 168186
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Application Areas (Unsolved Problems)/List of unsolved problems in physics - Wikipedia.pdf",
                                     "name": "List of unsolved problems in physics - Wikipedia.pdf",
-                                    "mtime": "2017-03-08T16:49:10.457Z",
-                                    "atime": "2017-03-12T12:37:07.228Z",
-                                    "size": 531902,
                                     "type": "file",
-                                    "hash": "44a6f3cec3403942c2d63c45099b84a7"
+                                    "hash": "44a6f3cec3403942c2d63c45099b84a7",
+                                    "mtime": "2017-03-08T16:49:10.457Z",
+                                    "atime": "2017-03-15T15:45:36.808Z",
+                                    "size": 531902
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Application Areas (Unsolved Problems)/List of unsolved problems in statistics - Wikipedia.pdf",
                                     "name": "List of unsolved problems in statistics - Wikipedia.pdf",
-                                    "mtime": "2017-03-08T16:49:19.885Z",
-                                    "atime": "2017-03-12T12:37:07.232Z",
-                                    "size": 129239,
                                     "type": "file",
-                                    "hash": "d537aa4d6ff539cd7ccb5e55e5561df7"
+                                    "hash": "d537aa4d6ff539cd7ccb5e55e5561df7",
+                                    "mtime": "2017-03-08T16:49:19.885Z",
+                                    "atime": "2017-03-15T15:45:36.812Z",
+                                    "size": 129239
                                 },
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Application Areas (Unsolved Problems)/Lists of unsolved problems - Wikipedia.pdf",
                                     "name": "Lists of unsolved problems - Wikipedia.pdf",
-                                    "mtime": "2017-03-08T16:47:08.657Z",
-                                    "atime": "2017-03-12T12:37:07.232Z",
-                                    "size": 75706,
                                     "type": "file",
-                                    "hash": "b339fb724e10dd6b72c6c43b497d32ed"
+                                    "hash": "b339fb724e10dd6b72c6c43b497d32ed",
+                                    "mtime": "2017-03-08T16:47:08.657Z",
+                                    "atime": "2017-03-15T15:45:36.812Z",
+                                    "size": 75706
                                 }
                             ]
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Government",
                             "name": "Government",
-                            "mtime": "2017-03-08T15:29:44.445Z",
-                            "atime": "2017-03-11T19:37:30.113Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Government/-p903-tiropanis.pdf",
                                     "name": "-p903-tiropanis.pdf",
-                                    "mtime": "2017-02-19T11:03:14.000Z",
-                                    "atime": "2017-03-12T12:37:07.232Z",
-                                    "size": 441337,
                                     "type": "file",
-                                    "hash": "51c11f9f7732a2f028c57b087e5bd92a"
+                                    "hash": "51c11f9f7732a2f028c57b087e5bd92a",
+                                    "mtime": "2017-02-19T11:03:14.000Z",
+                                    "atime": "2017-03-15T15:45:36.812Z",
+                                    "size": 441337
                                 }
                             ]
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Health",
                             "name": "Health",
-                            "mtime": "2017-03-08T16:25:12.979Z",
-                            "atime": "2017-03-11T19:37:30.113Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Health/socm2013_submission_4.pdf",
                                     "name": "socm2013_submission_4.pdf",
-                                    "mtime": "2017-03-08T16:25:01.991Z",
-                                    "atime": "2017-03-12T12:37:07.236Z",
-                                    "size": 287349,
                                     "type": "file",
-                                    "hash": "c1f307d3610e081cfcdc0d6cdbba206a"
+                                    "hash": "c1f307d3610e081cfcdc0d6cdbba206a",
+                                    "mtime": "2017-03-08T16:25:01.991Z",
+                                    "atime": "2017-03-15T15:45:36.816Z",
+                                    "size": 287349
                                 }
                             ]
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Other Types",
                             "name": "Other Types",
-                            "mtime": "2017-03-08T13:51:54.616Z",
-                            "atime": "2017-03-11T19:37:30.113Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Other Types/Machine-machine",
                                     "name": "Machine-machine",
-                                    "mtime": "2017-03-08T13:51:54.616Z",
-                                    "atime": "2017-03-11T19:37:30.113Z",
-                                    "size": 4096,
                                     "type": "folder",
                                     "children": [
                                         {
                                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Other Types/Machine-machine/-1010.3045.pdf",
                                             "name": "-1010.3045.pdf",
-                                            "mtime": "2017-02-17T09:24:08.000Z",
-                                            "atime": "2017-03-11T19:39:28.361Z",
-                                            "size": 2479595,
                                             "type": "file",
-                                            "hash": "447ea79281a69c423d91785e515bb79d"
+                                            "hash": "447ea79281a69c423d91785e515bb79d",
+                                            "mtime": "2017-02-17T09:24:08.000Z",
+                                            "atime": "2017-03-15T15:45:36.816Z",
+                                            "size": 2479595
                                         }
                                     ]
                                 }
@@ -1730,57 +2150,48 @@
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Politics",
                             "name": "Politics",
-                            "mtime": "2017-03-08T16:41:31.069Z",
-                            "atime": "2017-03-11T19:37:30.113Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Politics/mic2013020087.pdf",
                                     "name": "mic2013020087.pdf",
-                                    "mtime": "2017-03-08T16:41:12.500Z",
-                                    "atime": "2017-03-12T12:37:07.244Z",
-                                    "size": 855989,
                                     "type": "file",
-                                    "hash": "aaa25b5cdc8cb3e4d04f5e806ee68655"
+                                    "hash": "aaa25b5cdc8cb3e4d04f5e806ee68655",
+                                    "mtime": "2017-03-08T16:41:12.500Z",
+                                    "atime": "2017-03-15T15:45:36.824Z",
+                                    "size": 855989
                                 }
                             ]
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Services",
                             "name": "Services",
-                            "mtime": "2017-03-08T16:18:45.777Z",
-                            "atime": "2017-03-11T19:37:30.113Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Services/379508.pdf",
                                     "name": "379508.pdf",
-                                    "mtime": "2017-03-08T16:18:28.257Z",
-                                    "atime": "2017-03-12T12:37:07.244Z",
-                                    "size": 318410,
                                     "type": "file",
-                                    "hash": "fae0c3b31cf8e5e6346ca4c0674b0024"
+                                    "hash": "fae0c3b31cf8e5e6346ca4c0674b0024",
+                                    "mtime": "2017-03-08T16:18:28.257Z",
+                                    "atime": "2017-03-15T15:45:36.824Z",
+                                    "size": 318410
                                 }
                             ]
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Wikipedia",
                             "name": "Wikipedia",
-                            "mtime": "2017-03-08T16:51:22.348Z",
-                            "atime": "2017-03-11T19:37:30.113Z",
-                            "size": 4096,
                             "type": "folder",
                             "children": [
                                 {
                                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Types, Use Cases, Implementations, Examples/Wikipedia/a6-tinati.pdf",
                                     "name": "a6-tinati.pdf",
-                                    "mtime": "2017-03-08T16:51:12.544Z",
-                                    "atime": "2017-03-12T12:37:07.248Z",
-                                    "size": 383874,
                                     "type": "file",
-                                    "hash": "4e4d39f305ddddfe6e2d36363957166c"
+                                    "hash": "4e4d39f305ddddfe6e2d36363957166c",
+                                    "mtime": "2017-03-08T16:51:12.544Z",
+                                    "atime": "2017-03-15T15:45:36.828Z",
+                                    "size": 383874
                                 }
                             ]
                         }
@@ -1789,258 +2200,189 @@
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Vision, Research Topics",
                     "name": "Vision, Research Topics",
-                    "mtime": "2017-03-08T16:21:09.745Z",
-                    "atime": "2017-03-11T19:37:30.113Z",
-                    "size": 4096,
                     "type": "folder",
                     "children": [
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Vision, Research Topics/!07450779.pdf",
                             "name": "!07450779.pdf",
-                            "mtime": "2017-03-08T08:44:25.700Z",
-                            "atime": "2017-03-12T12:37:07.248Z",
-                            "size": 1357315,
                             "type": "file",
-                            "hash": "ac0c65bf4ec7ab5f9f3e6253cef60515"
+                            "hash": "ac0c65bf4ec7ab5f9f3e6253cef60515",
+                            "mtime": "2017-03-08T08:44:25.700Z",
+                            "atime": "2017-03-15T15:45:36.828Z",
+                            "size": 1357315
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Vision, Research Topics/-1-s2.0-S0004370209001404-main.pdf",
                             "name": "-1-s2.0-S0004370209001404-main.pdf",
-                            "mtime": "2017-02-17T14:07:10.000Z",
-                            "atime": "2017-03-12T12:37:07.252Z",
-                            "size": 211189,
                             "type": "file",
-                            "hash": "3ef27239069eddc348b44b77c39b5cc7"
+                            "hash": "3ef27239069eddc348b44b77c39b5cc7",
+                            "mtime": "2017-02-17T14:07:10.000Z",
+                            "atime": "2017-03-15T15:45:36.832Z",
+                            "size": 211189
                         },
                         {
                             "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Vision, Research Topics/Futurist-Gerd-Leonhard’s-speaking-topics-the-future-of-humanity-business-media-and-technology-Futurist-Author-and-Keynote-Speaker-Gerd-Leonhard-2016.pdf",
                             "name": "Futurist-Gerd-Leonhard’s-speaking-topics-the-future-of-humanity-business-media-and-technology-Futurist-Author-and-Keynote-Speaker-Gerd-Leonhard-2016.pdf",
-                            "mtime": "2017-03-08T16:20:57.825Z",
-                            "atime": "2017-03-12T12:37:07.252Z",
-                            "size": 460547,
                             "type": "file",
-                            "hash": "852d6fb8886f6e0fc11fe33fa0aba9b9"
+                            "hash": "852d6fb8886f6e0fc11fe33fa0aba9b9",
+                            "mtime": "2017-03-08T16:20:57.825Z",
+                            "atime": "2017-03-15T15:45:36.832Z",
+                            "size": 460547
+                        },
+                        {
+                            "path": "/home/jonas/FU/IKON/Literatur/Social Machines/Vision, Research Topics/hendler-berners-lee-semantic-web.pdf",
+                            "name": "hendler-berners-lee-semantic-web.pdf",
+                            "type": "file",
+                            "hash": "9e5671924d9d1b96f5b7cfa66bd4b72b",
+                            "mtime": "2016-12-19T16:38:45.501Z",
+                            "atime": "2017-03-15T15:45:36.836Z",
+                            "size": 136269
                         }
                     ]
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/WWW2016 Workshop_ The Theory & Practice of Social Machines.pdf",
                     "name": "WWW2016 Workshop_ The Theory & Practice of Social Machines.pdf",
+                    "type": "file",
+                    "hash": "7de1fef9cc68d623a36de59cba400ef9",
                     "mtime": "2016-12-20T14:56:32.314Z",
-                    "atime": "2017-03-12T12:37:07.256Z",
-                    "size": 110866,
-                    "type": "file",
-                    "hash": "7de1fef9cc68d623a36de59cba400ef9"
-                },
-                {
-                    "path": "/home/jonas/FU/IKON/Literatur/Social Machines/WebSci16_Upload_Paper_112.pdf",
-                    "name": "WebSci16_Upload_Paper_112.pdf",
-                    "mtime": "2017-01-04T07:11:21.644Z",
-                    "atime": "2017-03-12T12:37:07.256Z",
-                    "size": 224804,
-                    "type": "file",
-                    "hash": "390219839718af87647b1dbb71a0be7a"
+                    "atime": "2017-03-15T15:45:36.836Z",
+                    "size": 110866
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/cognitivev2.pdf",
                     "name": "cognitivev2.pdf",
+                    "type": "file",
+                    "hash": "dc43989363ce9dfee75d33f2a43d6518",
                     "mtime": "2017-03-08T17:00:37.835Z",
-                    "atime": "2017-03-12T12:37:07.256Z",
-                    "size": 142050,
-                    "type": "file",
-                    "hash": "dc43989363ce9dfee75d33f2a43d6518"
-                },
-                {
-                    "path": "/home/jonas/FU/IKON/Literatur/Social Machines/finalversion.pdf",
-                    "name": "finalversion.pdf",
-                    "mtime": "2017-02-19T11:45:22.000Z",
-                    "atime": "2017-03-12T12:37:07.256Z",
-                    "size": 111844,
-                    "type": "file",
-                    "hash": "f300d61d42d94d9d9f595bc96b0cabf6"
-                },
-                {
-                    "path": "/home/jonas/FU/IKON/Literatur/Social Machines/hendler-berners-lee-semantic-web.pdf",
-                    "name": "hendler-berners-lee-semantic-web.pdf",
-                    "mtime": "2016-12-19T16:38:45.501Z",
-                    "atime": "2017-03-12T12:37:07.260Z",
-                    "size": 136269,
-                    "type": "file",
-                    "hash": "9e5671924d9d1b96f5b7cfa66bd4b72b"
+                    "atime": "2017-03-15T15:45:36.836Z",
+                    "size": 142050
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/maverick_research_surviving__253498.pdf",
                     "name": "maverick_research_surviving__253498.pdf",
+                    "type": "file",
+                    "hash": "c4b9fd6a04073ff9dcb2458e4cdbb67d",
                     "mtime": "2017-03-08T16:36:54.637Z",
-                    "atime": "2017-03-12T12:37:07.260Z",
-                    "size": 430926,
-                    "type": "file",
-                    "hash": "c4b9fd6a04073ff9dcb2458e4cdbb67d"
-                },
-                {
-                    "path": "/home/jonas/FU/IKON/Literatur/Social Machines/p139-luczak-roesch.pdf",
-                    "name": "p139-luczak-roesch.pdf",
-                    "mtime": "2017-03-08T16:28:08.392Z",
-                    "atime": "2017-03-12T12:37:07.260Z",
-                    "size": 662189,
-                    "type": "file",
-                    "hash": "5bea5b11e0815032a00b161050a18f48"
+                    "atime": "2017-03-15T15:45:36.836Z",
+                    "size": 430926
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/p40-bundy.pdf",
                     "name": "p40-bundy.pdf",
-                    "mtime": "2017-01-26T12:17:05.221Z",
-                    "atime": "2017-03-12T12:37:07.264Z",
-                    "size": 1946831,
                     "type": "file",
-                    "hash": "a355952feb858e70e0886a3beb12ce53"
+                    "hash": "a0b3162068b500c1a943bec08bea1ef3",
+                    "mtime": "2017-03-12T18:32:25.229Z",
+                    "atime": "2017-03-15T15:45:36.840Z",
+                    "size": 1945156
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/p759.pdf",
                     "name": "p759.pdf",
+                    "type": "file",
+                    "hash": "dbfd5ee105b1832b87dac654ca3e0d51",
                     "mtime": "2017-02-17T11:22:34.000Z",
-                    "atime": "2017-03-12T12:37:07.268Z",
-                    "size": 704460,
-                    "type": "file",
-                    "hash": "dbfd5ee105b1832b87dac654ca3e0d51"
-                },
-                {
-                    "path": "/home/jonas/FU/IKON/Literatur/Social Machines/p891-byrneevans.pdf",
-                    "name": "p891-byrneevans.pdf",
-                    "mtime": "2017-03-08T16:25:26.212Z",
-                    "atime": "2017-03-12T12:37:07.272Z",
-                    "size": 436602,
-                    "type": "file",
-                    "hash": "6ace8683c9316a6d8068147f2a731067"
+                    "atime": "2017-03-15T15:45:36.848Z",
+                    "size": 704460
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/socm2013_submission_8.pdf",
                     "name": "socm2013_submission_8.pdf",
+                    "type": "file",
+                    "hash": "1ec90d964feee6631089631b26b3834b",
                     "mtime": "2017-03-01T11:49:10.000Z",
-                    "atime": "2017-03-12T12:37:07.272Z",
-                    "size": 182297,
-                    "type": "file",
-                    "hash": "1ec90d964feee6631089631b26b3834b"
-                },
-                {
-                    "path": "/home/jonas/FU/IKON/Literatur/Social Machines/socm2013_submission_9.pdf",
-                    "name": "socm2013_submission_9.pdf",
-                    "mtime": "2017-02-19T11:35:56.000Z",
-                    "atime": "2017-03-12T12:37:07.276Z",
-                    "size": 639474,
-                    "type": "file",
-                    "hash": "d35713a5a53c804c36e795ce4225d36d"
-                },
-                {
-                    "path": "/home/jonas/FU/IKON/Literatur/Social Machines/vass_and_munson.pdf",
-                    "name": "vass_and_munson.pdf",
-                    "mtime": "2017-02-19T11:32:42.000Z",
-                    "atime": "2017-03-12T12:37:07.276Z",
-                    "size": 195913,
-                    "type": "file",
-                    "hash": "63c64e6714b22ac51beaef06effef9a9"
-                },
-                {
-                    "path": "/home/jonas/FU/IKON/Literatur/Social Machines/w15socm14-vankleek.pdf",
-                    "name": "w15socm14-vankleek.pdf",
-                    "mtime": "2017-02-19T11:34:00.000Z",
-                    "atime": "2017-03-12T12:37:07.276Z",
-                    "size": 510821,
-                    "type": "file",
-                    "hash": "aa259043fbb32db2c376304e02407982"
+                    "atime": "2017-03-15T15:45:36.848Z",
+                    "size": 182297
                 },
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Social Machines/wef-dti-societal-implications-narrative-final-january-2016-c.pdf",
                     "name": "wef-dti-societal-implications-narrative-final-january-2016-c.pdf",
-                    "mtime": "2017-01-26T12:43:14.417Z",
-                    "atime": "2017-03-12T12:37:07.280Z",
-                    "size": 2186846,
                     "type": "file",
-                    "hash": "ce6d79505eaa080b32f51e564470c41f"
+                    "hash": "ce6d79505eaa080b32f51e564470c41f",
+                    "mtime": "2017-01-26T12:43:14.417Z",
+                    "atime": "2017-03-15T15:45:36.848Z",
+                    "size": 2186846
                 }
             ]
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/Stakeholder Analysis",
             "name": "Stakeholder Analysis",
-            "mtime": "2017-03-01T13:26:16.225Z",
-            "atime": "2017-03-11T19:37:30.113Z",
-            "size": 4096,
             "type": "folder",
             "children": [
                 {
                     "path": "/home/jonas/FU/IKON/Literatur/Stakeholder Analysis/__Libfile_repository_Content_Dini%2C P_Sequoia_Sequoia%28lsero%29.pdf",
                     "name": "__Libfile_repository_Content_Dini%2C P_Sequoia_Sequoia%28lsero%29.pdf",
-                    "mtime": "2017-02-17T15:53:38.000Z",
-                    "atime": "2017-03-12T12:37:07.288Z",
-                    "size": 813428,
                     "type": "file",
-                    "hash": "ede908ca42acfd8ef1dfd4dce2c5acdd"
+                    "hash": "ede908ca42acfd8ef1dfd4dce2c5acdd",
+                    "mtime": "2017-02-17T15:53:38.000Z",
+                    "atime": "2017-03-15T15:45:36.856Z",
+                    "size": 813428
                 }
             ]
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/The Uncanny Valley_ The Original Essay by Masahiro Mori - IEEE Spectrum.pdf",
             "name": "The Uncanny Valley_ The Original Essay by Masahiro Mori - IEEE Spectrum.pdf",
-            "mtime": "2017-03-08T15:41:47.098Z",
-            "atime": "2017-03-12T12:37:07.288Z",
-            "size": 881024,
             "type": "file",
-            "hash": "fde05dd9418f9614bf2873fd7cf86206"
+            "hash": "fde05dd9418f9614bf2873fd7cf86206",
+            "mtime": "2017-03-08T15:41:47.098Z",
+            "atime": "2017-03-15T15:45:36.860Z",
+            "size": 881024
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/Uncanny valley - Wikipedia.pdf",
             "name": "Uncanny valley - Wikipedia.pdf",
-            "mtime": "2017-03-08T15:41:59.758Z",
-            "atime": "2017-03-12T12:37:07.292Z",
-            "size": 530205,
             "type": "file",
-            "hash": "24ca321b76b412a578d53e6a957819d2"
+            "hash": "24ca321b76b412a578d53e6a957819d2",
+            "mtime": "2017-03-08T15:41:59.758Z",
+            "atime": "2017-03-15T15:45:36.860Z",
+            "size": 530205
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/conways-law.jpg",
             "name": "conways-law.jpg",
-            "mtime": "2017-02-28T20:30:20.000Z",
-            "atime": "2017-03-12T12:37:07.296Z",
-            "size": 154113,
             "type": "file",
-            "hash": "8cb4b3ef0bc271a9633d1243c8b4ed7d"
+            "hash": "8cb4b3ef0bc271a9633d1243c8b4ed7d",
+            "mtime": "2017-02-28T20:30:20.000Z",
+            "atime": "2017-03-15T15:45:36.864Z",
+            "size": 154113
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/human-factors-8-728.jpg",
             "name": "human-factors-8-728.jpg",
-            "mtime": "2017-03-08T14:17:43.141Z",
-            "atime": "2017-03-12T12:37:07.296Z",
-            "size": 111467,
             "type": "file",
-            "hash": "f2bc0a35a8cf6631a5bdb67f3c69e76e"
+            "hash": "f2bc0a35a8cf6631a5bdb67f3c69e76e",
+            "mtime": "2017-03-08T14:17:43.141Z",
+            "atime": "2017-03-15T15:45:36.864Z",
+            "size": 111467
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/p100-wegner.pdf",
             "name": "p100-wegner.pdf",
-            "mtime": "2017-02-17T08:20:36.000Z",
-            "atime": "2017-03-12T12:37:07.296Z",
-            "size": 69236,
             "type": "file",
-            "hash": "b34c81e8cdc2e62fcdb21bd06bc7e697"
+            "hash": "b34c81e8cdc2e62fcdb21bd06bc7e697",
+            "mtime": "2017-02-17T08:20:36.000Z",
+            "atime": "2017-03-15T15:45:36.864Z",
+            "size": 69236
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/p11-kroeker.pdf",
             "name": "p11-kroeker.pdf",
-            "mtime": "2017-02-17T08:20:04.000Z",
-            "atime": "2017-03-12T12:37:07.296Z",
-            "size": 1529849,
             "type": "file",
-            "hash": "0a8d71ed4966aa7f9bfdf0a5e7d51589"
+            "hash": "0a8d71ed4966aa7f9bfdf0a5e7d51589",
+            "mtime": "2017-02-17T08:20:04.000Z",
+            "atime": "2017-03-15T15:45:36.864Z",
+            "size": 1529849
         },
         {
             "path": "/home/jonas/FU/IKON/Literatur/paper_77 (1).pdf",
             "name": "paper_77 (1).pdf",
-            "mtime": "2017-03-04T18:20:13.348Z",
-            "atime": "2017-03-12T12:37:07.300Z",
-            "size": 373162,
             "type": "file",
-            "hash": "ce42f9412a43cf7347e45e60eb286dca"
+            "hash": "ce42f9412a43cf7347e45e60eb286dca",
+            "mtime": "2017-03-04T18:20:13.348Z",
+            "atime": "2017-03-15T15:45:36.868Z",
+            "size": 373162
         }
     ]
 }

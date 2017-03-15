@@ -6,11 +6,12 @@ import ActionInfo from 'material-ui/svg-icons/action/info';
 import Divider from 'material-ui/Divider';
 import Subheader from 'material-ui/Subheader';
 import Avatar from 'material-ui/Avatar';
-import FileFolder from 'material-ui/svg-icons/file/folder';
-import FileIcon from 'material-ui/svg-icons/file/cloud';
 import ActionAssignment from 'material-ui/svg-icons/action/assignment';
 import {blue500, yellow600} from 'material-ui/styles/colors';
 import EditorInsertChart from 'material-ui/svg-icons/editor/insert-chart';
+
+import FolderIcon from 'material-ui/svg-icons/file/folder';
+import FileIcon from 'material-ui/svg-icons/file/cloud';
 
 
 const mapFolders = () => {
@@ -24,15 +25,16 @@ const ListFolder = (props) => {
         return null;
     };
     const folders = props.folders.children.map((f) => {
-        // TODO
-        // let FIcon = <FileIcon />;
-        // if (f['type'] !== "file") {
-        //     FIcon = <FileFolder />;
-        // }
-        // console.log(FIcon);
+        // console.log(f['type']);
+        let FIcon;
+        if (f['type'] === "file") {
+            FIcon = <FileIcon />;
+        } else {
+            FIcon = <FolderIcon />;
+        }
         return (
             <ListItem
-                leftAvatar={<Avatar icon={<FileIcon />} />}
+                leftAvatar={<Avatar icon={FIcon} />}
                 primaryText={f.name}
                 secondaryText={getSecText(f)}
             />

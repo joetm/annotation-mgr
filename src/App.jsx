@@ -65,16 +65,16 @@ export default class App extends React.Component {
         // fetch the data
         const URL = "./data/folders.json";
         this.serverRequest = fetch(URL)
-        .then(r => r.json())
-        .then((folderdata) => {
-            console.log(URL, folderdata);
-            this.setState({
-                folders: folderdata,
-                isLoading: false,
-                filesVisible: true,
-                numUnannotated: folderdata.children.length, // TODO
+            .then(r => r.json())
+            .then((folderdata) => {
+                console.log(URL, folderdata);
+                this.setState({
+                    folders: folderdata,
+                    isLoading: false,
+                    filesVisible: true,
+                    numUnannotated: folderdata.children.length, // TODO
+                });
             });
-        });
     }
 
     componentDidMount() {
@@ -101,7 +101,7 @@ export default class App extends React.Component {
             filesVisible: false,
         });
         // TODO
-
+        
 
         this.fetchPapers();
     }
