@@ -15,6 +15,21 @@ import FileIcon from 'material-ui/svg-icons/action/description';
 
 import ListFolderItem from "./ListFolderItem.jsx";
 
+const processItems = function (folder) {
+    return folder.map((f) => {
+        let children = [];
+        if ('children' in f) {
+            children = processItems(f.children);
+            console.log('folder has children', children);
+        }
+        return (
+            <ListFolderItem
+                f={f}
+                children={children}
+            />
+        );
+    });
+}
 
 const ListFolder = (props) => {
 
@@ -22,11 +37,7 @@ const ListFolder = (props) => {
         return null;
     };
 
-    const items = props.folders.children.map((f) => (
-            <ListFolderItem
-                f={f}
-            />
-        ));
+    let items = processItems(props.folders.children);
 
     // const ConditionalSubHeader = props.folders.name ? <Subheader inset={true}>{props.folders.name}</Subheader> : null;
     return (

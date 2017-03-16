@@ -8,6 +8,11 @@ import FolderIcon from 'material-ui/svg-icons/file/folder';
 import FileIcon from 'material-ui/svg-icons/action/description';
 
 
+const nestedListStyle = {
+	marginLeft: '1em'
+};
+
+
 const getSecText = (txt) => `${txt.type}: ${txt.mtime}, ${txt.size}`;
 
 
@@ -52,6 +57,9 @@ class ListFolderItem extends React.Component {
 				onClick={this.getDetails.bind(this)}
 				autoGenerateNestedIndicator={true}
 				primaryTogglesNestedList={true}
+				insetChildren={true}
+				nestedItems={this.props.children}
+				nestedListStyle={nestedListStyle}
 			/>
 		);
     }
