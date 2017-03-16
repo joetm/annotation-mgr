@@ -23,11 +23,10 @@ import Search from './Search.jsx'
 */
 
 
-//    <Search onTouchTap={props.openDialog} />
-
 const RightIconMenu = (props) => (
   <div>
 
+    <IconButton><Search /></IconButton>
     <IconButton><SettingsIcon onTouchTap={props.openDialog} /></IconButton>
     <IconButton><SyncIcon onTouchTap={props.syncLiterature} /></IconButton>
 

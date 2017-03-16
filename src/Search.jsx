@@ -13,21 +13,26 @@ export default class Search extends React.Component {
     };
   }
 
-  expand() {
+  toggle() {
     // TODO
-    console.log('expand search bar');
-    this.setState({isExpanded: true});
+      if (this.state.isExpanded) {
+          console.log('close search bar');
+          this.setState({isExpanded: false});
+      } else {
+          console.log('expand search bar');
+          this.setState({isExpanded: true});
+      }
   }
 
   render() {
     return (
-        <div style={{display:'inline-block'}}>
+        <div style={{display:'block'}}>
             <SearchIcon
-                onTouchTap={this.expand.bind(this)}
-                style={{marginRight:'10px'}}
+                onTouchTap={this.toggle.bind(this)}
+                style={{float:'right', marginRight:'10px'}}
             />
             <TextField
-                style={{display: this.state.isExpanded ? 'block' : 'none'}}
+                style={{float:'right', display: this.state.isExpanded ? 'block' : 'none'}}
                 hintText="Search"
             />
         </div>

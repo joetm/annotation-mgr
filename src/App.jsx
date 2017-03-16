@@ -37,6 +37,7 @@ const theme = getMuiTheme({
   }
 });
 
+
 export default class App extends React.Component {
 
     constructor() {
@@ -100,9 +101,6 @@ export default class App extends React.Component {
         this.setState({
             filesVisible: false,
         });
-        // TODO
-        
-
         this.fetchPapers();
     }
 
@@ -123,7 +121,9 @@ export default class App extends React.Component {
                         open={this.state.dialogOpen}
                         closeSettingsDialog={this.closeSettingsDialog.bind(this)}
                     />
-                    <Loader progress={this.state.progress} visible={this.state.isLoading} />
+                    <Loader
+                    	progress={this.state.progress}
+                    	visible={this.state.isLoading} />
                     <ListFolder
                         folders={this.state.folders}
                         visible={this.state.filesVisible}
@@ -132,5 +132,4 @@ export default class App extends React.Component {
             </MuiThemeProvider>
   		  );
   	}
-
 }
