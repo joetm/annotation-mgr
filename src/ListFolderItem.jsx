@@ -18,13 +18,6 @@ const getSecText = (txt) => `${txt.type}: ${txt.mtime}, ${txt.size}`;
 
 class ListFolderItem extends React.Component {
 
-	getSubfolder (file) {
-    	console.log('getting subfolder for', file.name);
-
-		// TODO
-
-	}
-
 	getAnnotations (file) {
 	    console.log('getting annotations for', file.name);
 
@@ -37,8 +30,6 @@ class ListFolderItem extends React.Component {
 	getDetails () {
 		if (this.props.f.type === 'file') {
 			this.getAnnotations(this.props.f);
-		} else {
-			this.getSubfolder(this.props.f);
 		}
 	}
 
