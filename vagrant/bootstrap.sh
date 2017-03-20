@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 
 # install Apache
-# apt-get update
-# apt-get install -y apache2
-# if ! [ -L /var/www ]; then
-#   rm -rf /var/www
-#   ln -fs /vagrant /var/www
-# fi
+apt-get update
+apt-get install -y apache2
+if ! [ -L /var/www ]; then
+  rm -rf /var/www
+  ln -fs /vagrant /var/www
+  ln -fs /vagrant/build /var/www/html
+fi
 
 # install Oracle JDK
 apt-get install -y python-software-properties debconf-utils
@@ -18,6 +19,12 @@ echo "oracle-java8-installer shared/accepted-oracle-license-v1-1 select true" | 
 apt-get install -y oracle-java8-installer
 # javac -version
 apt-get install -y oracle-java8-set-default
+
+iptables -P INPUT ACCEPT
+iptables -P OUTPUT ACCEPT
+iptables -P FORWARD ACCEPT
+iptables -F
+ufw disable
 
 # install elasticsearch
 apt-get install -y apt-transport-https
