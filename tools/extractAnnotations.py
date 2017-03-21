@@ -1,40 +1,35 @@
 #!/usr/bin/python
 
-import poppler
-import os.path
-import json
 import sys
+import json
+import os.path
+import poppler
 
-def getAnnotations():
+class AnnotationExtractor:
 
-    filepath = sys.argv[1]
-    print filepath
+    @staticmethod
+    def getAnnotations(filepath):
 
-    # absolute path
-    if not filepath.startswith('file://'):
-        filepath = "file://%s" % filepath
+        doc = poppler.document_new_from_file(filepath, None)
+        pages = [doc.get_page(i) for i in range(doc.get_n_pages())]
 
-    print filepath
+        annotations = []
 
-    doc = poppler.document_new_from_file(filepath, None)
-    pages = [doc.get_page(i) for i in range(doc.get_n_pages())]
+        # process annotations
+        for page_no, page in enumerate(pages):
+            # get the annotations
+            items = [i.annot.get_contents() for i in page.get_annot_mapping()]
+            # filter out empty annotations
+            items = [i for i in items if i]
+            # print "page: %s comments: %s " % (page_no + 1, items)
+            for it in items:
+                # clean string
+                it = it.replace("\n", "").replace("\r", "").strip()
+                # write to file
+                annotations.append([page_no + 1, it])
 
-    annotations = []
+        return json.dumps(annotations, indent=4, encoding="utf-8")
 
-    # process annotations
-    for page_no, page in enumerate(pages):
-        # get the annotations
-        items = [i.annot.get_contents() for i in page.get_annot_mapping()]
-        # filter out empty annotations
-        items = [i for i in items if i]
-        # print "page: %s comments: %s " % (page_no + 1, items)
-        for it in items:
-            # clean string
-            it = it.replace("\n", "").replace("\r", "").strip()
-            # write to file
-            annotations.append([page_no + 1, it])
-
-    print json.dumps(annotations, indent=4, encoding="utf-8")
 
 
 if __name__ == "__main__":
@@ -44,5 +39,10 @@ if __name__ == "__main__":
         print "Usage: %s /path/to/file.pdf" % sys.argv[0]
         sys.exit(1)
 
-    getAnnotations()
+    filepath = sys.argv[1]
+    # absolute path
+    if not filepath.startswith('file://'):
+        filepath = "file://%s" % filepath
+    # print filepath
 
+    print AnnotationExtractor.getAnnotations(filepath)
