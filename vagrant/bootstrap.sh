@@ -92,3 +92,6 @@ update-rc.d kibana defaults 95 10
 # start kibana
 /etc/init.d/kibana start
 
+# elasticsearch setup
+./elasticsearch.sh
+
