@@ -1,16 +1,16 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 # vim: tabstop=8 expandtab shiftwidth=4 softtabstop=4
-"""
-    ======================
-    PDF Metadata Extractor
-    ======================
-"""
 
-from pyPdf import PdfFileReader
+# http://blog.isnotworking.com/2006/08/extract-pdf-title-from-all-files-on.html
 
-class Extractor:
+import os, sys
+from pyPdf import PdfFileWriter, PdfFileReader
+
+
+class TitleExtractor:
     """
-    Extractor class
+    Title Extractor class
     """
 
     def __init__(self):
@@ -19,61 +19,23 @@ class Extractor:
         """
         pass
 
-    def get_metadata(self, pdf_file_path):
-        if not pdf_file_path:
-            raise # TODO
+    def getTitle(self, filepath):
 
-        with open(pdf_file_path) as f:
-            pdf_reader = PdfFileReader(f)
-            return pdf_reader.getDocumentInfo()
+        if filepath.lower()[-3:] != "pdf":
+            raise Exception("%s : Not a pdf file" % os.path.basename(filepath))
 
-    def get_title(self, pdf_file_path):
-        metadata = self.get_metadata(pdf_file_path)
-        return metadata.title
+        title = None
 
-    def get_subject(self, pdf_file_path):
-        metadata = self.get_metadata(pdf_file_path)
-        return metadata.subject
+        with file(filepath, "rb") as f:
+            title = PdfFileReader(f).getDocumentInfo().title
 
-    def get_creator(self, pdf_file_path):
-        metadata = self.get_metadata(pdf_file_path)
-        return metadata.creator
-
-    def get_author(self, pdf_file_path):
-        metadata = self.get_metadata(pdf_file_path)
-        return metadata.author
-
-    def get_keywords(self, pdf_file_path):
-        metadata = self.get_metadata(pdf_file_path)
-        keywords_str = metadata['/Keywords']
-        keywords = keywords_str.split(',')
-        keywords = [x.strip() for x in keywords]
-        return keywords
-
-    def get_creationdate(self, pdf_file_path):
-        metadata = self.get_metadata(pdf_file_path)
-        return metadata.creationDate
-
-    def get_numpages(self, pdf_file_path):
-        if not pdf_file_path:
-            raise # TODO
-        with open(pdf_file_path) as f:
-            pdf_reader = PdfFileReader(f)
-            return pdf_reader.getNumPages()
-
-    def get_outlines(self, pdf_file_path):
-        if not pdf_file_path:
-            raise # TODO
-        with open(pdf_file_path) as f:
-            pdf_reader = PdfFileReader(f)
-            return pdf_reader.getOutlines()
+        return title
 
 
-
-e = Extractor()
-
-title = e.get_keywords('test-PDFXChange-Viewer.pdf')
-
-print title
-
-
+if __name__ == "__main__":
+    if (len(sys.argv) != 2):
+        print "Missing path to document as argument"
+        print "Usage: %s /path/to/file.pdf" % sys.argv[0]
+        sys.exit(1)
+    te = TitleExtractor()
+    print te.getTitle(sys.argv[1])
