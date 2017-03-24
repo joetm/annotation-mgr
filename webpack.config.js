@@ -2,6 +2,7 @@ var debug = process.env.NODE_ENV !== "production";
 var webpack = require('webpack');
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var FlowBabelWebpackPlugin = require('flow-babel-webpack-plugin');
 // var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
@@ -55,7 +56,8 @@ module.exports = {
     new webpack.DefinePlugin({
         'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
     }),
-    new ExtractTextPlugin({ filename: 'css/[name].css', disable: false, allChunks: true })
+    new ExtractTextPlugin({ filename: 'css/[name].css', disable: false, allChunks: true }),
+    new FlowBabelWebpackPlugin()
   ]
   :
   // PROD
