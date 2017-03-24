@@ -33,9 +33,13 @@ class Syncer:
                 if name.lower()[-3:] != "pdf":
                     continue # skip this file
 
+                metadata = {}
 
                 try:
-                    print MetadataExtractor.get_metadata(filepath)
+
+                    metadata = MetadataExtractor.get_metadata(filepath)
+                    # TODO - save the metadata
+
                 except ValueError:
                     print "==========================================="
                     print filepath
@@ -48,7 +52,6 @@ class Syncer:
                     print "==========================================="
                     print filepath
                     print "skipped - other exception: %s" % err
-
 
 
 if __name__ == "__main__":
