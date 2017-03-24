@@ -11,6 +11,7 @@
   },
   "scripts": {
     "clean": "rimraf dist",
+    "flow": "npm run-script flow",
     "lint": "eslint build src tests",
     "lint:fix": "npm run lint -- --fix",
     "dev": "cross-env NODE_ENV=production node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base build/ --open",
@@ -65,6 +66,7 @@
     "eslint-plugin-standard": "^2.1.1",
     "extract-text-webpack-plugin": "^2.0.0",
     "file-loader": "^0.10.1",
+    "flow-bin": "^0.42.0",
     "html-webpack-plugin": "^2.28.0",
     "imports-loader": "^0.7.1",
     "json-loader": "^0.5.4",
