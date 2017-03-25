@@ -74,6 +74,12 @@ apt-get install -y logstash --allow-unauthenticated
 # edit /etc/elasticsearch/elasticsearch.yml and change network.host: 196.168.0.1 to network.host: 0.0.0.0
 # !!!!!!!!!!!!!!
 
+# !!!!!!!!!!!!!!
+# TODO: elasticsearch cors config for dev
+# http.cors.enabled: true
+# http.cors.allow-origin: "*"
+# !!!!!!!!!!!!!!
+
 
 # update-rc.d elasticsearch defaults 95 10
 update-rc.d kibana defaults 95 10

@@ -18,7 +18,7 @@ import Loader from './Loader.jsx';
 import ListFolder from './ListFolder.jsx';
 import SettingsMenu from './SettingsMenu.jsx';
 import SettingsDialog from './SettingsDialog.jsx';
-import Searchbox from './Searchbox.jsx'
+
 
 import {
   lightBlue500,
@@ -45,14 +45,42 @@ export default class App extends React.Component {
         this.state = {
             isLoading: false,
             serverRequest: null,
-            papers: [],
+            folders: [],
+            progress: 0,
             dialogOpen: false,
             filesVisible: false,
             numUnannotated: null,
         };
     }
 
+    fetchConfig() {
+        // TODO
+    }
+
+    fetchPapers() {
+        //
+        this.setState({
+            isLoading: true,
+            progress: 0
+        });
+        // fetch the data
+        const URL = "./data/folders.json";
+        this.serverRequest = fetch(URL)
+            .then(r => r.json())
+            .then((folderdata) => {
+                console.log(URL, folderdata);
+                this.setState({
+                    folders: folderdata,
+                    isLoading: false,
+                    filesVisible: true,
+                    numUnannotated: folderdata.children.length, // TODO
+                });
+            });
+    }
+
     componentDidMount() {
+    	this.fetchConfig();
+    	this.fetchPapers();
     }
 
     componentWillUnmount() {
@@ -96,7 +124,9 @@ export default class App extends React.Component {
                     <Loader
                     	progress={this.state.progress}
                     	visible={this.state.isLoading} />
-                    <Searchbox
+                    <ListFolder
+                        folders={this.state.folders}
+                        visible={this.state.filesVisible}
                     />
                 </div>
             </MuiThemeProvider>
