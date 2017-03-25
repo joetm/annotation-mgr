@@ -20,6 +20,9 @@ import SettingsMenu from './SettingsMenu.jsx';
 import SettingsDialog from './SettingsDialog.jsx';
 import Searchbox from './Searchbox.jsx'
 
+import Config from '../config/config.js';
+
+
 import {
   lightBlue500,
   indigo500,
@@ -73,7 +76,12 @@ export default class App extends React.Component {
         this.setState({
             filesVisible: false,
         });
-        this.fetchPapers();
+
+        // TODO
+
+
+
+
     }
 
   	render() {

@@ -3,6 +3,7 @@ import React from 'react';
 import fetch from 'unfetch';
 import AutoComplete from 'material-ui/AutoComplete';
 
+import Config from '../config/config.js';
 
 const styles = {
   wrapper: {
@@ -32,9 +33,14 @@ class Searchbox extends React.Component {
       }
   }
   handleUpdateInput = (value) => {
+
+    let searchterm = value;
+    if (!value) {
+      searchterm = '*';
+    }
+
     // fetch the data
-    const index = 'papers'; // TODO
-    const URL = `http://10.10.10.10:9200/${index}/_search?q=*&pretty`; // TODO
+    const URL = `${Config.elasticsearch}/${Config.index}/_search?q=${searchterm}&pretty`; // TODO
     this.serverRequest = fetch(URL, {
         headers: {
           Accept: 'application/json',
