@@ -24,6 +24,7 @@ class Searchbox extends React.Component {
   state = {
     dataSource: [],
     serverRequest: null,
+    errorText: null
   };
   componentWillUnmount() {
       if (this.state.serverRequest) {
@@ -32,21 +33,31 @@ class Searchbox extends React.Component {
   }
   handleUpdateInput = (value) => {
     // fetch the data
-    const URL = "http://10.10.10.10:9200/"; // TODO
+    const index = 'papers'; // TODO
+    const URL = `http://10.10.10.10:9200/${index}/_search?q=*&pretty`; // TODO
     this.serverRequest = fetch(URL, {
         headers: {
           Accept: 'application/json',
         },
       })
       .then(r => r.json())
-      .then((autosuggestData) => {
-          console.log(URL, autosuggestData);
+      .then((response) => {
+          console.log(URL, response);
+
+          let autosuggestData = [],
+              errorText = null;
+
+          if (response.hits.total) {
+            autosuggestData = response.hits.hits;
+          } else {
+            if (value !== '') {
+              errorText = 'Nothing found';
+            }
+          }
+
           this.setState({
-            dataSource: [
-              value,
-              value + value,
-              value + value + value,
-            ],
+            dataSource: autosuggestData,
+            errorText
           }
       );
     });
@@ -60,6 +71,7 @@ class Searchbox extends React.Component {
           style={styles.autocomplete.wrapper}
           dataSource={this.state.dataSource}
           onUpdateInput={this.handleUpdateInput}
+          errorText={this.state.errorText}
           animated={true}
         />
       </div>
