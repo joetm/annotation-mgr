@@ -1,6 +1,7 @@
 'use strict';
 
-import React from 'react';
+// import React from 'react';
+import * as React from 'react'; // typescript
 
 import injectTapEventPlugin from 'react-tap-event-plugin';
 // Needed for onTouchTap

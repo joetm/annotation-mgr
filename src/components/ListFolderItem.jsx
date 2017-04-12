@@ -1,6 +1,8 @@
 'use strict';
 
-import React from 'react';
+//import React from 'react';
+import * as React from 'react'; // typescript
+
 import {ListItem} from 'material-ui/List';
 import Avatar from 'material-ui/Avatar';
 

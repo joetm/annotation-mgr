@@ -1,6 +1,8 @@
 'use strict';
 
-import React from 'react';
+// import React from 'react';
+import * as React from 'react'; // typescript
+
 import {List, ListItem} from 'material-ui/List';
 import ActionInfo from 'material-ui/svg-icons/action/info';
 import Divider from 'material-ui/Divider';

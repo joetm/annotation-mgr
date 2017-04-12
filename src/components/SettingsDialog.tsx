@@ -1,10 +1,12 @@
-import React from 'react';
+// import React from 'react';
+// typescript
+import * as React from 'react';
 
 import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
 
-export default class SettingsDialog extends React.Component {
+class SettingsDialog extends React.Component<any, any> {
   render() {
     const actions = [
       <FlatButton
@@ -34,3 +36,5 @@ export default class SettingsDialog extends React.Component {
     );
   }
 }
+
+export default SettingsDialog;

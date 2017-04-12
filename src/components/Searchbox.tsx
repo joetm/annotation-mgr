@@ -1,4 +1,5 @@
-import React from 'react';
+// import React from 'react';
+import * as React from 'react'; // typescript
 
 import fetch from 'unfetch';
 import AutoComplete from 'material-ui/AutoComplete';
@@ -21,15 +22,15 @@ const styles = {
 };
 
 
-class Searchbox extends React.Component {
+class Searchbox extends React.Component<any, any> {
   state = {
     dataSource: [],
-    serverRequest: null,
     errorText: null
   };
+  serverRequest = null;
   componentWillUnmount() {
-      if (this.state.serverRequest) {
-          serverRequest.abort();
+      if (this.serverRequest) {
+          this.serverRequest.abort();
       }
   }
   handleUpdateInput = (value) => {

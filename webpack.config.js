@@ -62,8 +62,7 @@ module.exports = {
     extensions: ['.jsx', '.js', '.ts', '.tsx', '.json', '.scss', '.css']
   },
   externals: {
-      "react": "React",
-      "react-dom": "ReactDOM"
+      // "react": "React",
   },
   plugins: debug ?
   //DEV

@@ -1,11 +1,12 @@
 'use strict';
 
-import React from 'react';
+// import React from 'react';
+import * as React from "react"; // typescript
 
-import injectTapEventPlugin from 'react-tap-event-plugin';
 // Needed for onTouchTap
 // http://stackoverflow.com/a/34015469/988941
-injectTapEventPlugin();
+// import injectTapEventPlugin from 'react-tap-event-plugin';
+// injectTapEventPlugin();
 
 import fetch from 'unfetch';
 
@@ -14,11 +15,11 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import AppBar from 'material-ui/AppBar';
 
-import Loader from './Loader.jsx';
-import ListFolder from './ListFolder.jsx';
+import Loader from './Loader';
+import Searchbox from './Searchbox';
+// import ListFolder from './ListFolder.jsx';
 import SettingsMenu from './SettingsMenu.jsx';
-import SettingsDialog from './SettingsDialog.jsx';
-import Searchbox from './Searchbox.jsx'
+import SettingsDialog from './SettingsDialog';
 
 import Config from '../../config/config.js';
 
@@ -41,26 +42,38 @@ const theme = getMuiTheme({
 });
 
 
-export default class App extends React.Component {
+export interface MainProps {
+    // TODO
+}
+export interface MainState {
+    isLoading: boolean;
+    serverRequest: any;
+    progress: number;
+    papers: any[];
+    dialogOpen: boolean;
+    filesVisible: boolean;
+    numUnannotated: number;
+}
 
-    constructor() {
-        super();
-        this.state = {
-            isLoading: false,
-            serverRequest: null,
-            papers: [],
-            dialogOpen: false,
-            filesVisible: false,
-            numUnannotated: null,
-        };
-    }
+
+export default class App extends React.Component<any, MainState> {
+
+    state = {
+        isLoading: false,
+        serverRequest: null,
+        progress: 0,
+        papers: [],
+        dialogOpen: false,
+        filesVisible: false,
+        numUnannotated: 0,
+    };
 
     componentDidMount() {
     }
 
     componentWillUnmount() {
         if (this.state.serverRequest) {
-            serverRequest.abort();
+            this.state.serverRequest.abort();
         }
     }
 

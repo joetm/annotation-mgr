@@ -1,12 +1,11 @@
-var React = require('react');
+import * as React from 'react'; // typescript
 
 import { Circle } from 'rc-progress';
 
 const loaderStyle = {width:'20%',height:'auto'};
 
-
-export default React.createClass({
-  render: function() {
+class Loader extends React.Component<any, any> {
+  render() {
     if (!this.props.visible) {
         return null;
     }
@@ -16,4 +15,6 @@ export default React.createClass({
         </div>
     );
   }
-});
+};
+
+export default Loader;

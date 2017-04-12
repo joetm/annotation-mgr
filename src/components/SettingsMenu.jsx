@@ -1,4 +1,5 @@
-import React from 'react';
+// import React from 'react';
+import * as React from 'react'; // typescript
 
 import IconMenu from 'material-ui/IconMenu';
 import MenuItem from 'material-ui/MenuItem';
@@ -9,7 +10,7 @@ import SettingsIcon from 'material-ui/svg-icons/action/settings';
 import Badge from 'material-ui/Badge';
 import NotificationsIcon from 'material-ui/svg-icons/social/notifications';
 
-import Search from './Search.jsx'
+// import Search from './Search.jsx'
 
 /*
     <IconMenu
@@ -22,11 +23,13 @@ import Search from './Search.jsx'
     </IconMenu>
 */
 
+/*
+<IconButton><Search /></IconButton>
+*/
 
 const RightIconMenu = (props) => (
   <div>
 
-    <IconButton><Search /></IconButton>
     <IconButton><SettingsIcon onTouchTap={props.openDialog} /></IconButton>
     <IconButton><SyncIcon onTouchTap={props.syncLiterature} /></IconButton>
 

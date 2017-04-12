@@ -1,8 +1,8 @@
-import React from 'react';
+// import React from 'react';
+import * as React from 'react'; // typescript
 
-import TextField from 'material-ui/TextField';
-
-import SearchIcon from 'material-ui/svg-icons/action/search';
+// import TextField from 'material-ui/TextField';
+// import SearchIcon from 'material-ui/svg-icons/action/search';
 
 export default class Search extends React.Component {
 
