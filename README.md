@@ -7,3 +7,10 @@ Annotation Mgr
 > THE MGR.
 >
 
+
+
+Usage
+=====
+
+yarn run dev
+

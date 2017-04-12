@@ -18,10 +18,10 @@ import AppBar from 'material-ui/AppBar';
 import Loader from './Loader';
 import Searchbox from './Searchbox';
 // import ListFolder from './ListFolder.jsx';
-import SettingsMenu from './SettingsMenu.jsx';
+import SettingsMenu from './SettingsMenu';
 import SettingsDialog from './SettingsDialog';
 
-import Config from '../../config/config.js';
+// import Config from '../../config/config.js';
 
 
 import {
@@ -47,7 +47,6 @@ export interface MainProps {
 }
 export interface MainState {
     isLoading: boolean;
-    serverRequest: any;
     progress: number;
     papers: any[];
     dialogOpen: boolean;
@@ -58,9 +57,10 @@ export interface MainState {
 
 export default class App extends React.Component<any, MainState> {
 
-    state = {
+    serverRequest: any;
+
+    state : MainState = {
         isLoading: false,
-        serverRequest: null,
         progress: 0,
         papers: [],
         dialogOpen: false,
@@ -72,8 +72,8 @@ export default class App extends React.Component<any, MainState> {
     }
 
     componentWillUnmount() {
-        if (this.state.serverRequest) {
-            this.state.serverRequest.abort();
+        if (this.serverRequest) {
+            this.serverRequest.abort();
         }
     }
 
