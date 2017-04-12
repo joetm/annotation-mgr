@@ -20,7 +20,7 @@ import SettingsMenu from './SettingsMenu.jsx';
 import SettingsDialog from './SettingsDialog.jsx';
 import Searchbox from './Searchbox.jsx'
 
-import Config from '../config/config.js';
+import Config from '../../config/config.js';
 
 
 import {

@@ -16,7 +16,7 @@ module.exports = {
     publicPath: '/',
     filename: "[name].js"
   },
-  devtool: debug ? "inline-sourcemap" : false,
+  devtool: debug ? "inline-sourcemap" : "source-map", // false,
   module: {
     loaders: [
       {
@@ -28,6 +28,17 @@ module.exports = {
           presets: ['es2015', 'stage-0', 'react'],
           plugins: ['transform-decorators-legacy', 'react-html-attrs', 'transform-class-properties'],
         }
+      },
+      // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
+      {
+          test: /\.tsx?$/,
+          loader: "awesome-typescript-loader"
+      },
+      // output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
+      {
+          enforce: "pre",
+          test: /\.js$/,
+          loader: "source-map-loader"
       },
       {
         test: /\.(ico|jpe?g|png|gif)$/,
@@ -48,7 +59,11 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.jsx', '.js', '.json', '.scss', '.css']
+    extensions: ['.jsx', '.js', '.ts', '.tsx', '.json', '.scss', '.css']
+  },
+  externals: {
+      "react": "React",
+      "react-dom": "ReactDOM"
   },
   plugins: debug ?
   //DEV

@@ -3,7 +3,7 @@ import React from 'react';
 import fetch from 'unfetch';
 import AutoComplete from 'material-ui/AutoComplete';
 
-import Config from '../config/config.js';
+import Config from '../../config/config.js';
 
 const styles = {
   wrapper: {

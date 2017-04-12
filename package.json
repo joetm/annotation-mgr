@@ -17,12 +17,12 @@
     "dev": "cross-env NODE_ENV=production node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base build/ --open",
     "test": "cross-env NODE_ENV=test node ./node_modules/karma/bin/karma start config/karma.config",
     "test:dev": "npm run test -- --watch",
-    "deploy": "npm run lint && npm run test && npm run clean && npm run compile",
-    "deploy:dev": "npm run deploy",
-    "deploy:prod": "npm run deploy",
     "codecov": "cat coverage/*/lcov.info | codecov"
   },
   "dependencies": {
+    "@types/react": "^15.0.21",
+    "@types/react-dom": "^0.14.23",
+    "awesome-typescript-loader": "^3.1.2",
     "lowdb": "^0.16.0",
     "material-ui": "^0.17.0",
     "md5-file": "^3.1.1",
@@ -35,6 +35,8 @@
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
     "service-worker-plugin": "^1.0.0",
+    "source-map-loader": "^0.2.1",
+    "typescript": "^2.2.2",
     "unfetch": "^2.1.1"
   },
   "devDependencies": {
