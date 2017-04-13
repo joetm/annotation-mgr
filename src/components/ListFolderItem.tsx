@@ -13,55 +13,62 @@ import 'unfetch/polyfill';
 
 
 const nestedListStyle = {
-	marginLeft: '1em'
+    marginLeft: '1em'
 };
 
 const annotationsContainerStyle = {
-	marginLeft: '4.5em',
+    marginLeft: '4.5em',
 };
 
 const iconStyles = {
-	important: {
-		backgroundColor: '#FFCCCC',
-	},
-	read: {
-		backgroundColor: '#CCFFCC',
-	},
-	unread: {
-		backgroundColor: '#CCCCCC',
-	},
+    important: {
+        backgroundColor: '#FFCCCC',
+    },
+    read: {
+        backgroundColor: '#CCFFCC',
+    },
+    unread: {
+        backgroundColor: '#CCCCCC',
+    },
 };
+
+
+export interface MainState {
+    annotations: any;
+    showAnnotations: boolean;
+}
 
 
 const getSecText = (f) => {
-	if (f.type !== 'folder') {
-		return `${f.type}: ${f.mtime}, ${f.size}`;
-	}
-	return '';
+    if (f.type !== 'folder') {
+        return `${f.type}: ${f.mtime}, ${f.size}`;
+    }
+    return '';
 };
 
 
-class ListFolderItem extends React.Component<any, any> {
+class ListFolderItem extends React.Component<any, MainState> {
 
-	serverRequest : any;
+    serverRequest : any;
 
-	state = {
-		annotations: []
-	};
+    state : MainState = {
+        annotations: [],
+        showAnnotations: false,
+    };
 
-	getAnnotations (file) {
-	    console.log('getting annotations for', file.path);
+    getAnnotations (file) {
+        console.log('getting annotations for', file.path);
 
-    	// TODO
+        // TODO
 
-		// TODO - get this from elasticsearch
+        // TODO - get this from elasticsearch
 
 
-		// for now:
-		// get annotations from pdf on the fly
-		// via flask server
+        // for now:
+        // get annotations from pdf on the fly
+        // via flask server
 
-		const urlpath = encodeURIComponent(file.path);
+        const urlpath = encodeURIComponent(file.path);
 
         const URL = `http://127.0.0.1:5000/annotation?path=${urlpath}`;
 
@@ -70,11 +77,12 @@ class ListFolderItem extends React.Component<any, any> {
             .then((annotationdata) => {
                 console.log(file.path, annotationdata);
                 this.setState({
-                	annotations: annotationdata
+                    annotations: annotationdata,
+                    showAnnotations: true,
                 });
 
             });
-	}
+    }
 
     componentWillUnmount() {
         if (this.serverRequest) {
@@ -82,54 +90,62 @@ class ListFolderItem extends React.Component<any, any> {
         }
     }
 
-	getDetails () {
-		if (this.props.f.type === 'file') {
-			this.getAnnotations(this.props.f);
-		}
-	}
+    getDetails () {
+        if (this.props.f.type === 'file') {
+            if (this.state.showAnnotations === false) {
+                console.log('show annotations');
+                this.getAnnotations(this.props.f);
+            } else {
+                console.log('hide annotations');
+                this.setState({showAnnotations: false});
+            }
+        }
+    }
 
     render () {
-		let FIcon;
-		if (this.props.f['type'] === "file") {
-			FIcon = <FileIcon />;
-		} else {
-			FIcon = <FolderIcon />;
-		}
-		let iconStyle = iconStyles.unread;
-		if (this.props.f['name'][0] === '-') {
-			iconStyle = iconStyles.important;
-		} else if (this.props.f['name'][0] === '!') {
-			iconStyle = iconStyles.important;
-		};
+        let FIcon;
+        if (this.props.f['type'] === "file") {
+            FIcon = <FileIcon />;
+        } else {
+            FIcon = <FolderIcon />;
+        }
+        let iconStyle = iconStyles.unread;
+        if (this.props.f['name'][0] === '-') {
+            iconStyle = iconStyles.important;
+        } else if (this.props.f['name'][0] === '!') {
+            iconStyle = iconStyles.important;
+        };
 
-		let annotations = [];
-		if (this.state.annotations.length) {
-			annotations = this.state.annotations.map((annotation) => (
-				<div>{annotation[0]}: {annotation[1]}</div>
-			));
-		}
+        let annotations = [];
+        if (this.state.annotations.length) {
+            annotations = this.state.annotations.map((annotation) => (
+                <div>{annotation[0]}: {annotation[1]}</div>
+            ));
+        }
 
-		return (
-			<div>
-				<ListItem
-					leftAvatar={<Avatar
-									icon={FIcon}
-									style={iconStyle}
-								/>}
-					primaryText={this.props.f.name}
-					secondaryText={getSecText(this.props.f)}
-					onClick={this.getDetails.bind(this)}
-					autoGenerateNestedIndicator={true}
-					primaryTogglesNestedList={true}
-					insetChildren={true}
-					nestedItems={this.props.children}
-					nestedListStyle={nestedListStyle}
-				/>
-				<div style={annotationsContainerStyle}>
-					{annotations}
-				</div>
-			</div>
-		);
+        return (
+            <div>
+                <ListItem
+                    leftAvatar={<Avatar
+                                    icon={FIcon}
+                                    style={iconStyle}
+                                />}
+                    primaryText={this.props.f.name}
+                    secondaryText={getSecText(this.props.f)}
+                    onClick={this.getDetails.bind(this)}
+                    autoGenerateNestedIndicator={true}
+                    primaryTogglesNestedList={true}
+                    insetChildren={true}
+                    nestedItems={this.props.children}
+                    nestedListStyle={nestedListStyle}
+                />
+                <div style={{display: this.state.showAnnotations ? 'block' : 'none'}}>
+                    <div style={annotationsContainerStyle}>
+                        {annotations}
+                    </div>
+                </div>
+            </div>
+        );
     }
 
 }
