@@ -8,6 +8,7 @@
 """
 
 import sys
+import json
 from pyPdf import PdfFileReader
 
 class MetadataExtractor:
@@ -29,7 +30,9 @@ class MetadataExtractor:
 
         with open(pdf_file_path) as f:
             pdf_reader = PdfFileReader(f)
-            return dict(pdf_reader.getDocumentInfo())
+            # print 'reading %s' % pdf_file_path
+            # return dict(pdf_reader.getDocumentInfo())
+            return json.dumps(pdf_reader.getDocumentInfo(), indent=4, encoding="utf-8")
 
     @staticmethod
     def get_title(pdf_file_path):

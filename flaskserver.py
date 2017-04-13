@@ -60,24 +60,29 @@ def crossdomain(origin=None, methods=None, headers=None,
 
 @app.route("/")
 def hello():
-    return "Hello World!"
+    return "GET TO WORK! The Annotation Mgr."
+
+@app.route("/metadata")
+@crossdomain(origin='*')
+def getMetadata():
+    # TODO
+    # insecure
+    filepath = request.args.get('path')
+    from tools.extractMeta import MetadataExtractor
+    metadata = MetadataExtractor.get_metadata(filepath)
+    return metadata
 
 @app.route("/annotation")
 @crossdomain(origin='*')
 def getAnnotation():
-
     # TODO
-
     # insecure
     filepath = request.args.get('path')
-
     from tools.extractAnnotations import AnnotationExtractor
-
     # absolute path
     if not filepath.startswith('file://'):
         filepath = "file://%s" % filepath
     # print filepath
-
     return AnnotationExtractor.getAnnotations(filepath)
 
 

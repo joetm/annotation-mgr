@@ -13,11 +13,15 @@ import 'unfetch/polyfill';
 
 
 const nestedListStyle = {
-    marginLeft: '1em'
+    marginLeft: '1em',
 };
 
 const annotationsContainerStyle = {
     marginLeft: '4.5em',
+};
+const metadataContainerStyle = {
+    marginLeft: '4.5em',
+    marginBottom: '1em',
 };
 
 const iconStyles = {
@@ -35,7 +39,7 @@ const iconStyles = {
 
 export interface MainState {
     annotations: any;
-    showAnnotations: boolean;
+    metadata: any;
 }
 
 
@@ -53,8 +57,34 @@ class ListFolderItem extends React.Component<any, MainState> {
 
     state : MainState = {
         annotations: [],
-        showAnnotations: false,
+        metadata: null,
     };
+
+    getMetadata (file) {
+        console.log('getting metadata for', file.path);
+
+        // TODO
+
+        // TODO - get this from elasticsearch
+
+
+        // for now:
+        // get annotations from pdf on the fly
+        // via flask server
+
+        const urlpath = encodeURIComponent(file.path);
+
+        const URL = `http://127.0.0.1:5000/metadata?path=${urlpath}`;
+
+        this.serverRequest = fetch(URL)
+            .then(r => r.json())
+            .then((metadata) => {
+                console.log(file.path, metadata);
+                this.setState({
+                    metadata
+                });
+            });
+    }
 
     getAnnotations (file) {
         console.log('getting annotations for', file.path);
@@ -78,9 +108,7 @@ class ListFolderItem extends React.Component<any, MainState> {
                 console.log(file.path, annotationdata);
                 this.setState({
                     annotations: annotationdata,
-                    showAnnotations: true,
                 });
-
             });
     }
 
@@ -92,12 +120,16 @@ class ListFolderItem extends React.Component<any, MainState> {
 
     getDetails () {
         if (this.props.f.type === 'file') {
-            if (this.state.showAnnotations === false) {
+            if (!this.state.annotations.length) {
                 console.log('show annotations');
+                this.getMetadata(this.props.f);
                 this.getAnnotations(this.props.f);
             } else {
                 console.log('hide annotations');
-                this.setState({showAnnotations: false});
+                this.setState({
+                    annotations: [],
+                    metadata: null,
+                });
             }
         }
     }
@@ -139,7 +171,17 @@ class ListFolderItem extends React.Component<any, MainState> {
                     nestedItems={this.props.children}
                     nestedListStyle={nestedListStyle}
                 />
-                <div style={{display: this.state.showAnnotations ? 'block' : 'none'}}>
+                {
+                    this.state.metadata ? (
+                        <div style={{display: this.state.metadata ? 'block' : 'none'}}>
+                            <div style={metadataContainerStyle}>
+                                <div style={{display: this.state.metadata && this.state.metadata['/Title'] ? 'block' : 'none'}}>Title: {this.state.metadata && this.state.metadata['/Title']}</div>
+                                <div style={{display: this.state.metadata && this.state.metadata['/Author'] ? 'block' : 'none'}}>Author: {this.state.metadata && this.state.metadata['/Author']}</div>
+                            </div>
+                        </div>
+                    ) : null
+                }
+                <div style={{display: this.state.annotations.length ? 'block' : 'none'}}>
                     <div style={annotationsContainerStyle}>
                         {annotations}
                     </div>
