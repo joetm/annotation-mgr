@@ -14,6 +14,18 @@ const nestedListStyle = {
 	marginLeft: '1em'
 };
 
+const iconStyles = {
+	important: {
+		backgroundColor: '#FFCCCC',
+	},
+	read: {
+		backgroundColor: '#CCFFCC',
+	},
+	unread: {
+		backgroundColor: '#CCCCCC',
+	},
+};
+
 
 const getSecText = (txt) => `${txt.type}: ${txt.mtime}, ${txt.size}`;
 
@@ -43,10 +55,18 @@ class ListFolderItem extends React.Component<any, any> {
 		} else {
 			FIcon = <FolderIcon />;
 		}
-		const important = this.props.f['name'][0] === '!' ? true : false;
+		let iconStyle = iconStyles.unread;
+		if (this.props.f['name'][0] === '-') {
+			iconStyle = iconStyles.important;
+		} else if (this.props.f['name'][0] === '!') {
+			iconStyle = iconStyles.important;
+		};
 		return (
 			<ListItem
-				leftAvatar={<Avatar icon={FIcon} style={{backgroundColor: important ? '#FFCCCC' : '#FFFFFF'}} />}
+				leftAvatar={<Avatar
+								icon={FIcon}
+								style={iconStyle}
+							/>}
 				primaryText={this.props.f.name}
 				secondaryText={getSecText(this.props.f)}
 				onClick={this.getDetails.bind(this)}
