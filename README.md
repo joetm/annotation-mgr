@@ -13,5 +13,6 @@ Usage
 =====
 
 vagrant up
+python flaskserver.py
 yarn run dev
 

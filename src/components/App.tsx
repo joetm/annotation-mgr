@@ -23,9 +23,7 @@ import SettingsDialog from './SettingsDialog';
 
 import ListFolderItem from "./ListFolderItem";
 
-
-// import Config from '../../config/config.js';
-
+import Config from "../../config/config.js";
 
 import {
   lightBlue500,
@@ -71,10 +69,6 @@ export default class App extends React.Component<any, MainState> {
         numUnannotated: 0,
     };
 
-    fetchConfig() {
-        // TODO
-    }
-
     processItems(folder) {
         let num = 0;
         return folder.map((f) => {
@@ -105,10 +99,9 @@ export default class App extends React.Component<any, MainState> {
             .then(r => r.json())
             .then((folderdata) => {
                 console.log(URL, folderdata);
-                if (folderdata && folderdata['children'] !== undefined) {
-                    const items = this.processItems(folderdata['children']);
+                if (folderdata['children'] !== undefined) {
                     this.setState({
-                        items,
+                        items: this.processItems(folderdata['children']),
                         isLoading: false,
                         dialogIsOpen: false,
                     });
@@ -117,7 +110,7 @@ export default class App extends React.Component<any, MainState> {
     }
 
     componentDidMount() {
-        this.fetchConfig();
+
     }
 
     componentWillUnmount() {
@@ -140,7 +133,9 @@ export default class App extends React.Component<any, MainState> {
                 isLoading: true,
                 progress: 0, // TODO
             });
-            this.fetchPapers();
+            if (!this.state.items.length) {
+                this.fetchPapers();
+            }
         }
     }
 
@@ -161,6 +156,7 @@ export default class App extends React.Component<any, MainState> {
         console.log('Sync Literature [TODO]');
 
         // TODO
+
 
 
 

@@ -1,4 +1,11 @@
-#!/usr/bin/python
+#!/usr/bin/bash python
+# -*- coding: utf-8 -*-
+# vim: tabstop=8 expandtab shiftwidth=4 softtabstop=4
+"""
+    ========================
+    PDF Annotation Extractor
+    ========================
+"""
 
 import sys
 import json
