@@ -8,16 +8,16 @@ import * as React from "react"; // typescript
 // import injectTapEventPlugin from 'react-tap-event-plugin';
 // injectTapEventPlugin();
 
-import fetch from 'unfetch';
+// import fetch from 'unfetch';
+import 'unfetch/polyfill';
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-
 import AppBar from 'material-ui/AppBar';
 
 import Loader from './Loader';
 import Searchbox from './Searchbox';
-// import ListFolder from './ListFolder.jsx';
+import ListFolder from './ListFolder';
 import SettingsMenu from './SettingsMenu';
 import SettingsDialog from './SettingsDialog';
 
@@ -48,9 +48,9 @@ export interface MainProps {
 export interface MainState {
     isLoading: boolean;
     progress: number;
-    papers: any[];
-    dialogOpen: boolean;
-    filesVisible: boolean;
+    folders: any,
+    view: string;
+    dialogIsOpen: boolean;
     numUnannotated: number;
 }
 
@@ -62,13 +62,42 @@ export default class App extends React.Component<any, MainState> {
     state : MainState = {
         isLoading: false,
         progress: 0,
-        papers: [],
-        dialogOpen: false,
-        filesVisible: false,
+        folders: [],
+        view: 'search',
+        dialogIsOpen: false,
         numUnannotated: 0,
     };
 
+    fetchConfig() {
+        // TODO
+    }
+
+    fetchPapers() {
+        //
+        console.log('fetching papers');
+        // fetch the data
+        const URL = "./data/folders.json";
+        this.serverRequest = fetch(URL)
+            .then(r => r.json())
+            .then((folderdata) => {
+                console.log(URL, folderdata);
+
+                console.log(folderdata);
+
+                if (folderdata && folderdata['children'] !== undefined) {
+                    const numUnannotated = folderdata['children'].length ? folderdata['children'].length : 0;
+                    this.setState({
+                        folders: folderdata,
+                        isLoading: false,
+                        dialogIsOpen: false,
+                        numUnannotated, // TODO
+                    });
+                }
+            });
+    }
+
     componentDidMount() {
+        this.fetchConfig();
     }
 
     componentWillUnmount() {
@@ -77,18 +106,33 @@ export default class App extends React.Component<any, MainState> {
         }
     }
 
+    switchView() {
+        console.log('switch between search and folder view');
+        if (this.state.view === 'folder') {
+            this.setState({
+                view: 'search',
+                progress: 0, // TODO
+                isLoading: false,
+            });
+        } else {
+            this.setState({
+                view: 'folder',
+                isLoading: true,
+                progress: 0, // TODO
+            });
+            this.fetchPapers();
+        }
+    }
+
     openSettingsDialog() {
-        this.setState({dialogOpen: true});
+        this.setState({dialogIsOpen: true});
     }
     closeSettingsDialog() {
-        this.setState({dialogOpen: false});
+        this.setState({dialogIsOpen: false});
     }
 
     syncLiterature() {
         console.log('Sync Literature [TODO]');
-        this.setState({
-            filesVisible: false,
-        });
 
         // TODO
 
@@ -98,29 +142,39 @@ export default class App extends React.Component<any, MainState> {
     }
 
   	render() {
-  		  return (
+
+        const View = this.state.view === 'folder' ?
+            <ListFolder
+                folders={this.state.folders}
+                visible={true}
+            /> :
+            <Searchbox
+            />;
+
+        return (
             <MuiThemeProvider muiTheme={theme}>
                 <div>
                     <AppBar
                         title="ANNOTATION MGR"
                         iconElementRight={<SettingsMenu
+                                view={this.state.view}
                                 openDialog={this.openSettingsDialog.bind(this)}
                                 syncLiterature={this.syncLiterature.bind(this)}
+                                switchView={this.switchView.bind(this)}
                                 numUnannotated={this.state.numUnannotated}
                             />}
                         showMenuIconButton={false}
                       />
                     <SettingsDialog
-                        open={this.state.dialogOpen}
+                        open={this.state.dialogIsOpen}
                         closeSettingsDialog={this.closeSettingsDialog.bind(this)}
                     />
                     <Loader
                     	progress={this.state.progress}
                     	visible={this.state.isLoading} />
-                    <Searchbox
-                    />
+                    {View}
                 </div>
             </MuiThemeProvider>
-  		  );
+        );
   	}
 }

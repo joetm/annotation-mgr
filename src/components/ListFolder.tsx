@@ -4,18 +4,12 @@
 import * as React from 'react'; // typescript
 
 import {List, ListItem} from 'material-ui/List';
-import ActionInfo from 'material-ui/svg-icons/action/info';
 import Divider from 'material-ui/Divider';
 import Subheader from 'material-ui/Subheader';
-import Avatar from 'material-ui/Avatar';
-import ActionAssignment from 'material-ui/svg-icons/action/assignment';
-import {blue500, yellow600} from 'material-ui/styles/colors';
-import EditorInsertChart from 'material-ui/svg-icons/editor/insert-chart';
-
 import FolderIcon from 'material-ui/svg-icons/file/folder';
 import FileIcon from 'material-ui/svg-icons/action/description';
 
-import ListFolderItem from "./ListFolderItem.jsx";
+import ListFolderItem from "./ListFolderItem";
 
 const processItems = function (folder) {
     return folder.map((f) => {
@@ -35,7 +29,7 @@ const processItems = function (folder) {
 
 const ListFolder = (props) => {
 
-    if (!props.folders.children || !props.folders.children.length) {
+    if (!props.folders || !props.folders.children || !props.folders.children.length) {
         return null;
     };
 

@@ -37,7 +37,7 @@
     "service-worker-plugin": "^1.0.0",
     "source-map-loader": "^0.2.1",
     "ts-loader": "^2.0.3",
-    "unfetch": "^2.1.1"
+    "unfetch": "^2.1.2"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",

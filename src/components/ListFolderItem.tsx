@@ -3,8 +3,8 @@
 //import React from 'react';
 import * as React from 'react'; // typescript
 
-import {ListItem} from 'material-ui/List';
 import Avatar from 'material-ui/Avatar';
+import {ListItem} from 'material-ui/List';
 
 import FolderIcon from 'material-ui/svg-icons/file/folder';
 import FileIcon from 'material-ui/svg-icons/action/description';
@@ -18,7 +18,7 @@ const nestedListStyle = {
 const getSecText = (txt) => `${txt.type}: ${txt.mtime}, ${txt.size}`;
 
 
-class ListFolderItem extends React.Component {
+class ListFolderItem extends React.Component<any, any> {
 
 	getAnnotations (file) {
 	    console.log('getting annotations for', file.name);

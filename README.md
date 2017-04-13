@@ -12,5 +12,6 @@ Annotation Mgr
 Usage
 =====
 
+vagrant up
 yarn run dev
 
