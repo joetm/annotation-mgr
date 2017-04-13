@@ -27,6 +27,7 @@ class ListFolderItem extends React.Component<any, any> {
 
 		// get annotations from pdf on the fly
 
+
 	}
 
 	getDetails () {
@@ -42,9 +43,10 @@ class ListFolderItem extends React.Component<any, any> {
 		} else {
 			FIcon = <FolderIcon />;
 		}
+		const important = this.props.f['name'][0] === '!' ? true : false;
 		return (
 			<ListItem
-				leftAvatar={<Avatar icon={FIcon} />}
+				leftAvatar={<Avatar icon={FIcon} style={{backgroundColor: important ? '#FFCCCC' : '#FFFFFF'}} />}
 				primaryText={this.props.f.name}
 				secondaryText={getSecText(this.props.f)}
 				onClick={this.getDetails.bind(this)}

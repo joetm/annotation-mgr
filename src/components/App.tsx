@@ -21,6 +21,9 @@ import ListFolder from './ListFolder';
 import SettingsMenu from './SettingsMenu';
 import SettingsDialog from './SettingsDialog';
 
+import ListFolderItem from "./ListFolderItem";
+
+
 // import Config from '../../config/config.js';
 
 
@@ -48,7 +51,7 @@ export interface MainProps {
 export interface MainState {
     isLoading: boolean;
     progress: number;
-    folders: any,
+    items: any,
     view: string;
     dialogIsOpen: boolean;
     numUnannotated: number;
@@ -62,7 +65,7 @@ export default class App extends React.Component<any, MainState> {
     state : MainState = {
         isLoading: false,
         progress: 0,
-        folders: [],
+        items: [],
         view: 'search',
         dialogIsOpen: false,
         numUnannotated: 0,
@@ -70,6 +73,27 @@ export default class App extends React.Component<any, MainState> {
 
     fetchConfig() {
         // TODO
+    }
+
+    processItems(folder) {
+        let num = 0;
+        return folder.map((f) => {
+            let children = [];
+            if ('children' in f) {
+                children = this.processItems(f.children);
+                num += children.length;
+                // console.log('folder has children', children);
+            }
+            this.setState({
+                numUnannotated: num,
+            });
+            return (
+                <ListFolderItem
+                    f={f}
+                    children={children}
+                />
+            );
+        });
     }
 
     fetchPapers() {
@@ -81,16 +105,12 @@ export default class App extends React.Component<any, MainState> {
             .then(r => r.json())
             .then((folderdata) => {
                 console.log(URL, folderdata);
-
-                console.log(folderdata);
-
                 if (folderdata && folderdata['children'] !== undefined) {
-                    const numUnannotated = folderdata['children'].length ? folderdata['children'].length : 0;
+                    const items = this.processItems(folderdata['children']);
                     this.setState({
-                        folders: folderdata,
+                        items,
                         isLoading: false,
                         dialogIsOpen: false,
-                        numUnannotated, // TODO
                     });
                 }
             });
@@ -131,6 +151,12 @@ export default class App extends React.Component<any, MainState> {
         this.setState({dialogIsOpen: false});
     }
 
+    setNumPapers(num) {
+        this.setState({
+            numUnannotated: num,
+        });
+    }
+
     syncLiterature() {
         console.log('Sync Literature [TODO]');
 
@@ -145,8 +171,9 @@ export default class App extends React.Component<any, MainState> {
 
         const View = this.state.view === 'folder' ?
             <ListFolder
-                folders={this.state.folders}
+                items={this.state.items}
                 visible={true}
+                setNumPapers={this.setNumPapers.bind(this)}
             /> :
             <Searchbox
             />;
