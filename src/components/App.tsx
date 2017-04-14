@@ -60,6 +60,8 @@ export default class App extends React.Component<any, MainState> {
 
     serverRequest: any;
 
+    num : number = 0;
+
     state : MainState = {
         isLoading: false,
         progress: 0,
@@ -70,16 +72,18 @@ export default class App extends React.Component<any, MainState> {
     };
 
     processItems(folder) {
-        let num = 0;
         return folder.map((f) => {
             let children = [];
             if ('children' in f) {
                 children = this.processItems(f.children);
-                num += children.length;
+                // count unannotated papers
+                if (f.name[0] !== '!' && f.name[0] !== '-') {
+                    this.num += children.length;
+                }
                 // console.log('folder has children', children);
             }
             this.setState({
-                numUnannotated: num,
+                numUnannotated: this.num,
             });
             return (
                 <ListFolderItem
@@ -146,7 +150,7 @@ export default class App extends React.Component<any, MainState> {
         this.setState({dialogIsOpen: false});
     }
 
-    setNumPapers(num) {
+    setNumPapers(num : number) {
         this.setState({
             numUnannotated: num,
         });

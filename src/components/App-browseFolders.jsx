@@ -12,7 +12,6 @@ import fetch from 'unfetch';
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-
 import AppBar from 'material-ui/AppBar';
 
 import Loader from './Loader.jsx';

@@ -3,19 +3,39 @@
 //import React from 'react';
 import * as React from 'react'; // typescript
 
+import 'unfetch/polyfill';
+
 import Avatar from 'material-ui/Avatar';
 import {ListItem} from 'material-ui/List';
 
 import FolderIcon from 'material-ui/svg-icons/file/folder';
 import FileIcon from 'material-ui/svg-icons/action/description';
 
-import 'unfetch/polyfill';
+import Annotations from './Annotations';
+
+
+// http://stackoverflow.com/a/14919494/426266
+function humanFileSize(bytes) {
+    const si = true;
+    var thresh = si ? 1000 : 1024;
+    if(Math.abs(bytes) < thresh) {
+        return bytes + ' B';
+    }
+    var units = si
+        ? ['kB','MB','GB','TB','PB','EB','ZB','YB']
+        : ['KiB','MiB','GiB','TiB','PiB','EiB','ZiB','YiB'];
+    var u = -1;
+    do {
+        bytes /= thresh;
+        ++u;
+    } while(Math.abs(bytes) >= thresh && u < units.length - 1);
+    return bytes.toFixed(1)+' '+units[u];
+}
 
 
 const nestedListStyle = {
     marginLeft: '1em',
 };
-
 const annotationsContainerStyle = {
     marginLeft: '4.5em',
 };
@@ -23,7 +43,6 @@ const metadataContainerStyle = {
     marginLeft: '4.5em',
     marginBottom: '1em',
 };
-
 const iconStyles = {
     important: {
         backgroundColor: '#FFCCCC',
@@ -35,6 +54,11 @@ const iconStyles = {
         backgroundColor: '#CCCCCC',
     },
 };
+const fileItemStyle = {
+};
+const folderItemStyle = {
+    color: '#EEEEEE',
+};
 
 
 export interface MainState {
@@ -45,7 +69,7 @@ export interface MainState {
 
 const getSecText = (f) => {
     if (f.type !== 'folder') {
-        return `${f.type}: ${f.mtime}, ${f.size}`;
+        return `${f.mtime}, ${humanFileSize(f.size)}`;
     }
     return '';
 };
@@ -66,7 +90,6 @@ class ListFolderItem extends React.Component<any, MainState> {
         // TODO
 
         // TODO - get this from elasticsearch
-
 
         // for now:
         // get annotations from pdf on the fly
@@ -93,7 +116,6 @@ class ListFolderItem extends React.Component<any, MainState> {
 
         // TODO - get this from elasticsearch
 
-
         // for now:
         // get annotations from pdf on the fly
         // via flask server
@@ -119,6 +141,9 @@ class ListFolderItem extends React.Component<any, MainState> {
     }
 
     getDetails () {
+        if (this.props.children) {
+            console.log('num children', this.props.children.length);
+        }
         if (this.props.f.type === 'file') {
             if (!this.state.annotations.length) {
                 console.log('show annotations');
@@ -134,26 +159,42 @@ class ListFolderItem extends React.Component<any, MainState> {
         }
     }
 
-    render () {
-        let FIcon;
+    getItemIcon() {
         if (this.props.f['type'] === "file") {
-            FIcon = <FileIcon />;
+            return <FileIcon />;
         } else {
-            FIcon = <FolderIcon />;
+            return <FolderIcon />;
         }
+    }
+
+    getItemIconStyle() {
         let iconStyle = iconStyles.unread;
         if (this.props.f['name'][0] === '-') {
             iconStyle = iconStyles.important;
         } else if (this.props.f['name'][0] === '!') {
             iconStyle = iconStyles.important;
         };
+        return iconStyle;
+    }
 
-        let annotations = [];
-        if (this.state.annotations.length) {
-            annotations = this.state.annotations.map((annotation) => (
-                <div>{annotation[0]}: {annotation[1]}</div>
-            ));
+    buildPrimaryTitle() {
+        let primaryText = this.props.f.name;
+        if (this.props.children.length) {
+            primaryText = primaryText + ' (' + this.props.children.length + ')';
         }
+        return primaryText;
+    }
+
+    render () {
+
+        const FIcon = this.getItemIcon();
+
+        const iconStyle = this.getItemIconStyle();
+
+        const primaryText = this.buildPrimaryTitle();
+
+        // console.log(this.props.f.children);
+        // console.log(this.props.children);
 
         return (
             <div>
@@ -162,7 +203,7 @@ class ListFolderItem extends React.Component<any, MainState> {
                                     icon={FIcon}
                                     style={iconStyle}
                                 />}
-                    primaryText={this.props.f.name}
+                    primaryText={primaryText}
                     secondaryText={getSecText(this.props.f)}
                     onClick={this.getDetails.bind(this)}
                     autoGenerateNestedIndicator={true}
@@ -172,18 +213,18 @@ class ListFolderItem extends React.Component<any, MainState> {
                     nestedListStyle={nestedListStyle}
                 />
                 {
-                    this.state.metadata ? (
-                        <div style={{display: this.state.metadata ? 'block' : 'none'}}>
-                            <div style={metadataContainerStyle}>
-                                <div style={{display: this.state.metadata && this.state.metadata['/Title'] ? 'block' : 'none'}}>Title: {this.state.metadata && this.state.metadata['/Title']}</div>
-                                <div style={{display: this.state.metadata && this.state.metadata['/Author'] ? 'block' : 'none'}}>Author: {this.state.metadata && this.state.metadata['/Author']}</div>
-                            </div>
+                    this.state.metadata && (this.state.metadata['/Title'] || this.state.metadata['/Author']) ? (
+                        <div style={metadataContainerStyle}>
+                            <div style={{display: this.state.metadata['/Title'] ? 'block' : 'none'}}>Title: {this.state.metadata && this.state.metadata['/Title']}</div>
+                            <div style={{display: this.state.metadata['/Author'] ? 'block' : 'none'}}>Author: {this.state.metadata && this.state.metadata['/Author']}</div>
                         </div>
                     ) : null
                 }
                 <div style={{display: this.state.annotations.length ? 'block' : 'none'}}>
                     <div style={annotationsContainerStyle}>
-                        {annotations}
+                        <Annotations
+                            rows={this.state.annotations}
+                        />
                     </div>
                 </div>
             </div>
