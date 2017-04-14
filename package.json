@@ -14,10 +14,11 @@
     "flow": "npm run-script flow",
     "lint": "eslint build src tests",
     "lint:fix": "npm run lint -- --fix",
-    "dev": "cross-env NODE_ENV=production node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base build/ --open",
+    "dev": "cross-env NODE_ENV=development node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base build/ --open",
     "test": "cross-env NODE_ENV=test node ./node_modules/karma/bin/karma start config/karma.config",
     "test:dev": "npm run test -- --watch",
-    "codecov": "cat coverage/*/lcov.info | codecov"
+    "codecov": "cat coverage/*/lcov.info | codecov",
+    "build": "cross-env NODE_ENV=production webpack -p"
   },
   "dependencies": {
     "@types/react": "^15.0.21",

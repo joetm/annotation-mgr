@@ -77,7 +77,7 @@ module.exports = {
   // PROD
   [
     new webpack.DefinePlugin({
-        'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
+        'process.env.NODE_ENV': 'production'
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new ExtractTextPlugin({
@@ -85,11 +85,11 @@ module.exports = {
       disable: false,
       allChunks: true
     })
-  	// new webpack.optimize.UglifyJsPlugin({
-   //      // mangle: false,
-   //      compress: {
-   //          warnings: false
-   //      }
-   //   })
+    // new webpack.optimize.UglifyJsPlugin({
+    //      // mangle: false,
+    //      compress: {
+    //          warnings: false
+    //      }
+    //   })
   ]
 };
