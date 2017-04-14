@@ -15,22 +15,11 @@ const annotationStyle = {
 // const AnnotationTable = (props) => (
 class AnnotationTable extends React.Component<any, {}> {
     copyToClipboard(selectedRows) {
-    //     // console.log(selectedRows);
-    //     let copiedAnnotations = [];
-    //     for (let i = 0; i < selectedRows.length; i++) {
-    //         copiedAnnotations.push(this.props.rows[selectedRows[i]][1]);
-    //     }
-    //     console.log(copiedAnnotations);
-    //     let annotationTxt = copiedAnnotations.join("\n");
-    //     const textarea = document.getElementById('clipboardArea123');
-    //     textarea.value = annotationTxt;
-    //     textarea.select();
-    //     document.execCommand('copy');
+        // TODO
     }
     render() {
         return (
             <Paper zDepth={1}>
-              <input id={'clipboardArea123'} />
               <Table selectable={true} multiSelectable={true} onRowSelection={this.copyToClipboard.bind(this)}>
                 <TableHeader adjustForCheckbox={true} displaySelectAll={true}>
                   <TableRow selectable={false}>

@@ -45,7 +45,7 @@ const metadataContainerStyle = {
 };
 const iconStyles = {
     important: {
-        backgroundColor: '#FFCCCC',
+        backgroundColor: '#FFBBBB',
     },
     read: {
         backgroundColor: '#CCFFCC',

@@ -35,10 +35,15 @@ class RightIconMenu extends React.Component<any, any> {
         return (
           <div>
 
-            <IconButton style={{display: this.props.view !== 'folder' ? 'inline-block' : 'none'}}><FolderIcon onClick={this.props.switchView} /></IconButton>
-            <IconButton style={{display: this.props.view === 'folder' ? 'inline-block' : 'none'}}><SearchIcon onClick={this.props.switchView} /></IconButton>
-
-            <IconButton><SettingsIcon onTouchTap={this.props.openDialog} /></IconButton>
+            <IconButton style={{display: this.props.view !== 'folder' ? 'inline-block' : 'none'}}>
+                <FolderIcon onClick={this.props.switchView} />
+            </IconButton>
+            <IconButton style={{display: this.props.view === 'folder' ? 'inline-block' : 'none'}}>
+                <SearchIcon onClick={this.props.switchView} />
+            </IconButton>
+            <IconButton>
+                <SettingsIcon onClick={this.props.openDialog} />
+            </IconButton>
 
             <Badge
               badgeContent={this.props.numUnannotated}

@@ -63,10 +63,10 @@ export default class App extends React.Component<any, MainState> {
     num : number = 0;
 
     state : MainState = {
-        isLoading: false,
+        isLoading: true,
         progress: 0,
         items: [],
-        view: 'search',
+        view: 'folder',
         dialogIsOpen: false,
         numUnannotated: 0,
     };
@@ -115,7 +115,9 @@ export default class App extends React.Component<any, MainState> {
     }
 
     componentDidMount() {
-
+        if (this.state.view === 'folder') {
+            this.fetchPapers();
+        }
     }
 
     componentWillUnmount() {
@@ -146,9 +148,11 @@ export default class App extends React.Component<any, MainState> {
     }
 
     openSettingsDialog() {
+        console.log('open dialog');
         this.setState({dialogIsOpen: true});
     }
     closeSettingsDialog() {
+        console.log('close dialog');
         this.setState({dialogIsOpen: false});
     }
 
@@ -196,6 +200,7 @@ export default class App extends React.Component<any, MainState> {
                       />
                     <SettingsDialog
                         open={this.state.dialogIsOpen}
+                        syncLiterature={this.syncLiterature.bind(this)}
                         closeSettingsDialog={this.closeSettingsDialog.bind(this)}
                     />
                     <Loader
