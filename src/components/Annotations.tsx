@@ -6,27 +6,52 @@ import * as React from 'react'; // typescript
 import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
 import Paper from 'material-ui/Paper';
 
-const AnnotationTable = (props) => (
-	<Paper zDepth={1}>
-	  <Table selectable={false}>
-	    <TableHeader adjustForCheckbox={false} displaySelectAll={false}>
-	      <TableRow selectable={false}>
-	        <TableHeaderColumn>Annotation</TableHeaderColumn>
-	        <TableHeaderColumn>page</TableHeaderColumn>
-	      </TableRow>
-	    </TableHeader>
-	    <TableBody displayRowCheckbox={false}>
-	    	{
-	    		props.rows.map((row) => (
-			      <TableRow selectable={false} striped={true}>
-			        <TableRowColumn style={{whiteSpace:'normal',wordWrap:'break-word'}}>{row[1]}</TableRowColumn>
-			        <TableRowColumn>{row[0]}</TableRowColumn>
-			      </TableRow>
-	    		))
-	    	}
-	    </TableBody>
-	  </Table>
-	</Paper>
-);
+const annotationStyle = {
+    whiteSpace:'normal',
+    wordWrap:'break-word',
+    cursor: 'pointer',
+};
+
+// const AnnotationTable = (props) => (
+class AnnotationTable extends React.Component<any, {}> {
+    copyToClipboard(selectedRows) {
+    //     // console.log(selectedRows);
+    //     let copiedAnnotations = [];
+    //     for (let i = 0; i < selectedRows.length; i++) {
+    //         copiedAnnotations.push(this.props.rows[selectedRows[i]][1]);
+    //     }
+    //     console.log(copiedAnnotations);
+    //     let annotationTxt = copiedAnnotations.join("\n");
+    //     const textarea = document.getElementById('clipboardArea123');
+    //     textarea.value = annotationTxt;
+    //     textarea.select();
+    //     document.execCommand('copy');
+    }
+    render() {
+        return (
+            <Paper zDepth={1}>
+              <input id={'clipboardArea123'} />
+              <Table selectable={true} multiSelectable={true} onRowSelection={this.copyToClipboard.bind(this)}>
+                <TableHeader adjustForCheckbox={true} displaySelectAll={true}>
+                  <TableRow selectable={false}>
+                    <TableHeaderColumn>Annotation</TableHeaderColumn>
+                    <TableHeaderColumn>page</TableHeaderColumn>
+                  </TableRow>
+                </TableHeader>
+                <TableBody displayRowCheckbox={true} deselectOnClickaway={false}>
+                    {
+                        this.props.rows.map((row) => (
+                          <TableRow selectable={true}>
+                            <TableRowColumn style={annotationStyle}>{row[1]}</TableRowColumn>
+                            <TableRowColumn>{row[0]}</TableRowColumn>
+                          </TableRow>
+                        ))
+                    }
+                </TableBody>
+              </Table>
+            </Paper>
+        );
+    }
+}
 
 export default AnnotationTable;

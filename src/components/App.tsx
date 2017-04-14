@@ -107,6 +107,7 @@ export default class App extends React.Component<any, MainState> {
                     this.setState({
                         items: this.processItems(folderdata['children']),
                         isLoading: false,
+                        progress: 100, // TODO
                         dialogIsOpen: false,
                     });
                 }
@@ -135,11 +136,12 @@ export default class App extends React.Component<any, MainState> {
             this.setState({
                 view: 'folder',
                 isLoading: true,
+                items: [], // reset
                 progress: 0, // TODO
             });
-            if (!this.state.items.length) {
-                this.fetchPapers();
-            }
+            // if (!this.state.items.length) {
+            this.fetchPapers();
+            // }
         }
     }
 

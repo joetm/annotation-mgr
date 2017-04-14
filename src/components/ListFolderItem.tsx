@@ -140,6 +140,10 @@ class ListFolderItem extends React.Component<any, MainState> {
         }
     }
 
+    flareTitle() {
+        // TODO
+    }
+
     getDetails () {
         if (this.props.children) {
             console.log('num children', this.props.children.length);
@@ -149,6 +153,10 @@ class ListFolderItem extends React.Component<any, MainState> {
                 console.log('show annotations');
                 this.getMetadata(this.props.f);
                 this.getAnnotations(this.props.f);
+                if (!this.state.annotations.length) {
+                    // no annotations found for this file
+                    this.flareTitle();
+                }
             } else {
                 console.log('hide annotations');
                 this.setState({
