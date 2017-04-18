@@ -27,18 +27,17 @@ class Syncer:
         """ Go through all the documents and extract the metadata """
         print "Syncing %s" % rootpath
 
+        # erase existing or create new
+        open('../build/data/papers.json', 'w').close()
+
+        # open output file in append mode
         fp = open('../build/data/papers.json', 'a')
-        fp.seek(0)
         fp.write("[\n")
 
         # traverse all files and sub-folders
         for path, subdirs, files in os.walk(rootpath):
 
-            counter = 0
-
             for name in files:
-
-                counter = counter + 1
 
                 filepath = os.path.join(path, name)
 
@@ -93,8 +92,12 @@ class Syncer:
                     default=None,
                     sort_keys=False
                 )
-                if counter != len(files):
-                    fp.write(",\n")
+
+                fp.write(",\n")
+
+        # remove the last comma
+        fp.seek(-2, os.SEEK_END)
+        fp.truncate()
 
         fp.write("\n]\n")
 
