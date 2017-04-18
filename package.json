@@ -18,6 +18,7 @@
     "test": "cross-env NODE_ENV=test node ./node_modules/karma/bin/karma start config/karma.config",
     "test:dev": "npm run test -- --watch",
     "codecov": "cat coverage/*/lcov.info | codecov",
+    "server": "python flaskserver.py",
     "build": "cross-env NODE_ENV=production webpack -p"
   },
   "dependencies": {

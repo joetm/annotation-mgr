@@ -5,6 +5,10 @@
 from flask import Flask
 from flask import request
 
+import os
+# proc_open equivalent - allows better capturing of exitcode (instead of os.system)
+from subprocess import check_output, STDOUT, CalledProcessError
+
 app = Flask(__name__)
 
 
@@ -57,6 +61,22 @@ def crossdomain(origin=None, methods=None, headers=None,
     return decorator
 
 
+def runtask(cmdstring):
+    """ Run a cmd command """
+    if not cmdstring:
+        raise Exception("No task to execute")
+    # reset
+    cmdstring = unicode(cmdstring)
+    result = {}
+    # ------------
+    # run the task
+    # ------------
+    result = check_output(cmdstring, shell=True, stderr=STDOUT)
+    # trim blank lines
+    # output = result.strip("\n")
+    return result
+
+
 
 @app.route("/")
 def hello():
@@ -65,7 +85,7 @@ def hello():
 @app.route("/metadata")
 @crossdomain(origin='*')
 def getMetadata():
-    # TODO
+    # TODO - use hash and elasticsearch
     # insecure
     filepath = request.args.get('path')
     from tools.extractMeta import MetadataExtractor
@@ -75,7 +95,7 @@ def getMetadata():
 @app.route("/annotation")
 @crossdomain(origin='*')
 def getAnnotation():
-    # TODO
+    # TODO - use hash and elasticsearch
     # insecure
     filepath = request.args.get('path')
     from tools.extractAnnotations import AnnotationExtractor
@@ -84,6 +104,15 @@ def getAnnotation():
         filepath = "file://%s" % filepath
     # print filepath
     return AnnotationExtractor.getAnnotations(filepath)
+
+@app.route("/resync")
+@crossdomain(origin='*')
+def resync():
+    try:
+        runtask('./tools/runSync.sh /home/jonas/FU/IKON/Literatur/')
+    except Exception as e:
+        return '{"error": %s}' % e
+    return "1"
 
 
 if __name__ == "__main__":

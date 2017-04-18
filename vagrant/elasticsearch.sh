@@ -11,3 +11,5 @@ curl -XPUT 'localhost:9200/papers?pretty&pretty' -H "Content-Type: application/j
 
 # create ingest pipeline
 curl -XPUT 'localhost:9200/_ingest/pipeline/attachment?pretty&pretty' -H "Content-Type: application/json" -d '{"description":"Extract attachment information","processors":[{"attachment":{"field":"data","indexed_chars":-1}}]}'
+
+

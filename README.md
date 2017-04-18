@@ -12,7 +12,8 @@ Annotation Mgr
 Usage
 =====
 
+```
 vagrant up
-python flaskserver.py
+yarn run server
 yarn run dev
-
+```
