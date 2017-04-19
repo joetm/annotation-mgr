@@ -12,6 +12,7 @@ import os.path
 from pyPdf import PdfFileReader
 from pyPdf.utils import PdfReadError
 import hashlib
+import requests
 
 from modules.extractAnnotations import AnnotationExtractor
 from modules.extractMeta import MetadataExtractor
@@ -23,16 +24,21 @@ class Syncer:
     """
 
     @staticmethod
-    def get_files(rootpath):
-        """ Go through all the documents and extract the metadata """
+    def sync_files(rootpath):
+        """ Go through all the documents and extract the metadata and annotations """
         print "Syncing %s" % rootpath
 
         # erase existing or create new
-        open('../build/data/papers.json', 'w').close()
+        # open('../build/data/papers.json', 'w').close()
 
         # open output file in append mode
-        fp = open('../build/data/papers.json', 'a')
-        fp.write("[\n")
+        # fp = open('../build/data/papers.json', 'a')
+        # fp.write("[\n")
+
+        # reset elasticsearch index
+        deletion_response = requests.delete('http://10.10.10.10:9200/papers?pretty')
+        if deletion_response.status_code not in [200, 404]:
+            raise Exception("Could not reset index")
 
         # traverse all files and sub-folders
         for path, subdirs, files in os.walk(rootpath):
@@ -65,7 +71,7 @@ class Syncer:
                 statinfo = os.stat(filepath)
 
                 # assemble the output dictionary
-                output = {
+                document = {
                     "path": filepath,
                     "name": os.path.basename(filepath),
                     # "type": "file",
@@ -77,31 +83,38 @@ class Syncer:
                     "annotations": annotations
                 }
 
+                # pump it into elasticsearch
+                response = requests.post('http://10.10.10.10:9200/papers/document/?pretty', data=json.dumps(document))
+
+                print response.json()
+
+                sys.exit()
+
                 # print output['metadata']
                 # print json.dumps(output, indent=4, encoding="utf-8")
 
-                json.dump(output, fp,
-                    skipkeys=False,
-                    ensure_ascii=False,
-                    check_circular=True,
-                    allow_nan=True,
-                    cls=None,
-                    indent=None,
-                    separators=(',',':'),
-                    encoding="utf-8",
-                    default=None,
-                    sort_keys=False
-                )
+                # json.dump(output, fp,
+                #     skipkeys=False,
+                #     ensure_ascii=False,
+                #     check_circular=True,
+                #     allow_nan=True,
+                #     cls=None,
+                #     indent=None,
+                #     separators=(',',':'),
+                #     encoding="utf-8",
+                #     default=None,
+                #     sort_keys=False
+                # )
 
-                fp.write(",\n")
+                # fp.write(",\n")
 
         # remove the last comma
-        fp.seek(-2, os.SEEK_END)
-        fp.truncate()
+        # fp.seek(-2, os.SEEK_END)
+        # fp.truncate()
 
-        fp.write("\n]\n")
+        # fp.write("\n]\n")
 
-        fp.close()
+        # fp.close()
 
 
 
@@ -118,4 +131,4 @@ if __name__ == "__main__":
         print "Argument must be a folder"
         sys.exit(1)
 
-    Syncer.get_files(sys.argv[1])
+    Syncer.sync_files(sys.argv[1])
