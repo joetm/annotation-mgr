@@ -57,31 +57,22 @@ apt-get install -y kibana --allow-unauthenticated
 # install logstash
 apt-get install -y logstash --allow-unauthenticated
 
-# TODO - configure elasticsearch and kibana
+
+
+# configure elasticsearch and kibana
 
 
 # !!!!!!!!!!!!!!
-# TODO - lower elasticsearch memory
+# lower elasticsearch memory requirement (or else the service won't start)
 # see http://stackoverflow.com/a/41662868/426266
+sed -i 's/-Xms2g/-Xms512m/' /etc/elasticsearch/jvm.options
+sed -i 's/-Xmx2g/-Xmx512m/' /etc/elasticsearch/jvm.options
 # !!!!!!!!!!!!!!
 
+cp -f /var/www/vagrant/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
+cp -f /var/www/vagrant/kibana.yml /etc/kibana/kibana.yml
 
-# !!!!!!!!!!!!!!
-# edit /etc/kibana/kibana.yml and change server.host: "localhost" to server.host: "0.0.0.0"
-# !!!!!!!!!!!!!!
-
-# !!!!!!!!!!!!!!
-# edit /etc/elasticsearch/elasticsearch.yml and change network.host: 196.168.0.1 to network.host: 0.0.0.0
-# !!!!!!!!!!!!!!
-
-# !!!!!!!!!!!!!!
-# TODO: elasticsearch cors config for dev
-# http.cors.enabled: true
-# http.cors.allow-origin: "*"
-# !!!!!!!!!!!!!!
-
-
-# update-rc.d elasticsearch defaults 95 10
+update-rc.d elasticsearch defaults 95 10
 update-rc.d kibana defaults 95 10
 
 # start elastic search
@@ -91,8 +82,6 @@ update-rc.d kibana defaults 95 10
 /bin/systemctl enable elasticsearch.service
 /bin/systemctl start elasticsearch.service
 
-/etc/init.d/elasticsearch start
-
 # service elasticsearch status
 
 # start kibana
@@ -101,3 +90,4 @@ update-rc.d kibana defaults 95 10
 # elasticsearch setup
 # ./elasticsearch.sh
 
+# usermod -a -G elasticsearch ubuntu

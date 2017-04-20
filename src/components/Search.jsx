@@ -28,7 +28,7 @@ export default class Search extends React.Component {
     return (
         <div style={{display:'block'}}>
             <SearchIcon
-                onTouchTap={this.toggle.bind(this)}
+                onClick={this.toggle.bind(this)}
                 style={{float:'right', marginRight:'10px'}}
             />
             <TextField

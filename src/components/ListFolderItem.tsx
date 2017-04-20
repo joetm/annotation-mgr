@@ -212,6 +212,7 @@ class ListFolderItem extends React.Component<any, MainState> {
                                     style={iconStyle}
                                 />}
                     primaryText={primaryText}
+                    key={this.props.f.hash}
                     secondaryText={getSecText(this.props.f)}
                     onClick={this.getDetails.bind(this)}
                     autoGenerateNestedIndicator={true}
