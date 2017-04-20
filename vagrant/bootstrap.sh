@@ -81,7 +81,6 @@ update-rc.d kibana defaults 95 10
 /bin/systemctl daemon-reload
 /bin/systemctl enable elasticsearch.service
 /bin/systemctl start elasticsearch.service
-
 # service elasticsearch status
 
 # start kibana
