@@ -48,10 +48,10 @@ const iconStyles = {
         backgroundColor: '#FFBBBB',
     },
     read: {
-        backgroundColor: '#CCFFCC',
+        backgroundColor: '#CCCCCC',
     },
     unread: {
-        backgroundColor: '#CCCCCC',
+        backgroundColor: '#202020',
     },
 };
 const fileItemStyle = {
@@ -178,7 +178,7 @@ class ListFolderItem extends React.Component<any, MainState> {
     getItemIconStyle() {
         let iconStyle = iconStyles.unread;
         if (this.props.f['name'][0] === '-') {
-            iconStyle = iconStyles.important;
+            iconStyle = iconStyles.read;
         } else if (this.props.f['name'][0] === '!') {
             iconStyle = iconStyles.important;
         };

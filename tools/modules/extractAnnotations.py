@@ -41,7 +41,7 @@ class AnnotationExtractor:
                 # clean string
                 it = it.replace("\n", "").replace("\r", "").strip()
                 # write to file
-                annotations.append([page_no + 1, it])
+                annotations.append({'page': page_no + 1, 'annotation': it})
 
         # return json.dumps(annotations, indent=4, encoding="utf-8")
         return annotations

@@ -82,17 +82,21 @@ class Syncer:
                     "metadata": metadata,
                     "annotations": annotations
                 }
+                print document
 
                 # pump it into elasticsearch
-                response = requests.post('http://10.10.10.10:9200/papers/document/?pretty', data=json.dumps(document))
-
+                response = requests.post(
+                    'http://10.10.10.10:9200/papers/paper/?pretty',
+                    data=json.dumps(document, encoding='latin1')
+                )
                 print response.json()
-
-                sys.exit()
+                # {u'_type': u'paper', u'_shards': {u'successful': 1, u'failed': 0, u'total': 2}, u'_index': u'papers', u'_version': 1, u'created': True, u'result': u'created', u'_id': u'AVugcAAX_KCavz3xTsKv'}
 
                 # print output['metadata']
-                # print json.dumps(output, indent=4, encoding="utf-8")
 
+                # sys.exit()
+
+                # print json.dumps(output, indent=4, encoding="utf-8")
                 # json.dump(output, fp,
                 #     skipkeys=False,
                 #     ensure_ascii=False,
@@ -105,15 +109,12 @@ class Syncer:
                 #     default=None,
                 #     sort_keys=False
                 # )
-
                 # fp.write(",\n")
 
         # remove the last comma
         # fp.seek(-2, os.SEEK_END)
         # fp.truncate()
-
         # fp.write("\n]\n")
-
         # fp.close()
 
 
