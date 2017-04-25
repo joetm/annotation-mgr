@@ -184,9 +184,9 @@ class ListFolderItem extends React.Component<any, MainState> {
 
     getItemIconStyle() {
         let iconStyle = styles.iconStyles.unread;
-        if (this.props.f['name'][0] === '-') {
+        if (this.props.f.name[0] === '-') {
             iconStyle = styles.iconStyles.read;
-        } else if (this.props.f['name'][0] === '!') {
+        } else if (this.props.f.name[0] === '!') {
             iconStyle = styles.iconStyles.important;
         };
         return iconStyle;

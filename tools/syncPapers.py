@@ -36,7 +36,8 @@ class Syncer:
         # fp.write("[\n")
 
         # reset elasticsearch index
-        deletion_response = requests.delete('http://10.10.10.10:9200/papers?pretty')
+        # deletion_response = requests.delete('http://10.10.10.10:9200/papers?pretty')
+        deletion_response = requests.delete('http://localhost:9200/papers?pretty')
         if deletion_response.status_code not in [200, 404]:
             raise Exception("Could not reset index")
 
@@ -74,7 +75,7 @@ class Syncer:
                 document = {
                     "path": filepath,
                     "name": os.path.basename(filepath),
-                    # "type": "file",
+                    "type": "file",
                     "hash": hashlib.md5(open(filepath, 'rb').read()).hexdigest(),
                     "mtime": statinfo.st_mtime,
                     "atime": statinfo.st_atime,
@@ -82,14 +83,15 @@ class Syncer:
                     "metadata": metadata,
                     "annotations": annotations
                 }
-                print document
+                # print document
 
                 # pump it into elasticsearch
                 response = requests.post(
-                    'http://10.10.10.10:9200/papers/paper/?pretty',
+                    # 'http://10.10.10.10:9200/papers/paper/?pretty',
+                    'http://localhost:9200/papers/paper/?pretty',
                     data=json.dumps(document, encoding='latin1')
                 )
-                print response.json()
+                # print response.json()
                 # {u'_type': u'paper', u'_shards': {u'successful': 1, u'failed': 0, u'total': 2}, u'_index': u'papers', u'_version': 1, u'created': True, u'result': u'created', u'_id': u'AVugcAAX_KCavz3xTsKv'}
 
                 # print output['metadata']
