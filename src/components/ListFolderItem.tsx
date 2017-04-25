@@ -33,36 +33,38 @@ function humanFileSize(bytes) {
 }
 
 
-const nestedListStyle = {
-    marginLeft: '1em',
-};
-const annotationsContainerStyle = {
-    marginLeft: '4.5em',
-};
-const metadataContainerStyle = {
-    marginLeft: '4.5em',
-    marginBottom: '1em',
-};
-const iconStyles = {
-    important: {
-        backgroundColor: '#FFBBBB',
+const styles = {
+    nestedListStyle: {
+        marginLeft: '1em',
     },
-    read: {
-        backgroundColor: '#CCCCCC',
+    annotationsContainerStyle: {
+        marginLeft: '4.5em',
     },
-    unread: {
-        backgroundColor: '#202020',
+    metadataContainerStyle: {
+        marginLeft: '4.5em',
+        marginBottom: '1em',
     },
-};
-const fileItemStyle = {
-};
-const folderItemStyle = {
-    color: '#EEEEEE',
+    iconStyles: {
+        important: {
+            backgroundColor: '#FFBBBB',
+        },
+        read: {
+            backgroundColor: '#CCCCCC',
+        },
+        unread: {
+            backgroundColor: '#202020',
+        },
+    },
+    fileItemStyle: {
+    },
+    folderItemStyle: {
+        color: '#EEEEEE',
+    },
 };
 
 
 export interface MainState {
-    annotations: any;
+    annotations_visible: boolean;
     metadata: any;
 }
 
@@ -80,59 +82,59 @@ class ListFolderItem extends React.Component<any, MainState> {
     serverRequest : any;
 
     state : MainState = {
-        annotations: [],
+        annotations_visible: false,
         metadata: null,
     };
 
-    getMetadata (file) {
-        console.log('getting metadata for', file.path);
+    // getMetadata (file) {
+    //     console.log('getting metadata for', file.path);
 
-        // TODO
+    //     // TODO
 
-        // TODO - get this from elasticsearch
+    //     // TODO - get this from elasticsearch
 
-        // for now:
-        // get annotations from pdf on the fly
-        // via flask server
+    //     // for now:
+    //     // get annotations from pdf on the fly
+    //     // via flask server
 
-        const urlpath = encodeURIComponent(file.path);
+    //     const urlpath = encodeURIComponent(file.path);
 
-        const URL = `http://127.0.0.1:5000/metadata?path=${urlpath}`;
+    //     const URL = `http://127.0.0.1:5000/metadata?path=${urlpath}`;
 
-        this.serverRequest = fetch(URL)
-            .then(r => r.json())
-            .then((metadata) => {
-                console.log(file.path, metadata);
-                this.setState({
-                    metadata
-                });
-            });
-    }
+    //     this.serverRequest = fetch(URL)
+    //         .then(r => r.json())
+    //         .then((metadata) => {
+    //             console.log(file.path, metadata);
+    //             this.setState({
+    //                 metadata
+    //             });
+    //         });
+    // }
 
-    getAnnotations (file) {
-        console.log('getting annotations for', file.path);
+    // getAnnotations (file) {
+    //     console.log('getting annotations for', file.path);
 
-        // TODO
+    //     // TODO
 
-        // TODO - get this from elasticsearch
+    //     // TODO - get this from elasticsearch
 
-        // for now:
-        // get annotations from pdf on the fly
-        // via flask server
+    //     // for now:
+    //     // get annotations from pdf on the fly
+    //     // via flask server
 
-        const urlpath = encodeURIComponent(file.path);
+    //     const urlpath = encodeURIComponent(file.path);
 
-        const URL = `http://127.0.0.1:5000/annotation?path=${urlpath}`;
+    //     const URL = `http://127.0.0.1:5000/annotation?path=${urlpath}`;
 
-        this.serverRequest = fetch(URL)
-            .then(r => r.json())
-            .then((annotationdata) => {
-                console.log(file.path, annotationdata);
-                this.setState({
-                    annotations: annotationdata,
-                });
-            });
-    }
+    //     this.serverRequest = fetch(URL)
+    //         .then(r => r.json())
+    //         .then((annotationdata) => {
+    //             console.log(file.path, annotationdata);
+    //             this.setState({
+    //                 annotations: annotationdata,
+    //             });
+    //         });
+    // }
 
     componentWillUnmount() {
         if (this.serverRequest) {
@@ -144,26 +146,31 @@ class ListFolderItem extends React.Component<any, MainState> {
         // TODO
     }
 
-    getDetails () {
-        if (this.props.children) {
+    revealDetails () {
+        if (this.props.children > 0) {
             console.log('num children', this.props.children.length);
+            // TODO
+
+
         }
-        if (this.props.f.type === 'file') {
-            if (!this.state.annotations.length) {
-                console.log('show annotations');
-                this.getMetadata(this.props.f);
-                this.getAnnotations(this.props.f);
-                if (!this.state.annotations.length) {
-                    // no annotations found for this file
-                    this.flareTitle();
-                }
-            } else {
-                console.log('hide annotations');
-                this.setState({
-                    annotations: [],
-                    metadata: null,
-                });
-            }
+        if (!this.state.annotations_visible &&
+            this.props.f.annotations !== undefined &&
+            this.props.f.annotations.length
+        ) {
+            console.log('showing annotations');
+            // this.getMetadata(this.props.f);
+            // this.getAnnotations(this.props.f);
+            this.setState({
+                annotations_visible: true,
+                metadata: this.props.f.metadata,
+            });
+        } else {
+            // no annotations found for this file
+            console.log('hiding annotations');
+            this.setState({
+                annotations_visible: false,
+                metadata: null,
+            });
         }
     }
 
@@ -176,11 +183,11 @@ class ListFolderItem extends React.Component<any, MainState> {
     }
 
     getItemIconStyle() {
-        let iconStyle = iconStyles.unread;
+        let iconStyle = styles.iconStyles.unread;
         if (this.props.f['name'][0] === '-') {
-            iconStyle = iconStyles.read;
+            iconStyle = styles.iconStyles.read;
         } else if (this.props.f['name'][0] === '!') {
-            iconStyle = iconStyles.important;
+            iconStyle = styles.iconStyles.important;
         };
         return iconStyle;
     }
@@ -205,41 +212,39 @@ class ListFolderItem extends React.Component<any, MainState> {
         // console.log(this.props.children);
 
         return (
-            <div>
+            <div
+                key={'d_' + this.props.f._id}
+            >
                 <ListItem
-                    leftAvatar={<Avatar
-                                    icon={FIcon}
-                                    style={iconStyle}
-                                />}
+                    leftAvatar={<Avatar icon={FIcon} style={iconStyle} />}
                     primaryText={primaryText}
-                    key={this.props.f.hash}
+                    key={'li_' + this.props.f._id}
                     secondaryText={getSecText(this.props.f)}
-                    onClick={this.getDetails.bind(this)}
+                    onClick={this.revealDetails.bind(this)}
                     autoGenerateNestedIndicator={true}
                     primaryTogglesNestedList={true}
                     insetChildren={true}
                     nestedItems={this.props.children}
-                    nestedListStyle={nestedListStyle}
+                    nestedListStyle={styles.nestedListStyle}
                 />
                 {
-                    this.state.metadata && (this.state.metadata['/Title'] || this.state.metadata['/Author']) ? (
-                        <div style={metadataContainerStyle}>
-                            <div style={{display: this.state.metadata['/Title'] ? 'block' : 'none'}}>Title: {this.state.metadata && this.state.metadata['/Title']}</div>
-                            <div style={{display: this.state.metadata['/Author'] ? 'block' : 'none'}}>Author: {this.state.metadata && this.state.metadata['/Author']}</div>
+                    this.props.f.metadata && (this.props.f.metadata['title'] || this.props.f.metadata['author']) ? (
+                        <div style={styles.metadataContainerStyle}>
+                            <div style={{display: this.props.f.metadata['title'] ? 'block' : 'none'}}>Title: {this.props.f.metadata['title']}</div>
+                            <div style={{display: this.props.f.metadata['author'] ? 'block' : 'none'}}>Author: {this.props.f.metadata['author']}</div>
                         </div>
                     ) : null
                 }
-                <div style={{display: this.state.annotations.length ? 'block' : 'none'}}>
-                    <div style={annotationsContainerStyle}>
+                <div style={{display: this.state.annotations_visible ? 'block' : 'none'}}>
+                    <div style={styles.annotationsContainerStyle}>
                         <Annotations
-                            rows={this.state.annotations}
+                            rows={this.props.f.annotations}
                         />
                     </div>
                 </div>
             </div>
         );
     }
-
 }
 
 export default ListFolderItem;

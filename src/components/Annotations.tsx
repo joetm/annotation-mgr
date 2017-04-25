@@ -29,10 +29,10 @@ class AnnotationTable extends React.Component<any, {}> {
                 </TableHeader>
                 <TableBody displayRowCheckbox={true} deselectOnClickaway={false}>
                     {
-                        this.props.rows.map((row) => (
-                          <TableRow selectable={true}>
-                            <TableRowColumn style={annotationStyle}>{row[1]}</TableRowColumn>
-                            <TableRowColumn>{row[0]}</TableRowColumn>
+                        this.props.rows.map((row, i) => (
+                          <TableRow selectable={true} key={i}>
+                            <TableRowColumn style={annotationStyle}>{row.annotation}</TableRowColumn>
+                            <TableRowColumn>{row.page}</TableRowColumn>
                           </TableRow>
                         ))
                     }

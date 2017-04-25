@@ -20,7 +20,6 @@ import Searchbox from './Searchbox';
 import ListFolder from './ListFolder';
 import SettingsMenu from './SettingsMenu';
 import SettingsDialog from './SettingsDialog';
-
 import ListFolderItem from "./ListFolderItem";
 
 import Config from "../../config/config.js";
@@ -87,7 +86,8 @@ export default class App extends React.Component<any, MainState> {
             });
             return (
                 <ListFolderItem
-                    f={f}
+                    key={f._id}
+                    f={f._source}
                     children={children}
                 />
             );
@@ -95,17 +95,22 @@ export default class App extends React.Component<any, MainState> {
     }
 
     fetchPapers() {
-        //
-        console.log('fetching papers');
         // fetch the data
-        const URL = "./data/folders.json";
+        const URL = "http://localhost:9200/papers/_search?q=*:*&size=100&pretty";
+        //
+        console.log('fetching papers', URL);
+        //
         this.serverRequest = fetch(URL)
             .then(r => r.json())
-            .then((folderdata) => {
-                console.log(URL, folderdata);
-                if (folderdata['children'] !== undefined) {
+            .then((papers) => {
+                console.log('papers', papers);
+                if (
+                    papers['hits'] !== undefined
+                    &&
+                    papers['hits']['hits'] !== undefined
+                ) {
                     this.setState({
-                        items: this.processItems(folderdata['children']),
+                        items: this.processItems(papers['hits']['hits']),
                         isLoading: false,
                         progress: 100, // TODO
                         dialogIsOpen: false,
@@ -180,7 +185,8 @@ export default class App extends React.Component<any, MainState> {
                 items={this.state.items}
                 visible={true}
                 setNumPapers={this.setNumPapers.bind(this)}
-            /> :
+            />
+            :
             <Searchbox
             />;
 
