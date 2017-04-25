@@ -74,6 +74,8 @@ class Syncer:
                 # assemble the output dictionary
                 document = {
                     "path": filepath,
+                    "folder": os.path.commonprefix(filepath),
+                    "topic": os.path.dirname(filepath),
                     "name": os.path.basename(filepath),
                     "type": "file",
                     "hash": hashlib.md5(open(filepath, 'rb').read()).hexdigest(),
@@ -93,6 +95,10 @@ class Syncer:
                 )
                 # print response.json()
                 # {u'_type': u'paper', u'_shards': {u'successful': 1, u'failed': 0, u'total': 2}, u'_index': u'papers', u'_version': 1, u'created': True, u'result': u'created', u'_id': u'AVugcAAX_KCavz3xTsKv'}
+
+                if response['created']:
+                    sys.stdout.write('.')
+                    sys.stdout.flush()
 
                 # print output['metadata']
 
