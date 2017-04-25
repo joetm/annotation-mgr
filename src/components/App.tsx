@@ -180,16 +180,6 @@ export default class App extends React.Component<any, MainState> {
 
   	render() {
 
-        const View = this.state.view === 'folder' ?
-            <ListFolder
-                items={this.state.items}
-                visible={true}
-                setNumPapers={this.setNumPapers.bind(this)}
-            />
-            :
-            <Searchbox
-            />;
-
         return (
             <MuiThemeProvider muiTheme={theme}>
                 <div>
@@ -212,7 +202,12 @@ export default class App extends React.Component<any, MainState> {
                     <Loader
                     	progress={this.state.progress}
                     	visible={this.state.isLoading} />
-                    {View}
+                    <Searchbox />
+                    <ListFolder
+                        items={this.state.items}
+                        visible={true}
+                        setNumPapers={this.setNumPapers.bind(this)}
+                    />
                 </div>
             </MuiThemeProvider>
         );
