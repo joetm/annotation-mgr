@@ -21,6 +21,7 @@ import ListFolder from './ListFolder';
 import SettingsMenu from './SettingsMenu';
 import SettingsDialog from './SettingsDialog';
 import ListFolderItem from "./ListFolderItem";
+import Growler from "./Growler";
 
 import Config from "../../config/config.js";
 
@@ -48,8 +49,10 @@ export interface MainProps {
 export interface MainState {
     isLoading: boolean;
     progress: number;
+    growlOpen: boolean,
     items: any,
     view: string;
+    growlMessage: string,
     dialogIsOpen: boolean;
     numUnannotated: number;
 }
@@ -64,9 +67,11 @@ export default class App extends React.Component<any, MainState> {
     state : MainState = {
         isLoading: true,
         progress: 0,
+        growlOpen: false,
         items: [],
         view: 'folder',
         dialogIsOpen: false,
+        growlMessage: '',
         numUnannotated: 0,
     };
 
@@ -115,6 +120,8 @@ export default class App extends React.Component<any, MainState> {
                         progress: 100, // TODO
                         dialogIsOpen: false,
                     });
+
+                    this.growl('Done.');
                 }
             });
     }
@@ -178,6 +185,13 @@ export default class App extends React.Component<any, MainState> {
 
     }
 
+    growl(msg) {
+        this.setState({
+            growlOpen: true,
+            growlMessage: msg,
+        });
+    }
+
   	render() {
 
         return (
@@ -207,6 +221,10 @@ export default class App extends React.Component<any, MainState> {
                         items={this.state.items}
                         visible={true}
                         setNumPapers={this.setNumPapers.bind(this)}
+                    />
+                    <Growler
+                        open={this.state.growlOpen}
+                        message={this.state.growlMessage}
                     />
                 </div>
             </MuiThemeProvider>

@@ -15,6 +15,18 @@ import poppler
 class AnnotationExtractor:
 
     @staticmethod
+    def cleanAnnotation(txt):
+        """ clean annotation string """
+        txt = txt
+                .replace("  ", " ")
+                .replace("- ", "-")
+                .replace("-", "")
+                .replace("\n", "")
+                .replace("\r", "")
+                .strip()
+        return txt
+
+    @staticmethod
     def getAnnotations(filepath):
 
         # absolute path
@@ -38,8 +50,7 @@ class AnnotationExtractor:
             items = [i for i in items if i]
             # print "page: %s comments: %s " % (page_no + 1, items)
             for it in items:
-                # clean string
-                it = it.replace("\n", "").replace("\r", "").strip()
+                it = AnnotationExtractor.cleanAnnotation(it)
                 # write to file
                 annotations.append({'page': page_no + 1, 'annotation': it})
 
